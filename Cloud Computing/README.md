@@ -53,7 +53,7 @@ Now that's out of the way, let's go over the steps:
 
 Congratulations, you have now succesfully created a Cloud Computer!
 
-### 4. SSH into the isntance
+### 4. SSH into the instance
 Windows users have to download PuTTY (https://www.putty.org/)
 
 SSH (Secure Shell) is a network protocol that allows secure communication between two devices over an insecure network. It is often used to remotely access and control a computer or device over the Internet.
@@ -93,7 +93,7 @@ To confirm the installation, type the command
 The output should be similar to:
 ![NGINX Status](Images/NGINX_Status.png)
 
-### 6. Access the Web Server from the client. 
+### 6. Access the Web Server from the client 
 Congratulations on your new Web Server. Now let's access it as a client. Open an incognito window, and type the machine IP in the serach bar and hit enter. The result should look something similar to this:
 
 ![NGINX Welcome](Images/Welcome.png)

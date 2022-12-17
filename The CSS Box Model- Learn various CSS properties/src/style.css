@@ -1,0 +1,15 @@
+/* YOUR CODE GOES IN HERE */
+.card {
+    width: 100px;
+    border-width: 10px;
+    border-color: orange;
+    border-style: dashed;
+    border-radius: 2px;
+    text-align: left;
+}
+
+img {
+    width: 100px;
+    border: px rgb(236, 183, 191) dashed;
+    border-radius: 25%;
+}

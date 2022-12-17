@@ -10,7 +10,7 @@ The box model wraps around in a rectangular structure around every HTML element.
 
 ## Box Model- Properties  
   
-  ![box-model](images/box-model-1.png)   
+  ![box-model](The CSS Box Model- Learn various CSS properties/images/box-model-1.png)   
   Properties of the Box Model (source:geeksforgeeks)
    
    <br>
@@ -41,9 +41,9 @@ The box model wraps around in a rectangular structure around every HTML element.
 
  3. Go to elements tab and take a look at the various div elements on the page. You will notice that all respective elements are wrapped up inside rectangular boxes which have their own properties and margins.
 
- ![box1](images/div1.png)
- ![box2](images/div%202.png)
- ![box3](images/div3.png)
+ ![box1](The CSS Box Model- Learn various CSS properties/images/div1.png)
+ ![box2](The CSS Box Model- Learn various CSS properties/images/div%202.png)
+ ![box3](The CSS Box Model- Learn various CSS properties/images/div3.png)
   <br><br>
 
 ## (b) Experimenting with various element properties inside the box model
@@ -51,12 +51,12 @@ The box model wraps around in a rectangular structure around every HTML element.
 1. Go to https://www.crio.do/bytes/ and right click on an element of your choice and click on Inspect Element.
 This opens the chrome developer tools in reference to the code belonging to that particular element.
 
-![crio1](images/crio1.png)
+![crio1](The CSS Box Model- Learn various CSS properties/images/crio1.png)
 
 2. In the styles tab you can see various listed properties. You can actually modify these right from these tab and see how it affects the element and the page.
 
     For example,on changing the width of this image from 800 to 80
-    ![crio3](images/crio2.png)
+    ![crio3](The CSS Box Model- Learn various CSS properties/images/crio2.png)
 
         We see that the image width changes  
 
@@ -67,7 +67,7 @@ Once you get an idea about the working behind these properties proceed to the ne
 
 ## Recreate the image using the box concept!
 
-![dog](images/dog.png)  
+![dog](The CSS Box Model- Learn various CSS properties/images/dog.png)  
 (source: The Web Developer bootcamp-Udemy)
 
 Your task is to recreate the image given in this file using html and css properties.

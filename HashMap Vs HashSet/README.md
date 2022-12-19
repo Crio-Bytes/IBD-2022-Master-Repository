@@ -148,7 +148,7 @@ class HashSet1{
 ```
 ## Output
 
-<img src="/images/sam-code-2.jpg" alt="HashSet" />
+<img src="./images/sam-code-2.jpg" alt="HashSet" />
 
 Duplicate elements are not permitted in HashSet.
 
@@ -256,7 +256,7 @@ public class Main {
 }
 ```
 ## Output
-<img src="/images/Exa-hashmap.jpg" alt="HashMap">
+<img src="./images/Exa-hashmap.jpg" alt="HashMap">
 
 ## Example of HashSet
 ```
@@ -287,7 +287,7 @@ public class Main {
 }
 ```
 ## Output
-<img src="/images/Exa-hashset.jpg" alt="HashSet">
+<img src="./images/Exa-hashset.jpg" alt="HashSet">
 
 ## When should you use HashSet and HashMap in Java?
 

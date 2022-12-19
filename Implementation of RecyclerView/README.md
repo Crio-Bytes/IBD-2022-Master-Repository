@@ -1,5 +1,5 @@
 ## Overview
-By this learner will learn how to install Android Studio, how to make project in Android Studio, how to implement RecyclerView with CustomeAdapter ,how to run an android app and how to build an apk of your android application
+By this learner will learn how to install Android Studio, how to make project in Android Studio, how to implement RecyclerView with CustomeAdapter, how to run an android app and how to build an apk of your android application
 
 ## What is Android Studio?
 Android Studio is a IDE(Integreated Development Environment), which provides an environment to develop android applications. Androind Studio has features that enchances the productivity while building Android apps

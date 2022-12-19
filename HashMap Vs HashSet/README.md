@@ -41,7 +41,7 @@ public class Main{
 }  
 ```
 ## Output
-<img src="/images/Exa-code-1.jpg" alt="HashMap">
+<img src="./images/Exa-code-1.jpg" alt="HashMap">
 
 The elements in the map are inserted using the put() method.
 

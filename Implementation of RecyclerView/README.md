@@ -30,7 +30,7 @@ Android Studio is a IDE(Integreated Development Environment), which provides an 
    - Now click on android studio setup , you will see this screen
      ![Screenshot (43)](https://user-images.githubusercontent.com/72004239/208439572-908ddfcc-a514-46eb-99fa-f928f8905548.png)
    - After that click on "Next option" and keep clicking "Next" until it gets started installing.
-   - After successful installation you will see this screen
+   - After successful installation you will see this screen as given below
        ![Screenshot (51)](https://user-images.githubusercontent.com/72004239/208440250-dcbadbd5-8f2b-46f4-9f4c-67ab775c8657.png)
 
 

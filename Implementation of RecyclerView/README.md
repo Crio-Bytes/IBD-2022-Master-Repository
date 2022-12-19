@@ -10,12 +10,17 @@ Android Studio is a IDE(Integreated Development Environment), which provides an 
   - It also provide a emulator on which you can run your apps and test your apps
 
 ## Pre-requisite
+   - You should have good knowledge of core java and collections framework.
+   - Minimum Specifications of the system as follows :
+     - RAM : 8GB or above
+     - CPU: 2nd gen Intel CPU or above, AMD CPU (Windows Hypervisor)
+     - Free storage: 8 GB
+     - Screen resolution: 1280 x 800
+   - Although android studio comes with it's build in JDK but it is recommend to install JDK 8 or above, to install click below link
+      - Link : https://www.educba.com/install-jdk/
 
 
-
-
-## Activity 1.
-## Install and Setup Android studio
+## Activity 1: Install and Setup Android studio
 - To download android studio visit official website, click below link
    - Link :- https://developer.android.com/studio
    - Then you will see this screen 

@@ -28,7 +28,6 @@ All the ADRs can be stored in a central repository that can be accessed by the t
 3. Options: Outline the various options or alternatives that were considered for addressing the problem.
 4. Decision: Explain the decision that was made and why it was chosen over the other options.
 5. Consequnces: Describe the anticipated consequences of the decision, both positive and negative.
-6. Status: Indicate the current status of the decision and any follow-up actions that need to be taken.
 
 ---
 
@@ -38,7 +37,7 @@ For Activity number x to y, consider development team is creating a to-do applic
 
 ## Activity 1 - Setup
 
-For all the next activites we will use [this]() template and create different ADRs.
+For all the next activites we will use [this](code/TEMPLATE.md) template and create different ADRs.
 
 - Go through the template once and try recalling what should we include under each topic as we saw under contents in ADR.
 

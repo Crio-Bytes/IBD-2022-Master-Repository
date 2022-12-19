@@ -40,8 +40,8 @@ public class Main{
  }  
 }  
 ```
-<hr />
-<br/>
+## Output
+<img src="/images/Exa-code-1.jpg" alt="HashMap">
 
 The elements in the map are inserted using the put() method.
 
@@ -146,6 +146,10 @@ class HashSet1{
     }  
 }  
 ```
+## Output
+
+<img src="/images/sam-code-2.jpg" alt="HashSet" />
+
 Duplicate elements are not permitted in HashSet.
 
 ## What does thread-safety mean in the context of hash sets?
@@ -251,6 +255,8 @@ public class Main {
   }
 }
 ```
+## Output
+<img src="/images/Exa-hashmap.jpg" alt="HashMap">
 
 ## Example of HashSet
 ```
@@ -281,13 +287,16 @@ public class Main {
 }
 ```
 ## Output
-
+<img src="/images/Exa-hashset.jpg" alt="HashSet">
 
 ## When should you use HashSet and HashMap in Java?
 
 When we wish to keep the Collection object's uniqueness, we should use HashSet rather than Hashmap. In all other circumstances, we should prefer HashMap over HashSet as its performance is superior than HashSet.
 
-
+# Activity 3
+Go through these links Once:
+- https://www.javatpoint.com/difference-between-hashset-and-hashmap
+- https://www.geeksforgeeks.org/difference-between-hashmap-and-hashset/?ref=gcse
 # Conclusion
 We utilise both of these as a Collection class in Java.
 HashSet implements the Set interface and functions internally similarly to HashMap, whereas HashMap implements the Map interface.

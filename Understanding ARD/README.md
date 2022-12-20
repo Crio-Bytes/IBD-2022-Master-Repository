@@ -42,7 +42,41 @@ For all the next activites we will use [this](code/TEMPLATE.md) template and cre
 - Go through the template once and try recalling what should we include under each topic as we saw under contents in ADR.
 
 &nbsp;
-Consider the development team is building a to-do application. The application will have features like creating and editing tasks, assigning due dates and priorities, and marking tasks as complete.
-In next activities we will create ADRs for the architectural decisions that the development team might have to take while developing to-do application.
+Consider the development team is building a to-do application. The application will have features like creating and editing tasks, and marking tasks as complete. You are a part of the development team and want to document the decisions so that it can be useful to reference in future and to understand the reason behind the decision.
+// , assigning due dates and priorities
+In next Activities we will create ADR for selecting a JavaScript framework to use for the front-end to develop the to-do application.
+
+---
+
+## Activity 2 - Write Context for our ADR
+
+To start creating the ADR we first will write context for ADR.
+
+1.  What context do you think we can give to the ADR?
+
+    > Note that we are writing Architectural Decision Record (ADR) for selecting a JavaScript framework to build the front-end of our to-do application.
+
+    &nbsp;
+
+            A context should provide background information and circumstances for making the decision.
+            You can also include
+            - current state of the software system
+            - specific problem or challenge that the decision is intended to address, including any requirements or user needs that the decision is intended to meet.
+            - Any constraints or limitations that were taken into consideration when making the decision, such as technical, financial, or organizational constraints
+            - Any stakeholders or decision-makers who were involved in the process, and any specific concerns or input that they provided.
+
+    <details>
+    <summary>
+    Click to see the context I have written.
+    </summary>
+
+    &nbsp;
+
+    We need to select a frontend framework to develop the to-do app. This app will be used by users to manage their tasks and activities. The app will need to be responsive and easy to use on a variety of devices, including desktop computers, tablets, and smartphones.
+    We need to consider a number of factors when making this decision, including the level of expertise and experience of our development team, the resources available for building and maintaining the app, and the needs and preferences of our users.
+
+    The context you have written can be different from the answer but it should give the reader idea about basic baground information about the decision.
+
+    </details>
 
 ---

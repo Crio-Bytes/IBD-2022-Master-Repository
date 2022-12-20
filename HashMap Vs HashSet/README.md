@@ -90,11 +90,16 @@ Output: 0
 
 1 <= nums[i] <= 100
 
-## Hint
-for each i, finds all j where, j < i && nums[j] == nums[i];
+<details>
+<summary> Hint </summary>
+ 
+    for each i, finds all j where, j < i && nums[j] == nums[i];
+</details>
 
-## Activity Solution
-```
+<details>
+<summary> Solution </summary>
+
+ ```
 public int numIdenticalPairs(int[] nums) {
         int res = 0;
         Map<Integer, Integer> map = new HashMap<>();
@@ -106,6 +111,8 @@ public int numIdenticalPairs(int[] nums) {
     }
 ```
     Time Complexity:O(n)
+ </details>
+ 
 <hr />
 
 # HashSet
@@ -163,21 +170,37 @@ HashSet has a variety of Other Topics. These are available for reading.
 # Activity 2
 1. How do you add a new hash set item?
 
-    ### Hint
+<details>
+<summary> Hint </summary>
+
     Using the add() method, you can add a new item to a hash set. This method will take as an argument the new item and add it to the set.
-
+</details>
+ 
 2. Can all items from one hash set be copied to another? If so, how so?
-    ### Hint 
+ 
+<details>
+<summary> Hint </summary> 
+ 
     Yes,The addAll() method can be used to do this.
-
+</details>
+ 
 3. What is the most efficient approach to iterate through a hash set?
-    ### Hint
+
+<details>
+<summary> Hint </summary>
+ 
     The best approach to iterate over a hash set is to use an iterator. This allows you to go over each element in the set one at a time without worrying about the order in which they are stored.
+ </details>
 
 4. What happens if a duplicate element is added to a hash set?
-    ### Hint
-    When you add a duplicate element to a hash set, it is simply ignored. Duplicate elements will not be stored in the hash set.
 
+<details>
+<summary> Hint </summary>
+    When you add a duplicate element to a hash set, it is simply ignored. Duplicate elements will not be stored in the hash set.
+ </details>
+ 
+ <hr/>
+ 
 # HashMap VS HashSet
 1. Hierarchy of Implementation
 

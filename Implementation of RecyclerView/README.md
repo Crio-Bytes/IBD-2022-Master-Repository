@@ -46,5 +46,9 @@ Now, we will learn how to create project in android studio, this is gonna be ver
    ![Screenshot (54)](https://user-images.githubusercontent.com/72004239/208449719-c5c54bd9-79b7-4154-93c1-6df37c2bb3b8.png)
    - But select "Java" in Language section.
  - Then just click on "finish" button, and it will take some time to build project, it just depends on your system 
+
+-  After finishing you wil see this below screen, this means you successfully created your project
+-   ![Screenshot (56)](https://user-images.githubusercontent.com/72004239/208704289-a5f9690b-87b5-4bed-ae5f-5316fbcc8b28.png)
+ -  
   
   

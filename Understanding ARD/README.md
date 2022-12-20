@@ -222,3 +222,23 @@ Now its time to add title to our ADR.
    You can refer the ADR [here](code/DECISION_TO_USE_REACTJS.md).
 
 ---
+
+# Mega Challenge
+
+> Now we have information on how to make a ADR and we also created one ADR, try creating ADR for selecting back-end for to-do app
+
+---
+
+# Conclusion
+
+Congratulations!! You made it. That was a quite a daunting and amazing ride!.
+
+---
+
+# References
+
+[Amazon Guide on ADR refrences](https://docs.aws.amazon.com/prescriptive-guidance/latest/architectural-decision-records/adr-process.html)
+
+[Blog on Documenting Architecture decision](https://www.fabian-keller.de/blog/documenting-architecture-decisions/)
+
+[Documenting Architecture Decisions](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions)

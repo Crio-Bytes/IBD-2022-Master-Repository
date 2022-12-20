@@ -195,6 +195,9 @@ If the balance factor of each node is between -1 and 1, the tree is said to be b
 Because no more space is required for any of the activities, the space complexity will be O(1).
 
 ## HashMap
+
+You can store things with identifiers using HashMap. The identifier is hashed using a hashing method and saved in a table format.
+
 ### ***Time Complexity***
 1. The time required to insert a value is
 - Average Complexity: O(1)

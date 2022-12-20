@@ -33,4 +33,18 @@ Android Studio is a IDE(Integreated Development Environment), which provides an 
    - After successful installation you will see this screen as given below
        ![Screenshot (51)](https://user-images.githubusercontent.com/72004239/208440250-dcbadbd5-8f2b-46f4-9f4c-67ab775c8657.png)
 
-
+## Activity 2: How create project in Android Studio
+Now, we will learn how to create project in android studio, this is gonna be very simple you just need to follow the steps given follow:
+ - Click on Android Studio launcher then you will able to see 
+ "New Project" option 
+![Screenshot (51)](https://user-images.githubusercontent.com/72004239/208440250-dcbadbd5-8f2b-46f4-9f4c-67ab775c8657.png)
+ - Now click on "New Project" 
+   - just scroll little a bit and you will see "Empty Activity" select it
+ ![Screenshot (53)](https://user-images.githubusercontent.com/72004239/208448273-b12fb4c1-7622-44b4-8c83-9e27001b7f04.png)
+   - And click the next button
+ - Now give name to your project, you can give any name
+   ![Screenshot (54)](https://user-images.githubusercontent.com/72004239/208449719-c5c54bd9-79b7-4154-93c1-6df37c2bb3b8.png)
+   - But select "Java" in Language section.
+ - Then just click on "finish" button, and it will take some time to build project, it just depends on your system 
+  
+  

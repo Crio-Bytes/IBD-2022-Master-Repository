@@ -48,7 +48,7 @@ Now, we will learn how to create project in android studio, this is gonna be ver
  - Then just click on "finish" button, and it will take some time to build project, it just depends on your system 
 
 -  After finishing you wil see this below screen, this means you successfully created your project
--   ![Screenshot (56)](https://user-images.githubusercontent.com/72004239/208704289-a5f9690b-87b5-4bed-ae5f-5316fbcc8b28.png)
- -  
+  ![Screenshot (56)](https://user-images.githubusercontent.com/72004239/208704289-a5f9690b-87b5-4bed-ae5f-5316fbcc8b28.png)
+  
   
   

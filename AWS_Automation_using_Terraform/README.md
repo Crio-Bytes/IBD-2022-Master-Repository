@@ -171,3 +171,9 @@ Nitesh_model.train(np.asarray(Training_Data_1), np.asarray(Labels_1))
 print("Model trained sucessefully")
 
 ```
+**Note:** You can download the code from the **/src** directory of this repository
+
+#### Activity 2.1
+- Add your dataset path
+- Install the required modules used in the code using `pip3 install <module_name>`
+- Read about **Numpy**

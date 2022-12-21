@@ -4,7 +4,7 @@ Data structures are the most significant element of product-based discussions. A
 - non-linear Data Structures
 
 # Time Complexity
-Time complexity is a notion that quantifies the amount of time it takes an algorithm or code snippet to execute. 
+The time it takes an algorithm to execute each statement of code in an algorithm until it completes, as a function of the length of the input.
 
 # Space Complexity
 

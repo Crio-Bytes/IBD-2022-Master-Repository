@@ -173,10 +173,16 @@ print("Model trained sucessefully")
 ```
 **Note:** You can download the code from the **/src** directory of this repository
 
+**Output:**
+
+![](./Images/model.png)
+
 #### Activity 2.1
 - Add your dataset path
 - Install the required modules used in the code using `pip3 install <module_name>`
 - Read about **Numpy**
 
+
+
+
 ### Activity 3 - Create Terraform Configuration file
- 

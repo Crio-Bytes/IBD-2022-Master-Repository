@@ -63,14 +63,15 @@ Now, we will learn how to create project in android studio, this is gonna be ver
   - Now in this microbyte, we will learn how to add recycler view to the activity where we will show our list of images which will look like below image
 ![Screenshot (61)](https://user-images.githubusercontent.com/72004239/208870863-e4b07069-74cb-41f2-9533-15428e0adf69.png)
  **To create list of we need images first, so follow below instructions to copy images**
-   - ## Copy Images into Drawble folder
+    ## 3.1 Copy Images into Drawble folder
   Firstly we need some images to show in our list of images, 
     copy some picutres into "drawble" folder
-    - Download images from "images/list images" folder download all images p1.png to p9.png, [click here to download]() 
-    - Then after download copy these images 
+  - Download images from "images/list images" folder download all images p1.png to p9.png, [click here to download](https://github.com/HimanshuSinghNegi/IBD-2022-Master-Repository/tree/HimanshuSinghNegi/Implementation_of_RecyclerView_%2318/Implementation%20of%20RecyclerView/images/list%20images) 
+    - Now, to copy images into your project refer to this link
+     - Link :https://www.geeksforgeeks.org/how-to-add-image-to-drawable-folder-in-android-studio
     
 
-   - ## Creating a layout file for each item of our RecyclerView
+   - ## 3.2 Creating a layout file for each item of our RecyclerView
    
       **To create layout file follow these steps:**
       - Right click on "Layout", then follow the below path
@@ -83,8 +84,6 @@ Now, we will learn how to create project in android studio, this is gonna be ver
     - After that on right side of screen you will see "Code" option, just click on that
 
   - if you are facing any issues with the instructions,Then please refer to ["images/Screenshot (59).png"](https://raw.githubusercontent.com/HimanshuSinghNegi/IBD-2022-Master-Repository/1d6d7886733e4278be774f6316589e6846def014/Implementation%20of%20RecyclerView/images/Screenshot%20(59).png)
-=======
-  - if you are facing any issues with the instruction,Then please refer to ["images/Screenshot (59).png"](https://raw.githubusercontent.com/HimanshuSinghNegi/IBD-2022-Master-Repository/1d6d7886733e4278be774f6316589e6846def014/Implementation%20of%20RecyclerView/images/Screenshot%20(59).png) 
 
 
  **After that, you will see the below screen**

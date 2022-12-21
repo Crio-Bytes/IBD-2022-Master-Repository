@@ -136,6 +136,8 @@ Instead of using a laptop or external webcam for face detection try to use your 
 
 ### Activity 2 - Train the Model
 
-To train the model we will use the dataset that we have created in **Activity-1** 
+To train the model we will use the dataset that we have created in **Activity-1**
+
+The code below will help us to train the model 
 
 

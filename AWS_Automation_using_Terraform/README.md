@@ -177,3 +177,6 @@ print("Model trained sucessefully")
 - Add your dataset path
 - Install the required modules used in the code using `pip3 install <module_name>`
 - Read about **Numpy**
+
+### Activity 3 - Create Terraform Configuration file
+ 

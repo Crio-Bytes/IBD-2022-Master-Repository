@@ -60,15 +60,18 @@ Now, we will learn how to create project in android studio, this is gonna be ver
   ![Screenshot (56)](https://user-images.githubusercontent.com/72004239/208704289-a5f9690b-87b5-4bed-ae5f-5316fbcc8b28.png)
 
   # Activity 3: Creating a Activity or Interface for RecyclerView
- 
-   ## Copy Images into Drawble folder
+  - Now in this microbyte, we will learn how to add recycler view to the activity where we will show our list of images which will look like below image
+![Screenshot (61)](https://user-images.githubusercontent.com/72004239/208870863-e4b07069-74cb-41f2-9533-15428e0adf69.png)
+ **To create list of we need images first, so follow below instructions to copy images**
+   - ## Copy Images into Drawble folder
   Firstly we need some images to show in our list of images, 
     copy some picutres into "drawble" folder
-    - Download images [p3.png],[p4.png],[p7.png]
+    - Download images from "images/list images" folder download all images p1.png to p9.png, [click here to download]() 
     - Then after download copy these images 
     
 
-   ## Creating a layout file for each item of our RecyclerView
+   - ## Creating a layout file for each item of our RecyclerView
+   
       **To create layout file follow these steps:**
       - Right click on "Layout", then follow the below path
         - Layout ->New ->Layout Resource File
@@ -91,8 +94,8 @@ Now, we will learn how to create project in android studio, this is gonna be ver
 - Now, copy code from "src" folder , the path is  ["src/activity_main.xml"]()
 
 
- - Now in this microbyte, we will learn how to add recycler view to the activity where we will show our list of images which will look like below image
-  ![f86e14b4-cf36-42d7-8b27-b6c91b66e42f](https://user-images.githubusercontent.com/72004239/208730328-973c87ac-56b1-488a-b7af-cbd57eaa7f02.png)
+ 
+
 
  - For that we have to move to "activity_main.xml" file, follow these instructions
     - On your left in "project" panel we have a folder called "res", click on that folder 

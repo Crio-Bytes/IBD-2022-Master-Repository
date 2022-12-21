@@ -22,3 +22,38 @@ Apart from the above scenario there are many potential applications for feature 
 2. Allowing certain features for specific users: Feature toggle can be used to enable or disable features for a specific group of users based on certain criteria such as their account type or location. Let's take example of a notes taking app that allows only users with a permium plan to ass images in their notes. We can make use of feature toggle where we will set the flag enabled to users with premium plan.
 
 3. Testing different versions of a feature: Feature toggle can be used to enable different versions of a feature for different users or groups of users. This can be useful for A/B testing or for gathering feedback on different versions of a feature. This helps in testing things like the design of a user interface or the effectiveness of different marketing messages.
+
+# Different ways to implemnt feature toggle.
+
+As you might have guessed till now feature toggle are basically conditional statements, enabling the block inside the conditional statement to be ‘toggled’ on or off depending on the flag. To implement feature toggle is a place where you can create and store value of this variable. Their are different ways in which this can be done.
+
+> Can you think of different ways we can store the value of the flag?
+
+1. Configuration file: We can specify which features are enabled or disabled in configuration file. This file can be stored locally or can be accessed using remote server.
+
+Let's look how we can implement feature toggle in Reactjs using configuration file.
+
+```
+// config.json
+{
+  "features": {
+    "advertisment": "on",
+    "darkMode": "off"
+  }
+}
+
+// AdvertismentToggle component
+import config from './config.json';
+
+const AdvertismentToggle = () => {
+  if (config.features.advertisment === 'on') {
+    return <Advertisment />;
+  }
+  return null;
+}
+
+```
+
+In the above example, we have config.json file where we have added a list of toggleable features and their current state. In AdvertismentToggle component we are returning advertisment if the feature is "on".
+
+2. Database:

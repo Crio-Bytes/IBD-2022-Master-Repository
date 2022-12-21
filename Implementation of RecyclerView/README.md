@@ -60,12 +60,13 @@ Now, we will learn how to create project in android studio, this is gonna be ver
   ![Screenshot (56)](https://user-images.githubusercontent.com/72004239/208704289-a5f9690b-87b5-4bed-ae5f-5316fbcc8b28.png)
 
   # Activity 3: Creating a Activity or Interface for RecyclerView
-  - Now in this microbyte, we will learn how to add recycler view to the activity where we will show our list of images which will look like below image
-  ![f86e14b4-cf36-42d7-8b27-b6c91b66e42f](https://user-images.githubusercontent.com/72004239/208730328-973c87ac-56b1-488a-b7af-cbd57eaa7f02.png)
-
- - For that we have to move to "activity_main.xml" file, follow these instructions
-    - On your left in "project" panel we have a folder called "res", click on that folder 
-    - Then, inside that folder click on "Layout", there you will able to see "activity_main.xml"
+ 
+   ## Copy Images into Drawble folder
+  Firstly we need some images to show in our list of images, 
+    copy some picutres into "drawble" folder
+    - Download images [p3.png],[p4.png],[p7.png]
+    - Then after download copy these images 
+    
 
    ## Creating a layout file for each item of our RecyclerView
       **To create layout file follow these steps:**
@@ -77,18 +78,25 @@ Now, we will learn how to create project in android studio, this is gonna be ver
 
     - Just double click on that file 
     - After that on right side of screen you will see "Code" option, just click on that
-<<<<<<< HEAD
+
   - if you are facing any issues with the instructions,Then please refer to ["images/Screenshot (59).png"](https://raw.githubusercontent.com/HimanshuSinghNegi/IBD-2022-Master-Repository/1d6d7886733e4278be774f6316589e6846def014/Implementation%20of%20RecyclerView/images/Screenshot%20(59).png)
 =======
   - if you are facing any issues with the instruction,Then please refer to ["images/Screenshot (59).png"](https://raw.githubusercontent.com/HimanshuSinghNegi/IBD-2022-Master-Repository/1d6d7886733e4278be774f6316589e6846def014/Implementation%20of%20RecyclerView/images/Screenshot%20(59).png) 
->>>>>>> 6fe6e9beb4de8085c2cd77e801097bb5c4ea2739
+
 
  **After that, you will see the below screen**
  ![Screenshot (60)](https://user-images.githubusercontent.com/72004239/208835547-389559b1-2f3b-4307-ac5d-953f041ff574.png)
 
 
-- Now, copy code fro
+- Now, copy code from "src" folder , the path is  ["src/activity_main.xml"]()
 
+
+ - Now in this microbyte, we will learn how to add recycler view to the activity where we will show our list of images which will look like below image
+  ![f86e14b4-cf36-42d7-8b27-b6c91b66e42f](https://user-images.githubusercontent.com/72004239/208730328-973c87ac-56b1-488a-b7af-cbd57eaa7f02.png)
+
+ - For that we have to move to "activity_main.xml" file, follow these instructions
+    - On your left in "project" panel we have a folder called "res", click on that folder 
+    - Then, inside that folder click on "Layout", there you will able to see "activity_main.xml"
   
   
   

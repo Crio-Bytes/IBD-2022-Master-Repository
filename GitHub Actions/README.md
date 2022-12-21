@@ -13,7 +13,6 @@ GitHub Actions helps developers to automate the software development workflows f
   * [Defining workflow triggerers](#define-when-the-workflow-will-be-triggered)
   * [Defining Jobs in the workflow](#defining-jobs-in-the-workflow)
 * [Activities](#activities)
-* [Conclusion](#conclusion)
 * [References](#references)
 
 ## CI/CD
@@ -160,7 +159,7 @@ jobs:
 2. Commit and push the code into your repository , 
 open the **Actions tab** in your repository and see your actions running!
 
-![Actions-Tab](/assets/images/actions-tab.png)   
+![Actions-Tab](/assets/images/action-tab.png)   
 
 See the actions running! : 
 

@@ -1,6 +1,16 @@
 ## INTRODUCTION
 GitHub Actions helps developers to automate the software development workflows from within GitHub. One can deploy workflows in the same place where you store code and collaborate on pull requests and issues.
 
+## PRE-REQUISITE
+To learn GitHub Actions one must know the following : 
+* Basics of Git like : 
+  * What is Git?
+  * What is the need of Git?
+  * How to use Git?
+* Basics of GitHub
+* Basic YAML syntax
+* Data structures like Maps and Lists in Python 
+
 ## TABLE OF CONTENT
 * [What is CI/CD?](#cicd)
 * [The need of CI/CD](#the-need-of-cicd)
@@ -17,6 +27,7 @@ GitHub Actions helps developers to automate the software development workflows f
   * [Activity 2](#activity-2)
   * [Activity 3](#activity-3)
   * [Activity 4](#activity-4)
+* [Summary](#summary)
 * [References](#references)
 
 ## CI/CD
@@ -238,6 +249,20 @@ The nested job can be defined as :
 See the Dependency graph that GitHub provides :
 ![Run](/assets/images/nested-jobs.png)  
 
+## Summary
+### What have we learnt?
+We learned :
+* The basics of GitHub Actions by understanding what are GitHub Actions and how do we use it
+* Basics of YAML syntax
+* How to write and trigger a workflow in GitHub actions
+
+### Outcome of performing the above activities
+By performing the above mentioned activities one will learn :
+* About the YAML syntax
+* About different ways of triggering a workflow
+* About different GitHub events like : `push` , `pull` , etc
+* About different types of runners that GitHub hosts
+* The concept of writing jobs in a workflow
 
 ## References
 - https://www.redhat.com/en/topics/devops/what-is-ci-cd

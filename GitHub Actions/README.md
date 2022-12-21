@@ -13,6 +13,10 @@ GitHub Actions helps developers to automate the software development workflows f
   * [Defining workflow triggerers](#define-when-the-workflow-will-be-triggered)
   * [Defining Jobs in the workflow](#defining-jobs-in-the-workflow)
 * [Activities](#activities)
+  * [Activity 1](#activity-1)
+  * [Activity 2](#activity-2)
+  * [Activity 3](#activity-3)
+  * [Activity 4](#activity-4)
 * [References](#references)
 
 ## CI/CD

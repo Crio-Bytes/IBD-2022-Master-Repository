@@ -173,90 +173,36 @@ See the actions running! :
 ### Activity 1
 * Create a workflow that will be triggered whenever a pull request is generated on the `master` branch and it has to have a job that runs on a windows-based runner and squentially prints "Hello world!" and the current date on the shell.
 
-#### Solution
+#### Hint
 
 * To trigger the workflow when a PR is generated we can use `pull_request` attribute. Within the `pull_request` attribute we can define the `branches` on which whenever the PR is made the workflow will get triggered. \
 **If we do not define the branch , then  PR on any branch will trigger the workflow.**
 * In order to define multiple commands one has to use the `|` (pipe character) in the `run` attribute.
 
 
-The resultant **action.yml** file : 
-```
-name: My Workflow
-on: 
- pull_request:
-    branches:
-      - master
-jobs:
-  job1:
-    name: Custom-1
-    runs-on: windows-latest
-    steps:
-      - name: Step-1
-        run: |
-          echo "Hello world!"
-          echo "DATE::$(date +'%Y-%m-%dT%H:%M:%S')" 
-
-```
-
-Output of the **Custom-1** job : 
+Output of the job should be: 
 ![Run](/assets/images/pr_output.png) 
 
 ### Activity 2
 * Create a workflow that prints "Hello world!" every 15 minutes.
 
-#### Solution
+#### Hint
 * To schedule a workflow the `schedule` attribute is used.
 * The `schedule` attribute uses `cron` attribute to schedule the cron jobs which are written in the [cron syntax](https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm). \
 The shortest cron job that can be scheduled in a free-tier GitHub account is **every 5 minutes.** 
 
-The resultant **action.yml** file : 
-```
-name: My Workflow
-on: 
- schedule: 
-    - cron: "*/15 * * * *" 
-jobs:
-  job1:
-    name: Custom-1
-    runs-on: ubuntu-latest
-    steps:
-      - name: Step-1
-        run: 
-          echo "Hello world!"
-```
-
-Scheduled Job in GitHub Actions: 
+Scheduled Jobs in GitHub Actions looks like : 
 ![Cron-Job](/assets/images/scheduled-job.png) 
 
 ## Activity 3
 * Create a workflow that will be triggered manually by workflow_dispatch event. 
 * Take a custom input message by the user and print it on the shell of the runner.
 
-#### Solution
-* We have used `workflow_dispatch` attribte for configuring the workflow dispatch event.
-* In the `workflow_dispatch` attribute we have defined the `inputs` key which basically takes the input provided by the user.
+#### Hint
+* We have to use `workflow_dispatch` attribte for configuring the workflow dispatch event.
+* In the `workflow_dispatch` attribute we have to define the `inputs` key which basically takes the input provided by the user.
+* Use of github environment variable like github.event can be used.
 
-The resultant **action.yml** :
-
-```
-name: My Workflow
-on: 
-  workflow_dispatch:
-    inputs:
-      message:
-        description: Give a message
-        required: true
-        default: Random message
-jobs:
-  job1:
-    name: Custom-1
-    runs-on: ubuntu-latest
-    steps:
-      - name: Step-1
-        run: 
-          echo "${{github.event.inputs.message}}"
-```
 * **Step-1** : This step is printing the input message that we will provide through the `workflow_dispatch` event.
 
 After adding the **workflow_dispatch** event one can see the below form created on the **Actions** tab: 
@@ -272,35 +218,12 @@ Output of the Job named **Custom-1** :
 * Create a workflow that is triggered whenever a `push` event occurs on the master branch .
 * This worksflow will have a nested job .
 
-#### Solution
+#### Hint
 * A nested job in GitHub actions is a job that is executed only when the parent jobs are successfully executed.
 * In order to define a nested job we have used `needs` attribute so as to define the parent jobs.
 
-The resultant **action.yml** file : 
+The nested job can be defined as : 
 ```
-name: My Workflow
-on: 
-  push:
-    branches:
-      - master
-jobs:
-  job1:
-    name: Custom-1
-    runs-on: ubuntu-latest 
-    steps:
-      - name: Step-1
-        uses: actions/checkout@v2
-      - name: Step-2
-        run: env | sort 
-  job2:
-    name: Custom-2
-    runs-on: ubuntu-latest
-    steps:
-      - name: Step-1
-        run:
-          |
-          echo "DATE::$(date +'%Y-%m-%dT%H:%M:%S')" 
-          echo "Hello world!"
   job3:
     name: Custom-3
     runs-on: ubuntu-latest
@@ -310,7 +233,7 @@ jobs:
         run: |
           echo "Hello Actions!"
 ```
-* In the above workflow job named **Custom-3** requires successfull execution of jobs `Custom-1` and `Custom-2`.
+* In the above workflow job named **Custom-3** requires successfull execution of jobs `job1` and `job2`.
 
 See the Dependency graph that GitHub provides :
 ![Run](/assets/images/nested-jobs.png)  

@@ -77,7 +77,11 @@ Now, we will learn how to create project in android studio, this is gonna be ver
 
     - Just double click on that file 
     - After that on right side of screen you will see "Code" option, just click on that
+<<<<<<< HEAD
   - if you are facing any issues with the instructions,Then please refer to ["images/Screenshot (59).png"](https://raw.githubusercontent.com/HimanshuSinghNegi/IBD-2022-Master-Repository/1d6d7886733e4278be774f6316589e6846def014/Implementation%20of%20RecyclerView/images/Screenshot%20(59).png)
+=======
+  - if you are facing any issues with the instruction,Then please refer to ["images/Screenshot (59).png"](https://raw.githubusercontent.com/HimanshuSinghNegi/IBD-2022-Master-Repository/1d6d7886733e4278be774f6316589e6846def014/Implementation%20of%20RecyclerView/images/Screenshot%20(59).png) 
+>>>>>>> 6fe6e9beb4de8085c2cd77e801097bb5c4ea2739
 
  **After that, you will see the below screen**
  ![Screenshot (60)](https://user-images.githubusercontent.com/72004239/208835547-389559b1-2f3b-4307-ac5d-953f041ff574.png)

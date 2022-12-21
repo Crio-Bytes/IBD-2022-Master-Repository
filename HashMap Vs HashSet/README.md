@@ -6,7 +6,7 @@ In Java, the most used Collection classes are HashMap and HashSet.
 Both are used in the data structure.
 The Java HashMap class implements the Map interface, which allows us to store key-value pairs with unique keys. If you try to insert the duplicate key, it will replace the associated key's element. The key index makes it simple to conduct actions such as updating, deleting, and so on. The java.util package contains the HashMap class.
 
-In Java, HashMap is similar to the classic Hashtable class, however it is not synced. It also allows us to store null elements, however there should only be one null key. Since Java 5, it has been denoted as HashMapK,V>, where K represents the key and V represents the value. It derives from AbstractMap and implements the Map interface.
+In Java, HashMap is similar to the classic Hashtable class, however it is not synced. It also allows us to store null elements, however there should only be one null key. Since Java 5, it has been denoted as HashMap<K,V>, where K represents the key and V represents the value. It derives from AbstractMap and implements the Map interface.
 
 ## Remember the following:
 - The Java HashMap stores values based on the key.

@@ -9,8 +9,16 @@ In this micro byte, we will explore the benefits of using feature toggle and lea
 
 Feature toggle, often reffered as feature flag or feature switch. With help of feature toggle we can enable or disable certain features in a application without requiring a full deploy. Feature toggle makes it easier to manage lifecycle of a features.Feature toggle is typically implemented with help of flag, when the flag is enabled, the feature is available to users. When the flag is disabled, the feature is not available to users. This allows developers to quickly and easily enable or disable features without requiring a full deploy of the codebase.
 
-## Different applications of feature toggle
+## Application of feature toggle
 
 Consider a scenario where you are working on a feature which take almost a month to get complete, your team follows trunk-based development so other members of the team are also working on same branch as you are working on. Now, when new changes are pushed to production the feature you are working on will also get deployed even though it is not complete yet. You can avoid this feature toggle to your component and disable flag whenever you are deploying the code. So with the help of feature toggle the incomplete feature won't be accessible to users.
 
+![feature-toggle](/UNDERSTANDING%20FEATURE%20TOGGLE/Images/FEATURE_TOGGLE.png)
+
 Apart from the above scenario there are many potential applications for feature toggle in software development. Few of them are:
+
+1. Controlling the rollout of new features: We can use feature toggle to gradually release new features. Team can release a new product feature to subset of users to gather feedback. If the new feature proves to be a hit, the development team can then roll out the feature to a larger user base. If the new feature turns out to be a flop, the development team can easily disable the feature toggle and later remove the feature from the codebase.
+
+2. Allowing certain features for specific users: Feature toggle can be used to enable or disable features for a specific group of users based on certain criteria such as their account type or location. Let's take example of a notes taking app that allows only users with a permium plan to ass images in their notes. We can make use of feature toggle where we will set the flag enabled to users with premium plan.
+
+3. Testing different versions of a feature: Feature toggle can be used to enable different versions of a feature for different users or groups of users. This can be useful for A/B testing or for gathering feedback on different versions of a feature. This helps in testing things like the design of a user interface or the effectiveness of different marketing messages.

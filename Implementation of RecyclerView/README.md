@@ -100,7 +100,7 @@ Here you have to do a task
 
 - ## 3.3 Add this below code to "activity_main.xml" file 
  - **Note** :- Remove all code from file first
- - For code move to ["src/activity_main.xml"]() ,copy whole code from that file
+ - For code move to ["src/activity_main.xml"](https://github.com/HimanshuSinghNegi/IBD-2022-Master-Repository/blob/6a1da81aa3a7133523f2f9adfae49ab5ddce3409/Implementation%20of%20RecyclerView/src/activity_main.xml) ,copy whole code from that file
  - And paste the copied code into "activity_main.xml" of your project
 
  **After that you will see this output**
@@ -119,4 +119,65 @@ Here you have to do a task
     - After you have to give name of POJO class here i giving "Item"
     - Then click "ok" , after you will see a file "Item.java" will be created in "com.example.myrecyclerview" package
 
-    - Now copy code form file ["src/Item.java"]() to your "Item.java" file
+    - Now copy code form file ["src/Item.java"](https://github.com/HimanshuSinghNegi/IBD-2022-Master-Repository/blob/6a1da81aa3a7133523f2f9adfae49ab5ddce3409/Implementation%20of%20RecyclerView/src/Item.java) to your "Item.java" file
+    - **After copying your code will look like below screen**
+    ![screenshot(100)](https://user-images.githubusercontent.com/72004239/209058926-4d1ce78d-3fdc-4828-8fb7-af0069a07f0e.png)
+
+ - ## 4.2 Creating Custom Adapter for RecyclerView
+    Now, here we will make a custome adapter that will inflate our items in our recycler view which we have created above in activity 3 <br>
+    **For that **just follow **the below instructions:-****
+      - At the same place where we have created "Item.java" file, we have to Create "MyCustomeAdapter.java" file.
+      ![branch](https://user-images.githubusercontent.com/72004239/209063999-88d3af61-1058-44b0-ad30-6b9e3780cf31.png)
+      - To make "MyCustomAdapter.java" , follow this path<br>
+         - Right click ("com.example.myrecyclerview")
+         - After that (New->Java File)
+         - Now give file name "MyCustomAdapter"<br>
+    **After that you see the below output**
+    ![Screenshot (63)](https://user-images.githubusercontent.com/72004239/209064988-f0d3dc81-2c8a-4ab7-866f-2365cecfb4ce.png))
+      - **Note :** 
+         - Copy code carefully, it clearly mentioned in file from 
+                   where you have to copy code
+         - In case you get any error , to solve just **hover over that error 
+          click"import" statement** or just put **your cursor over error and 
+          press "Alt+Enter"**
+      - Now copy code from ["src/MyCustomeAdapter]()
+ - ## 4.3 Add items in list , set Layout Manager and Adapter
+    Now here we will write some code in "MainActivity.java" file<br>
+    Firstly move to this place as show in figure
+    ![branch](https://user-images.githubusercontent.com/72004239/209063999-88d3af61-1058-44b0-ad30-6b9e3780cf31.png)
+    - Open "MainActivity.java" file
+    - Now copy code ["src/MainActivity"]() to your Mainactivity.java file
+  
+  Now you have successfully created your RecyclerView
+  - ## 4.4 How to run project on "Android emulator"
+    To create a virtual device just refer to this page
+     Link : https://developer.android.com/studio/run/emulator#:~:text=To%20install%20the%20Android%20Emulator%2C%20select%20the%20Android,version%20and%20hardware%20characteristics%20of%20the%20simulated%20device.
+  - ## 4.5 How to run project on Android emulator
+    - Go to top-right corner there you will be seeing a "run" button press it
+         ![Screenshot (64)](https://user-images.githubusercontent.com/72004239/209067322-0d1c5300-11ae-4d93-b2f7-a6e7c42baff6.png)
+     - It will take some time to run 
+
+# Activity 5: Build apk of your android application
+APK stands for Android Package sometimes Android Package Kit or Android Application Package). It's the file format that Android uses to distribute and install apps. As a result, an APK contains all the elements that an app needs to install correctly on your device.
+
+**To build "apk" follow below instruction :-**
+ - Move to top of your android studio 
+ - There you will see "Build" click on that, then follow this path <br>
+   - Build -> Build Bundle(s)/APK-> Build Apk
+   ![apk](https://user-images.githubusercontent.com/72004239/209069935-79272b1b-fa4a-47d3-a6ea-d2e094a4773b.png)
+ - After sometime you will get a pop up in you bottom-right corner
+ ![locate](https://user-images.githubusercontent.com/72004239/209070632-47c6d67b-f326-4718-8e96-16a63eb90418.png)
+ - Then, click on **"locate"**, and it will take you where "apk" is located as show in below image
+ ![apk1](https://user-images.githubusercontent.com/72004239/209071376-269cc3bc-6156-4fa3-b1ce-5dd0fb75ee42.png) 
+ - That it , this is your "apk" which you can copy and share with others
+   
+
+    
+
+      
+
+
+
+    
+    
+       

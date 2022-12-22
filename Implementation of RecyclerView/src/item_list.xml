@@ -6,7 +6,10 @@
     android:layout_height="wrap_content"
     android:padding="2dp">
 
+<<<<<<< HEAD
  
+=======
+>>>>>>> 2c8b5f7b22efd6a27a069c89cfe25229839008fb
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -42,6 +45,11 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+<<<<<<< HEAD
 
+=======
+    
+    
+>>>>>>> 2c8b5f7b22efd6a27a069c89cfe25229839008fb
 
 </androidx.constraintlayout.widget.ConstraintLayout>

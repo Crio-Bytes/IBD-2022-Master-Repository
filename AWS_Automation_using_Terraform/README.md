@@ -45,7 +45,9 @@ Note: Only after the installation of Python, you can install OpenCV
 
 # Activities
 
+<hr>
 ### Activity 1 - Create a Dataset of face images
+<hr>
 
 > Why we need to create Dataset?
 
@@ -80,7 +82,9 @@ Instead of using a laptop or external webcam for face detection try to use your 
 
 <br>
 
+<hr>
 ### Activity 2 - Train the Model
+<hr>
 In this activity, we are going to train the face recognition model so that it can recognize our face as soon as the web camera turns on
 
 To train the model we will use the dataset that we have created in **Activity-1**
@@ -102,9 +106,9 @@ To train the model we will use the dataset that we have created in **Activity-1*
 
 <br>
 
-
+<hr>
 ### Activity 3 - Get the details from AWS
- 
+<hr> 
  Before we start creating the configuration file, we should know the following things:
 
 - Make sure **Terraform** is installed in your system, if not install it by following the step in **Pre-Requisite**
@@ -131,8 +135,9 @@ Now we have the required information, we can add these details in our terraform 
 
 <br>
 
+<hr>
 ### Activity 4 - Create Terraform Configuration file
-
+<hr>
 With the help of Terraform Configuration file, you can launch the resources in the cloud platform and also attach the resource like ebs volume is attached to the ec2, with the help of it you can launch the resources in the multiple cloud platform at once like you can launch resources in AWS(Amazon Web Service), GCP(Google Cloud Platform), etc.
 
 - To create the Terraform file to launch the AWS resources:
@@ -152,7 +157,9 @@ With the help of Terraform Configuration file, you can launch the resources in t
 
 <br>
 
+<hr>
 ### Activity 5 - Integrate Terraform file with the Face Recognition Program
+<hr>
 In this activity, we are going to integrate the terraform configuration file with the face recognition program so that our terraform file gets executed as soon as our face gets recognized.
 
  To perform the activity:
@@ -204,6 +211,7 @@ Apply complete! Resources: 3 added, 0 changed, 1 destroyed.
 ### Micro-Challenge:-
 
 > Try to launch S3 bucket to store the imgages in the AWS using Terraform
+
 
 
 # Conclusion

@@ -116,16 +116,20 @@ To train the model we will use the dataset that we have created in **Activity-1*
 - The **AMI-id** of the instance which you will be using
 
 
-If you are not able to find the region name in AWS then:
+**If you are not able to find the region name in AWS then:**
 > refer to Images/Activity-3/region.png
 
-For getting the AMI-id, follow the following steps:
+**For getting the AMI-id, follow the following steps:**
 
 - Login to you AWS account
+
 - Go to **EC2** service
 - Click on **Launch Instance** button
+<br>
     > refer to Images/Activity-3/launch_instance.png
+
 - Select the **AMI** that you want to work on and you will find the AMI-id just below the AMI
+<br>
     > refer to Images/ACtivity-3/ami.png `the highlited one in the image is the ami-id`
 
 *Now we have the required information, we can add these details in our terraform configuration file*

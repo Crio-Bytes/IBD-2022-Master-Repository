@@ -2,7 +2,7 @@
 
 Software design plays a crucial role in the success of a software project, especially in large teams working on big or old codebases. Software design includes making important decisions about the structure, functionality, and architecture of the software system. However, making these decisions can be challenging, especially in a collaborative environment where misunderstandings and miscommunication can occur. In this micro-byte we will understand:
 
-- What are ADR?
+- What is ADR?
 - Why we need to create ADR?
 - Contents in ADR.
 - Activities to create ADRs.
@@ -13,7 +13,7 @@ Software design plays a crucial role in the success of a software project, espec
 
 In software development, Architectural Decision Record (ADR) is a document that records a decision made about the architecture of a software system. The purpose of an ADR is to document the reasoning behind an architectural decision, as well as the alternatives that were considered and the consequences of the chosen solution. This can help developers to understand the rationale behind the design of the system and can also be used when changes need to be made to the architecture in the future.
 
-## Why to create ADR?
+## Why we need to create ADR?
 
 By documenting design decisions, ADRs help to ensure that the design of the software system is consistent and coherent. This can improve the overall quality and effectiveness of the software system.
 Also, understanding decisions made by a team makes it easier for other team members to adopt the decision and prevent other architects who weren’t involved in the decision-making process to overrule that decision in the future.
@@ -168,7 +168,7 @@ Great, you now have your options listed, you can discuss with your team on pros 
 
 ## Activity 5 - Think of the consequences and write it in ADR
 
-    The consequences section of an architectural decision record (ADR) should describe the expected outcomes and impacts of the decision that was made. This can include both positive and negative consequences and should consider both short-term and long-term impacts.
+The consequences section of an architectural decision record (ADR) should describe the expected outcomes and impacts of the decision that was made. This can include both positive and negative consequences and should consider both short-term and long-term impacts.
 
 1. What do you think are the consequences of your decision?
 

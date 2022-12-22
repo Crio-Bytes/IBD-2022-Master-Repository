@@ -19,6 +19,7 @@ To make use of cloud computing resources we need to go to the AWS platform and w
 
 In this Micro-byte, we will learn to create a Face Recognition program, and how to create Terraform configuration file so that we can automate AWS to launch the services.
 
+<br>
 
 # Pre-Requisites
 

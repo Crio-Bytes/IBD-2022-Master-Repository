@@ -20,7 +20,51 @@ Static code analysis is an important part of the software development process as
 
 ## What is SonarCloud?
 
-SonarCloud is a cloud-based static code analysis tool that enables developers to analyze their code for quality, security and maintainability issues.
+SonarCloud is a cloud-based static code analysis tool that enables developers to analyze their code for quality, security and maintainability issues. Sonar cloud helps in early detection of problem which ensures that fewer issues get through to the later stages of the process and ultimately helps to increase the overall quality of your code.
+
+SonarCloud provides variety of features such as:
+
+- Automated code reviews: It can provide feedback and suggestions for improving your code for a wide range of issues, including syntax errors, bugs, security vulnerabilities, and style violations
+
+- Customizable rules: SonarCloud allows developers to configure the analysis to check for specific types of issues, and to set their own rules and standards for code quality.
+
+- Integration with popular development tools: SonarCloud can be integrated into popular development tools, such as GitHub, Azure DevOps, and Jenkins, to provide continuous analysis and feedback as code is being developed.
+
+- Collaboration and reporting: SonarCloud provides features for collaborating with team members and sharing analysis results, as well as generating reports and charts to help visualize code quality trends over time.
+
+## Acitivities
+
+### Activity 1: Let's recap the basics.
+
+1. How does static code analysis find potential issues in code?
+
+- [] By executing the code and observing the results
+
+- [] By comparing the code to a set of predefined rules or best practices.
+
+- [] By analyzing the code's runtime performance
+
+- [] By analyzing the code's memory usage
+
+<details>
+<summary>Click to see hint</summary>
+Static code analysis analyze the code without actually scanning it.
+</details>
+
+<details>
+<summary>Click to see answer</summary>
+
+- [] By executing the code and observing the results
+- [x] By comparing the code to a set of predefined rules or best practices.
+- [] By analyzing the code's runtime performance
+- [] By analyzing the code's memory usage
+
+Static code analysis tools scan the source code and identify any issues that violate predefined rules.
+
+</details>
+## Conclusion
+
+In this micro byte we learned about static code analysis which will help you in writing high-quality, reliable and secure code.
 
 ## Refrences
 

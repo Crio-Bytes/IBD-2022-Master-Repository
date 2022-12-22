@@ -25,7 +25,7 @@ The `ping` command sends a packet to the specified address, a URL or an IP.
 c is the attribute that stands for the count.
 By using `-c 2` , we send only 2 data packets to the specified address, `www.google.com`.
 
-<img src='./images/pic1.jpg'>
+<img src='./images/pic1.JPG'>
 
 You observe that the IP addresses of google.com change every time we ping. Why is this so? Continue with this micro byte, and we will explore why this is happening.
 
@@ -37,7 +37,7 @@ So, we will launch multiple application servers instead of using a single server
 
 Of course not, If this much effort is to be made by users, they will end up abandoning our application. The load balancer resolves this issue. A load balancer is a server which distributes traffic across multiple servers. In other words, a load balancer is utilized to manage and reroute user traffic among various servers.
 
-<img src='./images/pic2.jpg'>
+<img src='./images/pic2.JPG'>
 
 Load Balancing is a method in which we can distribute network traffic across multiple resources with the help of a load balancer that supports an application. Another name for load balancing is *server pool*. It is essential to improving a website's functionality and dependability.
 
@@ -45,7 +45,7 @@ Load Balancing is a method in which we can distribute network traffic across mul
 
 DNS stands for Domain Name System. It is a directory service that establishes a connection between the hostname and address on a network.
 
-<img src="./images/pic3.jpg">
+<img src="./images/pic3.JPG">
 
 Remembering numbers is difficult. It is comparatively easier to remember names. We can reach a website using its different IP address, but it is easier to use the domain name, which consists of words and is unique to a particular website.
 
@@ -53,7 +53,7 @@ Remembering numbers is difficult. It is comparatively easier to remember names. 
 
 Load Balancing can be classified into different categories. One of the categories of Load Balancing is *DNS Load Balancing*. It involves configuring the domain name to route network requests and divide them among servers.
 
-<img src="./images/pic4.jpg">
+<img src="./images/pic4.JPG">
 
 DNS Load Balancing keeps the apps accessible and evenly distributes network traffic among the servers. We can provide domain to any service accessible through the internet, like a website, a mail system, a print server, etc.
 
@@ -67,14 +67,14 @@ Now that we understand the concept of load balancing and DNS load balancing, let
 
 Open the command prompt and ping to `www.google.com`.
 
-<img src="./images/pic5.jpg">
+<img src="./images/pic5.JPG">
 
 Observe the IP address.
 Try to rerun the same command, and you will get the same IP address.
 
 Now change the wifi connection and again ping to `www.google.com`.
 
-<img src="./images/pic6.jpg">
+<img src="./images/pic6.JPG">
 
 Observe the IP address in both cases. We will see that the IP addresses change. Now, you should know the reason behind it.
 

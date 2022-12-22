@@ -83,10 +83,12 @@ In the above example, we have a config.json file where we have added a list of t
 
 3. Database: We can store the feature toggles in database by either creating a new table contaning or keys or if app is using microservice architecture you can store the toggles in a separate service that manages the toggles.
 
-   | First Header | Second Header |
+   | Feature name | Feature value |
    | ------------ | ------------- |
-   | Content Cell | Content Cell  |
-   | Content Cell | Content Cell  |
+   | advertisment | on            |
+   | dark mode    | of            |
+
+We can access feature flag value from the database, if we need feature flag flag value in frontend we can create a REST API to access the value.
 
 4. Using Ghraphical User Interface: You can create a simple UI interface by youself or use any feature toggle management tool available.
 
@@ -126,6 +128,35 @@ Generally, for the feature to be displayed flag needs to be enabled.
 - [ ] Backend
 - [ ] Both Frontend and Backend
 - [ ] Depends on use case
+
+> Hint: To find the answer take differnt examples and think where should we add feature toggle
+
+<details>
+<summary>Click here to see the answer</summary>
+It depends on use case, feature toggles can be implemented in frontend or backend or both. Consider a feature that involves interaction between frontend and backend, then in this case we will need to add feature toggle both to the frontend and backend.
+
+Consider you need to disable button from UI, in this case we will add feature toggle only in the frontend.
+
+</details>
+
+3. Should we keep feature toggle in our code indefinetly?
+
+- [ ] Yes
+- [ ] No
+      &nbsp;
+
+![stack](/UNDERSTANDING%20FEATURE%20TOGGLE/Images/STACK.jpeg)
+
+<details>
+<summary>Click here to see the answer</summary>
+No, it is generally not recommended to keep feature toggles in the code indefinetly. One feature toggle are no longer needed we need to remove them from our code.
+</details>
+
+.
+
+## Activity 2: Understanding feature toggle from real world use cases.
+
+1.
 
 ## Conclusion
 

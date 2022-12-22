@@ -199,11 +199,11 @@ Apply complete! Resources: 3 added, 0 changed, 1 destroyed.
 
 - Now you can check in the AWS that the resources that we have mentioned in the terraform configuration file are launched successfully
 
-> Instance launched successfully
+> **Instance launched successfully**
 
 ![instance](./Images/Activity-5/instance.png)
 
-> EBS volume of 5 GB as mentioned launched successfully
+> **EBS volume of 5 GB as mentioned launched successfully**
 
 ![ebs](./Images/Activity-5/ebs.png)
 

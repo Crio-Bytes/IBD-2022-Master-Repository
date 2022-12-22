@@ -1,4 +1,4 @@
-package com.example.myrecyclerview;
+package com.example.myrecyclerview; // to not copy this line 
 
 public class Item {
     //copy data from here

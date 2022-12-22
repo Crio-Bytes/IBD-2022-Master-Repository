@@ -215,7 +215,7 @@ Apply complete! Resources: 3 added, 0 changed, 1 destroyed.
 
 - Try to launch an S3 bucket to store the images in the AWS using Terraform
 
-
+<br>
 
 # Conclusion
 

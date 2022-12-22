@@ -1,5 +1,5 @@
 # Overview
-Through this microbyte learner will learn how to install Android Studio, make projects in Android Studio,  implement RecyclerView with CustomeAdapter, run an android app and build an apk of your android application
+Through this microbytes learner will learn how to install Android Studio, make projects in Android Studio,  implement RecyclerView with CustomeAdapter, run an android app and build an apk of your android application
 
 # What is Android Studio?
 Android Studio is an IDE(Integrated Development Environment), which provides an environment to develop android applications. Android Studio has features that enhance productivity while building Android apps
@@ -167,7 +167,7 @@ APK stands for Android Package sometimes Android Package Kit or Android Applicat
  ![locate](https://user-images.githubusercontent.com/72004239/209070632-47c6d67b-f326-4718-8e96-16a63eb90418.png)
  - Then, click on **"locate"**, and it will take you to where "apk" is located as show in below image
  ![apk1](https://user-images.githubusercontent.com/72004239/209071376-269cc3bc-6156-4fa3-b1ce-5dd0fb75ee42.png) 
- - That it, this is your "apk" which you can copy and share with others
+ - That's it, this is your "apk" which you can copy and share with others
    
 
     

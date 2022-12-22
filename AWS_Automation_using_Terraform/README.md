@@ -62,25 +62,27 @@ To create the dataset we will make use of OpenCV, it will capture your face imag
 > copy the file from `/Src/Activity-1/create_dataset.ipynb` and fill the required data as mentioned
 
 - Add your directory path
-
-### Activity 1 - Task
-
-- Instead of capturing 100 images, capture 500 for better model training
-
-
-<details>
-<summary>Micro-Challenge</summary>
-Instead of using a laptop or external webcam for face detection try to use your phone camera i.e connect your phone to the program for face detection 
-
-> Hint: IP Webcam android application
-</details>
-
+- Execute the file by pressing key `ctrl + enter` or the `run` button in jupyter notebook.
 
 **output:** 
 
 ![face](./Images/Activity-1/face.jpg)
 
 > Instead of my face you will see your face captured and stored in the directory
+
+
+### Activity 1 - Task
+
+- Instead of capturing 100 images, capture 500 for better model training
+
+
+
+<details>
+<summary> <b>Micro-Challenge</b></summary>
+Instead of using a laptop or external webcam for face detection try to use your phone camera i.e connect your phone to the program for face detection 
+
+> Hint: IP Webcam android application
+</details>
 
 <br>
 
@@ -168,9 +170,9 @@ In this activity, we are going to integrate the terraform configuration file wit
  To perform the activity:
  >Copy the file from `Src/Activity-5/automate.ipynb` and paste it to the location where your terraform file is present
 
-- Execute the file by using the command **ctrl + enter**
+- Execute the file by pressing **ctrl + enter** or **run** button in the jupyter notebook
 
-As soon as the file gets executed you will see that your WebCam  get opened your face gets recognized as shown below
+As soon as the file gets executed you will see that your WebCam  gets opened your face gets recognized as shown below
 
 ![face recognized](./Images/Activity-5/face_recognized.jpeg)
 

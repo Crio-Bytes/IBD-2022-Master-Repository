@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:padding="2dp">
 
-    // copy code from here (do not copy these comment lines)
+ 
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
@@ -42,7 +42,6 @@
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-    
-    //end of copy code
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

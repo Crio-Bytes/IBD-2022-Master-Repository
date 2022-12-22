@@ -60,45 +60,63 @@ Now, we will learn how to create project in android studio, this is gonna be ver
   ![Screenshot (56)](https://user-images.githubusercontent.com/72004239/208704289-a5f9690b-87b5-4bed-ae5f-5316fbcc8b28.png)
 
   # Activity 3: Creating a Activity or Interface for RecyclerView
-  - Now in this microbyte, we will learn how to add recycler view to the activity where we will show our list of images which will look like below image
+  - Now in this microbyte, we will learn how to add recycler view to the activity where we will show our list of images which will look like below image <br>
 ![Screenshot (61)](https://user-images.githubusercontent.com/72004239/208870863-e4b07069-74cb-41f2-9533-15428e0adf69.png)
- **To create list of we need images first, so follow below instructions to copy images**
+ - **To create list of we need images first, so follow below instructions to copy images**
     ## 3.1 Copy Images into Drawble folder
   Firstly we need some images to show in our list of images, 
     copy some picutres into "drawble" folder
   - Download images from "images/list images" folder download all images p1.png to p9.png, [click here to download](https://github.com/HimanshuSinghNegi/IBD-2022-Master-Repository/tree/HimanshuSinghNegi/Implementation_of_RecyclerView_%2318/Implementation%20of%20RecyclerView/images/list%20images) 
     - Now, to copy images into your project refer to this link
-     - Link :https://www.geeksforgeeks.org/how-to-add-image-to-drawable-folder-in-android-studio
+     - Link : https://www.geeksforgeeks.org/how-to-add-image-to-drawable-folder-in-android-studio
     
 
    - ## 3.2 Creating a layout file for each item of our RecyclerView
-   
-      **To create layout file follow these steps:**
+     **To create layout file follow these steps:**
       - Right click on "Layout", then follow the below path
         - Layout ->New ->Layout Resource File
       - After that, it will show you a screen where it wil ask you for name of the Layout resource file, you can give any name, but here giving "list_item"
-       - Then, click "ok", and your Layout Resource file is ready
-    If you get any problem to follow these instructions just refer to this [images/Screen/]
+      - Then, click "ok", and your Layout Resource file is ready
+    If you get any problem to follow these instructions just refer to this [click here](https://www.tutorialkart.com/kotlin-android/android-studio-create-new-layout-xml-file/#:~:text=Android%20%E2%80%93%20Create%20Layout%20File%20in%20Resources%20Layout,4%20Step%204%3A%20Configure%20Layout%20XML%20File%20)
 
-    - Just double click on that file 
-    - After that on right side of screen you will see "Code" option, just click on that
+  - Just double click on that file 
+  - After that on right side of screen you will see "Code" option, just click on that
 
   - if you are facing any issues with the instructions,Then please refer to ["images/Screenshot (59).png"](https://raw.githubusercontent.com/HimanshuSinghNegi/IBD-2022-Master-Repository/1d6d7886733e4278be774f6316589e6846def014/Implementation%20of%20RecyclerView/images/Screenshot%20(59).png)
 
-
- **After that, you will see the below screen**
+**After that, you will see the below screen**
  ![Screenshot (60)](https://user-images.githubusercontent.com/72004239/208835547-389559b1-2f3b-4307-ac5d-953f041ff574.png)
 
+Here you have to do a task
+ - As you can see in above screen, we have "constraintlayout" and "TextView" xml code
+ - Your task is to delete the "TextView" xml code only,
+ - For that just select the "TextView" xml and delete it
+ - **Note** :- Remove all code from file first
+- Now, copy code from ["src/list_item.xml"](https://github.com/HimanshuSinghNegi/IBD-2022-Master-Repository/blob/2c8b5f7b22efd6a27a069c89cfe25229839008fb/Implementation%20of%20RecyclerView/src/item_list.xml)
 
-- Now, copy code from "src" folder , the path is  ["src/activity_main.xml"]()
+**After that you will a output like this**
+![studio64_11NFnuoxNr](https://user-images.githubusercontent.com/72004239/208989780-641902b3-344e-4cc3-9c92-c37d72600dd0.png)
+**It means you see this screen means you successfully created "list_item.xml"**
+
+- ## 3.3 Add this below code to "activity_main.xml" file 
+ - **Note** :- Remove all code from file first
+ - For code move to ["src/activity_main.xml"]() ,copy whole code from that file
+ - And paste the copied code into "activity_main.xml" of your project
+
+ **After that you will see this output**
+ ![Screenshot (62)](https://user-images.githubusercontent.com/72004239/208992255-cb82ffba-b72f-4e0e-9a73-4fd297ca044f.png)
 
 
- 
+# Activity 4: Creating a CustomAdpater,POJO class etc
+ Here in this microbyte we will create a custom  adapter to inflate our items into the recyclerview 
 
+ Firstly, open package where is "MainActivity.java"
+ file, for that follow instructions as show in figure
+ ![java](https://user-images.githubusercontent.com/72004239/208996349-a8deb959-748b-419d-b20f-fe9d81a7c1cd.png)
+ - ## 4.1 Creating POJO class
+    - Now, right-click on "com.example.myrecyclerview" 
+    - Then follow this path New->Java File
+    - After you have to give name of POJO class here i giving "Item"
+    - Then click "ok" , after you will see a file "Item.java" will be created in "com.example.myrecyclerview" package
 
- - For that we have to move to "activity_main.xml" file, follow these instructions
-    - On your left in "project" panel we have a folder called "res", click on that folder 
-    - Then, inside that folder click on "Layout", there you will able to see "activity_main.xml"
-  
-  
-  
+    - Now copy code form file ["src/Item.java"]() to your "Item.java" file

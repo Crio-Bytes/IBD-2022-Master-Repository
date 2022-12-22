@@ -6,7 +6,8 @@ However, even with these safeguards in place, it can still be challenging to man
 In this micro byte, we will explore
 
 1. What is a feature toggle?
-2. Applications of feature toggle
+2. Applications of feature toggle.
+3. Different ways to implement feature toggle.
 
 # What is a feature toggle?
 
@@ -32,7 +33,28 @@ As you might have guessed by now feature toggles are basically conditional state
 
 > Can you think of different ways we can store the value of the flag?
 
-1. Configuration file: We can specify which features are enabled or disabled in a configuration file. This file can be stored locally or can be accessed using a remote server.
+&nbsp;
+
+1. Variable in same file: The most basic way would be creating a variable with feature name in the same file. But it isn't used as it has various drawbacks like:
+
+- all the toggles aren't stored in one place.
+- They are only accessible in same file.
+- The code needs to be deployed again for changes to get reflected.
+
+```
+// AdvertismentToggle component
+
+const AdvertismentToggle = () => {
+  const advertisment= "on";
+  if (advertisment === 'on') {
+    return <Advertisment />;
+  }
+  return null;
+}
+
+```
+
+2. Configuration file: We can specify which features are enabled or disabled in a configuration file. This file can be stored locally or can be accessed using a remote server.
 
 Let's look at how we can implement a feature toggle in Reactjs using a configuration file.
 
@@ -59,4 +81,60 @@ const AdvertismentToggle = () => {
 
 In the above example, we have a config.json file where we have added a list of toggleable features and their current state. In the AdvertismentToggle component, we are returning advertisment if the feature is "on".
 
-2. Database:
+3. Database: We can store the feature toggles in database by either creating a new table contaning or keys or if app is using microservice architecture you can store the toggles in a separate service that manages the toggles.
+
+   | First Header | Second Header |
+   | ------------ | ------------- |
+   | Content Cell | Content Cell  |
+   | Content Cell | Content Cell  |
+
+4. Using Ghraphical User Interface: You can create a simple UI interface by youself or use any feature toggle management tool available.
+
+![launch-darkly](/UNDERSTANDING%20FEATURE%20TOGGLE/Images/LaunchDarkly.png)
+[img: LaunchDarkly toggle’s interface]
+
+# Activity
+
+## Activity 1: Basics of Feature Toggle
+
+1. What will be the value of flag if you want to display the feature1?
+
+- [ ] true
+- [ ] false
+
+```
+const FeatureToggle = () => {
+  if (config.features.feature1) {
+    return <Feature />;
+  }
+  return null;
+}
+```
+
+<details>
+<summary>Click here to see the answer</summary>
+The value of the flag should be <b>true</b>
+According to the given code, if the flag value is true then it will return the Feature component.
+
+Generally, for the feature to be displayed flag needs to be enabled.
+
+</details>
+
+2. Where should we add feature toggle?
+
+- [ ] Frontend
+- [ ] Backend
+- [ ] Both Frontend and Backend
+- [ ] Depends on use case
+
+## Conclusion
+
+In this micro byte we leared what feature toggles are and different ways we can implement feature toggles.
+
+## References
+
+[Blog on Marti Folowser's site](https://martinfowler.com/articles/feature-toggles.html)
+
+[Blog by Atlassian](https://www.atlassian.com/continuous-delivery/principles/feature-flags)
+
+[Feature Flags: Smaller, Faster, Better Software Development](https://medium.com/@dehora/feature-flags-smaller-better-faster-software-development-f2eab58df0f9)

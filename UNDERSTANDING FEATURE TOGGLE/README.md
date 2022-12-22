@@ -146,17 +146,46 @@ Consider you need to disable button from UI, in this case we will add feature to
       &nbsp;
 
 ![stack](/UNDERSTANDING%20FEATURE%20TOGGLE/Images/STACK.jpeg)
+Photo by <a href="https://unsplash.com/@dimhou?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dim Hou</a> on <a href="https://unsplash.com/photos/PfNzKoA5R4E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 <details>
 <summary>Click here to see the answer</summary>
 No, it is generally not recommended to keep feature toggles in the code indefinetly. One feature toggle are no longer needed we need to remove them from our code.
 </details>
 
-.
+&nbsp;
 
 ## Activity 2: Understanding feature toggle from real world use cases.
 
-1.
+> Did you know: Netflix, Spotify also use feature toggle. Try solving these to understand benefits of feature toggle.
+
+1. A team is working on a new feature for an e-commerce website that involves adding a new payment method. To minimize the risk of introducing bugs or breaking the application, the team decides to use a feature toggle to gradually roll out the new payment method to a subset of users. Which of the following is NOT a potential benefit of using a feature toggle in this situation?
+
+- [ ] The team can gather feedback and monitor the impact of the new payment method before making it available to all users.
+- [ ] The team can quickly revert to the previous version of the application if there are any issues with the new payment method.
+- [ ] The team can reduce the complexity of the codebase by removing the feature toggle once the new payment method is stable.
+- [ ] The team can improve the performance of the application by using a feature toggle to optimize the code.
+
+<details>
+<summary>Click here to see answer</summary>
+In this situation adding feature toggle won't have any effect on performance. So the answer is last option: The team can improve the performance of the application by using a feature toggle to optimize the code.
+</details>
+
+2. A team is working on a new feature for a social media app that allows users to see posts from their favorite celebrities. The feature is still in development and the team is concerned about introducing bugs or negatively impacting the user experience. To minimize the risk of these issues, the team decides to use a feature toggle to gradually roll out the new feature to a subset of users. Which of the following is NOT a potential benefit of using a feature toggle in this situation?
+
+- [ ] The team can gather feedback and monitor the impact of the new feature before making it available to all users.
+- [ ] The team can quickly revert to the previous version of the application if there are any issues with the new feature.
+- [ ] The team can reduce the complexity of the codebase by removing the feature toggle once the new feature is stable.
+- [ ] The team can improve the security of the application by using a feature toggle to isolate the new feature from the rest of the codebase.
+- [ ] The team can make the new feature available to a subset of users who are more likely to use it.
+
+<details>
+<summary>Click here to see answer</summary>
+While feature toggles can have a number of potential benefits, such as allowing developers to gradually roll out new features and test changes to the application without affecting the production environment, they do not typically result in significant improvements to the security of the application.
+
+So the answer is: The team can improve the security of the application by using a feature toggle to isolate the new feature from the rest of the codebase.
+
+</details>
 
 ## Conclusion
 
@@ -164,8 +193,12 @@ In this micro byte we leared what feature toggles are and different ways we can 
 
 ## References
 
-[Blog on Marti Folowser's site](https://martinfowler.com/articles/feature-toggles.html)
+[Netflix skip intro button](https://about.netflix.com/en/news/looking-back-on-the-origin-of-skip-intro-five-years-later)
+
+[Blog on Martin Fowler's site](https://martinfowler.com/articles/feature-toggles.html)
 
 [Blog by Atlassian](https://www.atlassian.com/continuous-delivery/principles/feature-flags)
 
 [Feature Flags: Smaller, Faster, Better Software Development](https://medium.com/@dehora/feature-flags-smaller-better-faster-software-development-f2eab58df0f9)
+
+[Spotify feature toggle video](https://www.youtube.com/watch?time_continue=3&v=4GK1NDTWbkY&feature=emb_logo)

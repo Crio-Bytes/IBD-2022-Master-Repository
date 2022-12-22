@@ -61,7 +61,7 @@ Now, we will learn how to create project in android studio, this is gonna be ver
 
   # Activity 3: Creating an Activity or Interface for RecyclerView
   - Now in this microbyte, we will learn how to add a recycler view to the activity where we will show our list of images which will look like the below image<br>  ![Screenshot (61)](https://user-images.githubusercontent.com/72004239/208870863-e4b07069-74cb-41f2-9533-15428e0adf69.png)
- - **To create list of we need images first, so follow below instructions to copy images**
+ - **To create list  we need images first, so follow below instructions to copy images**
     ## 3.1 Copy Images into Drawble folder
   Firstly we need some images to show in our list of images, 
     copy some picutres into "drawble" folder
@@ -74,8 +74,8 @@ Now, we will learn how to create project in android studio, this is gonna be ver
      **To create layout file follow these steps:**
       - Right click on "Layout", then follow the below path
         - Layout ->New ->Layout Resource File
-      - After that, it will show you a screen where it wil ask you for name of the Layout resource file, you can give any name, but here giving "list_item"
-      - Then, click "ok", and your Layout Resource file is ready
+      - After that, it will show you a screen where it will ask you for name of the Layout resource file, you can give any name, but here giving "list_item"
+      - Then, click "ok", and your Layout Resource file is ready<br>
     If you get any problem to follow these instructions just refer to this [click here](https://www.tutorialkart.com/kotlin-android/android-studio-create-new-layout-xml-file/#:~:text=Android%20%E2%80%93%20Create%20Layout%20File%20in%20Resources%20Layout,4%20Step%204%3A%20Configure%20Layout%20XML%20File%20)
 
   - Just double click on that file 

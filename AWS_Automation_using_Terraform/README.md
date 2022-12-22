@@ -200,11 +200,11 @@ Apply complete! Resources: 3 added, 0 changed, 1 destroyed.
 > Try to launch S3 bucket to store the imgages in the AWS using Terraform
 
 
-### Conclusion
+# Conclusion
 
 Congratulations! You have completed all the activities. I hope it was fun and you learned something new. Now you can automate any cloud computing platform using Terraform and can play with OpenCV
 
-### References
+# References
 
 1. [Terraform Documentation](https://developer.hashicorp.com/terraform/intro)
 2. [AWS Services](https://aws.amazon.com/)

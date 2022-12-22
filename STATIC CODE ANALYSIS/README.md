@@ -38,27 +38,49 @@ SonarCloud provides variety of features such as:
 
 1. How does static code analysis find potential issues in code?
 
-- [ ] By executing the code and observing the results
-- [ ] By comparing the code to a set of predefined rules or best practices.
-- [ ] By analyzing the code's runtime performance
-- [ ] By analyzing the code's memory usage
+   - [ ] By executing the code and observing the results
+   - [ ] By comparing the code to a set of predefined rules or best practices.
+   - [ ] By analyzing the code's runtime performance
+   - [ ] By analyzing the code's memory usage
 
-<details>
-<summary>Click to see hint</summary>
-Static code analysis analyze the code without actually scanning it.
-</details>
+    <details>
+    <summary>Click to see hint</summary>
+    Static code analysis analyze the code without actually executing it.
+    </details>
 
-<details>
-<summary>Click to see answer</summary>
+    <details>
+    <summary>Click to see answer</summary>
 
-- [ ] By executing the code and observing the results
-- [x] By comparing the code to a set of predefined rules or best practices.
-- [ ] By analyzing the code's runtime performance
-- [ ] By analyzing the code's memory usage
+   - [ ] By executing the code and observing the results
+   - [x] By comparing the code to a set of predefined rules or best practices.
+   - [ ] By analyzing the code's runtime performance
+   - [ ] By analyzing the code's memory usage
 
-Static code analysis tools scan the source code and identify any issues that violate predefined rules.
+   Static code analysis tools scan the source code and identify any issues that violate predefined rules.
+    </details>
 
-</details>
+2. Which of the following cannot be identified by using static code analysis?
+
+   - [ ] Programming errors
+   - [ ] How function will execute.
+   - [ ] Coding standard violations.
+   - [ ] Security weaknesses.
+
+    <details>
+    <summary>Click to see hint</summary>
+    Static code analysis analyze does not execute the code.
+    </details>
+
+    <details>
+    <summary>Click to see answer</summary>
+
+   - [ ] Programming errors
+   - [x] How function will execute.
+   - [ ] Coding standard violations.
+   - [ ] Security weaknesses.
+
+   Static code analysis can't detect whether software requirement have been fulfilled or how function will execute. You will need dynamic analysis for that.
+    </details>
 
 ## Conclusion
 

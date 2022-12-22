@@ -1,31 +1,31 @@
 # Overview
-By this learner will learn how to install Android Studio, make project in Android Studio,  implement RecyclerView with CustomeAdapter,run an android app and build an apk of your android application
+Through this microbyte learner will learn how to install Android Studio, make projects in Android Studio,  implement RecyclerView with CustomeAdapter, run an android app and build an apk of your android application
 
 # What is Android Studio?
-Android Studio is a IDE(Integreated Development Environment), which provides an environment to develop android applications. Androind Studio has features that enchances the productivity while building Android apps
+Android Studio is an IDE(Integrated Development Environment), which provides an environment to develop android applications. Android Studio has features that enhance productivity while building Android apps
 # Some Features of Android Studio
-  - It has a user-friendly environment to develop android application
-  - It has Gradle build system which automates the compilation,testing,linking of libraries files and do many more tasks
+  - It has a user-friendly environment to develop an android application
+  - It has Gradle build system which automates the compilation, testing, and linking of libraries files and do many more tasks
   - It provides various tools for testing your android applications
-  - It also provide a emulator on which you can run your apps and test your apps
+  - It also provides an emulator on which you can run your apps and test your apps
 
   # What is RecyclerView in Android?
-  RecyclerView id a view group in Android that is used to display a collection of items in a list or a grid. It is the successor of [ListView](https://www.javatpoint.com/android-listview-example) and the [GridView](https://www.tutorialspoint.com/android/android_grid_view.htm)
-  The RecyclerView Widgets is more flexible and efficient than its predecessors 
+  RecyclerView is a view group in Android that is used to display a collection of items in a list or a grid. It is the successor of [ListView](https://www.javatpoint.com/android-listview-example) and the [GridView](https://www.tutorialspoint.com/android/android_grid_view.htm)
+  The RecyclerView Widgets are more flexible and efficient than their predecessors 
   ## Features of RecyclerView
-  - It reuses view holders when scrolling and can display larger collection of data with better performance
-  - One of the main benefit of using RecyclerView by many android applications is that it allows for efficient display of larger lists of data by recycling views
+  - It reuses view holders when scrolling and can display a larger collection of data with better performance
+  - One of the main benefits of using RecyclerView by many android applications is that it allows for the efficient display of larger lists of data by recycling views
   ......[click to know more](https://www.javatpoint.com/android-recyclerview-list-example)
 
 
 # Pre-requisite
-   - You should have good knowledge of core java and collections framework.
-   - Minimum Specifications of the system as follows :
+   - You should have good knowledge of core java and collections framework
+   - Minimum Specifications of the system are as follows:
      - RAM : 8GB or above
      - CPU: 2nd gen Intel CPU or above, AMD CPU (Windows Hypervisor)
      - Free storage: 8 GB
      - Screen resolution: 1280 x 800
-   - Although android studio comes with it's build in JDK but it is recommend to install JDK 8 or above, to install click below link
+   - Although android studio comes with its built JDK but it is recommended to install JDK 8 or above, to install click the below link
       - Link : https://www.educba.com/install-jdk/
 
 
@@ -34,8 +34,8 @@ Android Studio is a IDE(Integreated Development Environment), which provides an 
    - Link :- https://developer.android.com/studio
    - Then you will see this screen 
     ![Screenshot (42)](https://user-images.githubusercontent.com/72004239/208305090-c90c50d4-81ee-4a69-aa42-1f841ccf7816.png)
-     Now click download button and it will begin download
- - After download start installing android studio,for that just follow below steps :-
+     Now click "download" button and it will begin to download
+  - After download start installing android studio, for that just follow below steps:-
    - Now click on android studio setup , you will see this screen
      ![Screenshot (43)](https://user-images.githubusercontent.com/72004239/208439572-908ddfcc-a514-46eb-99fa-f928f8905548.png)
    - After that click on "Next option" and keep clicking "Next" until it gets started installing.
@@ -53,15 +53,14 @@ Now, we will learn how to create project in android studio, this is gonna be ver
    - And click the next button
  - Now give name to your project, you can give any name
    ![Screenshot (54)](https://user-images.githubusercontent.com/72004239/208449719-c5c54bd9-79b7-4154-93c1-6df37c2bb3b8.png)
-   - But select "Java" in Language section.
- - Then just click on "finish" button, and it will take some time to build project, it just depends on your system 
+   - But select "Java" in the Language section.
+ - Then just click on "finish" button, and it will take some time to build the project, it just depends on your system 
 
--  After finishing you wil see this below screen, that means you have successfully created your project
+-  After finishing you wil see this below screen, which means you have successfully created your project
   ![Screenshot (56)](https://user-images.githubusercontent.com/72004239/208704289-a5f9690b-87b5-4bed-ae5f-5316fbcc8b28.png)
 
-  # Activity 3: Creating a Activity or Interface for RecyclerView
-  - Now in this microbyte, we will learn how to add recycler view to the activity where we will show our list of images which will look like below image <br>
-![Screenshot (61)](https://user-images.githubusercontent.com/72004239/208870863-e4b07069-74cb-41f2-9533-15428e0adf69.png)
+  # Activity 3: Creating an Activity or Interface for RecyclerView
+  - Now in this microbyte, we will learn how to add a recycler view to the activity where we will show our list of images which will look like the below image  Screenshot (61)](https://user-images.githubusercontent.com/72004239/208870863-e4b07069-74cb-41f2-9533-15428e0adf69.png)
  - **To create list of we need images first, so follow below instructions to copy images**
     ## 3.1 Copy Images into Drawble folder
   Firstly we need some images to show in our list of images, 
@@ -140,13 +139,13 @@ Here you have to do a task
          - In case you get any error , to solve just **hover over that error 
           click"import" statement** or just put **your cursor over error and 
           press "Alt+Enter"**
-      - Now copy code from ["src/MyCustomeAdapter]()
+      - Now copy code from ["src/MyCustomeAdapter](https://github.com/HimanshuSinghNegi/IBD-2022-Master-Repository/blob/ebf6fc23eb7ed13eb0769369851eecebc0690573/Implementation%20of%20RecyclerView/src/MyCustomAdapter.java)
  - ## 4.3 Add items in list , set Layout Manager and Adapter
     Now here we will write some code in "MainActivity.java" file<br>
     Firstly move to this place as show in figure
     ![branch](https://user-images.githubusercontent.com/72004239/209063999-88d3af61-1058-44b0-ad30-6b9e3780cf31.png)
     - Open "MainActivity.java" file
-    - Now copy code ["src/MainActivity"]() to your Mainactivity.java file
+    - Now copy code ["src/MainActivity"](https://github.com/HimanshuSinghNegi/IBD-2022-Master-Repository/blob/ebf6fc23eb7ed13eb0769369851eecebc0690573/Implementation%20of%20RecyclerView/src/MainActivity.java) to your Mainactivity.java file
   
   Now you have successfully created your RecyclerView
   - ## 4.4 How to run project on "Android emulator"
@@ -160,16 +159,15 @@ Here you have to do a task
 # Activity 5: Build apk of your android application
 APK stands for Android Package sometimes Android Package Kit or Android Application Package). It's the file format that Android uses to distribute and install apps. As a result, an APK contains all the elements that an app needs to install correctly on your device.
 
-**To build "apk" follow below instruction :-**
+**To build "apk" **follow below instruction:-****
  - Move to top of your android studio 
  - There you will see "Build" click on that, then follow this path <br>
    - Build -> Build Bundle(s)/APK-> Build Apk
-   ![apk](https://user-images.githubusercontent.com/72004239/209069935-79272b1b-fa4a-47d3-a6ea-d2e094a4773b.png)
- - After sometime you will get a pop up in you bottom-right corner
+   ![apk]After some time you will get a pop up in you bottom-right corner
  ![locate](https://user-images.githubusercontent.com/72004239/209070632-47c6d67b-f326-4718-8e96-16a63eb90418.png)
- - Then, click on **"locate"**, and it will take you where "apk" is located as show in below image
+ - Then, click on **"locate"**, and it will take you to where "apk" is located as show in below image
  ![apk1](https://user-images.githubusercontent.com/72004239/209071376-269cc3bc-6156-4fa3-b1ce-5dd0fb75ee42.png) 
- - That it , this is your "apk" which you can copy and share with others
+ - That it, this is your "apk" which you can copy and share with others
    
 
     

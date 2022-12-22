@@ -38,13 +38,10 @@ SonarCloud provides variety of features such as:
 
 1. How does static code analysis find potential issues in code?
 
-- [] By executing the code and observing the results
-
-- [] By comparing the code to a set of predefined rules or best practices.
-
-- [] By analyzing the code's runtime performance
-
-- [] By analyzing the code's memory usage
+- [ ] By executing the code and observing the results
+- [ ] By comparing the code to a set of predefined rules or best practices.
+- [ ] By analyzing the code's runtime performance
+- [ ] By analyzing the code's memory usage
 
 <details>
 <summary>Click to see hint</summary>
@@ -54,14 +51,15 @@ Static code analysis analyze the code without actually scanning it.
 <details>
 <summary>Click to see answer</summary>
 
-- [] By executing the code and observing the results
+- [ ] By executing the code and observing the results
 - [x] By comparing the code to a set of predefined rules or best practices.
-- [] By analyzing the code's runtime performance
-- [] By analyzing the code's memory usage
+- [ ] By analyzing the code's runtime performance
+- [ ] By analyzing the code's memory usage
 
 Static code analysis tools scan the source code and identify any issues that violate predefined rules.
 
 </details>
+
 ## Conclusion
 
 In this micro byte we learned about static code analysis which will help you in writing high-quality, reliable and secure code.

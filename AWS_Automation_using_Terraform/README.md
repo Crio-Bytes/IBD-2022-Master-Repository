@@ -27,10 +27,10 @@ Before we start, there are some pre-requisite to this micro-byte that you must h
 1. Install **Python3**
 > sudo apt install python3
 
-2. You should have an account on **AWS**
+2. You should have an account on **AWS** and basic knowledge of it.
 >You can create [free tier AWS account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all) for performing the activities
 
-3. Install **Terraform**
+3. Install **Terraform** and have some basic knowledge about it.
 > wget -O- https://apt.releases.hashicorp.com/gpg | gpg --dearmor | sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
 
 > echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
@@ -207,5 +207,5 @@ Congratulations! You have completed all the activities. I hope it was fun and yo
 # References
 
 1. [Terraform Documentation](https://developer.hashicorp.com/terraform/intro)
-2. [AWS Services](https://aws.amazon.com/)
+2. [AWS Documentation](https://docs.aws.amazon.com/?nc2=h_ql_doc_do)
 3. [Face Detection with OpenCV](https://realpython.com/face-recognition-with-python/)

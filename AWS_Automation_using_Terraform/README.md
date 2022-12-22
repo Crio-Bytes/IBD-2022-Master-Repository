@@ -221,6 +221,8 @@ Apply complete! Resources: 3 added, 0 changed, 1 destroyed.
 
 Congratulations! You have completed all the activities. I hope it was fun and you learned something new. Now you can automate any cloud computing platform using Terraform and can play with OpenCV
 
+<br>
+
 # References
 
 1. [Terraform Documentation](https://developer.hashicorp.com/terraform/intro)

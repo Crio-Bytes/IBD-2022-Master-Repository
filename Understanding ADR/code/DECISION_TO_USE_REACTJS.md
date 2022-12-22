@@ -2,10 +2,8 @@
 
 ## Context
 
-We need to select a frontend framework to develop the to-do app. This app will be used by users to manage their tasks and activities. The app will need to be responsive and easy to use on a variety of devices, including desktop computers, tablets, and smartphones.
+We need to select a front-end framework to develop the to-do application. This application can be used by users to manage their tasks and activities. The app will need to be responsive and easy to use on a variety of devices, including desktop computers, tablets, and smartphones.
 We need to consider a number of factors when making this decision, including the level of expertise and experience of our development team, the resources available for building and maintaining the app, and the needs and preferences of our users.
-
-The context you have written can be different from the answer but it should give the reader idea about basic baground information about the decision.
 
 ---
 
@@ -19,17 +17,17 @@ The context you have written can be different from the answer but it should give
 
 ## Decision
 
-After considering a number of options, we have decided to use React as the frontend technology for the to-do app.
+After considering a number of options, we have decided to use ReactJS as the front-end technology for the to-do app.
 
-React is a popular and widely-used web framework that is known for its performance, flexibility, and ease of use. It is also supported by a large and active community of developers, which makes it easy to find resources and support when needed.
+ReactJS is a popular and widely-used web framework that is known for its performance, flexibility, and ease of use. It is also supported by a large and active community of developers, which makes it easy to find resources and support when needed.
 
-We considered a number of other options, including Angular and Vue.js. However, we ultimately determined that React was the best fit for our needs based on the following factors:
+We considered a number of other options, including Angular and Vue.js. However, we ultimately determined that ReactJS was the best fit for our needs based on the following factors:
 
-- Our development team has extensive experience with React, and is comfortable using it to build complex web applications.
-- React is well-suited to building responsive and scalable web apps, which is important given the diverse range of devices that our users will be using.
-- React has strong support for integrating with other technologies, such as APIs and databases, which will be useful as we continue to develop and expand the to-do app.
+- Our development team has extensive experience with ReactJS and is comfortable using it to build complex web applications.
+- ReactJS is well-suited to building responsive and scalable web apps, which is important given the diverse range of devices that our users will be using.
+- ReactJS has strong support for integrating with other technologies, such as APIs and databases, which will be useful as we continue to develop and expand the to-do app.
 
-We believe that using React as the frontend technology for the to-do app will enable us to build a high-quality, user-friendly app that meets the needs of our users.
+We believe that using ReactJS as the frontend technology for the to-do app will enable us to build a high-quality, user-friendly app that meets the needs of our users.
 
 ---
 

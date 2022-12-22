@@ -43,6 +43,7 @@ Before we start, there are some pre-requisite to this micro-byte that you must h
 
 **Note:** Only after the installation of Python, you can install OpenCV
 
+<br>
 
 # Activities
 

@@ -14,7 +14,7 @@ To make use of cloud computing resources we need to go to the AWS platform and w
 #### What OpenCV and Terraform will do?
 - OpenCV will allow us to detect our face and as soon as our face is detected Terraform configuration file will get executed which will launch the AWS services.
 
-![Architecture](./Images/archtitecture.png)
+![Architecture](./Images/Introduction/archtitecture.png)
 
 
 In this Micro-byte, we will learn to create a Face Recognition program, and how to create Terraform configuration file so that we can automate AWS to launch the services.
@@ -53,72 +53,16 @@ Note: Only after the installation of Python, you can install OpenCV
 
 - Here we are going to use the **haarcascade_frontalface** model for face detection
 
-To create the dataset use the code below, it will capture your face image 100 times and store it in a directory, which will be used by the model for face detection.
+To create the dataset we will make use of OpenCV, it will capture your face image 100 times and store it in a directory, which will be used by the model for face detection.
 
-```Python
-import cv2
-import numpy as np
-
-# Load HAAR face classifier
-face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-
-# Load functions
-def face_extractor(img):
-    # Function detects faces and returns the cropped face
-    # If no face detected, it returns the input image
-
-    gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-    faces = face_classifier.detectMultiScale(gray, 1.3, 5)
-
-    if faces is ():
-        return None
-
-    # Crop all faces found
-    for (x,y,w,h) in faces:
-        cropped_face = img[y:y+h, x:x+w]
-
-    return cropped_face
-
-# Initialize Webcam
-cap = cv2.VideoCapture(0)
-count = 0
-# Collect 100 samples of your face from webcam input
-while True:
-
-    ret, frame = cap.read()
-    if face_extractor(frame) is not None:
-        count += 1
-        face = cv2.resize(face_extractor(frame), (200, 200))
-        face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
-
-        # Save file in specified directory with unique name
-        #path
-        file_name_path = 'Path_of_dir/' + str(count) + '.jpg'
-        cv2.imwrite(file_name_path, face)
-
-        # Put count on images and display live count
-        cv2.putText(face, str(count), (50, 50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,255,0), 2)
-        cv2.imshow('Face Cropper', face)
-
-    else:
-        print("Face not found")
-        pass
-
-    if cv2.waitKey(1) == 13 or count == 100: #13 is the Enter Key
-        break
-
-cap.release()
-
-
-cv2.destroyAllWindows()
-
-```
-#### Activity 1.1
+> copy the file from `/Src/Activity-1/create_dataset.ipynb` and fill the required data as mentioned
 
 - Add your directory path
+
+#### Activity 1 - Task
+
 - Instead of capturing 100 images, capture 500 for better model training
 
-**Note:** You can download code from the **/src** directory of this repository
 
 <details>
 <summary>Micro-Challenge</summary>
@@ -130,59 +74,138 @@ Instead of using a laptop or external webcam for face detection try to use your 
 
 **output:** 
 
-![face](./Images/face.jpg)
+![face](./Images/Activity-1/face.jpg)
 
 > Instead of my face you will see your face captured and stored in the directory
 
 ### Activity 2 - Train the Model
+In this activity, we are going to train the face recognition model so that it can recognize our face as soon as the web camera turns on
 
 To train the model we will use the dataset that we have created in **Activity-1**
 
-The code below will help us to train the model 
+**Now to train the model:** 
 
-``` Python
-import cv2
-import numpy as np
-from os import listdir
-from os.path import isfile, join
+> Copy the file from  `Src/Activity-2/model_training.ipynb` to your jupyter notebook and fill the required data as mentioned.
 
-# Get the training data we previously made
-data_path_1 = 'path_of_image_dataset/'
-onlyfiles_1 = [f for f in listdir(data_path_1) if isfile(join(data_path_1, f))]
-
-
-# Create arrays for training data and labels
-Training_Data_1, Labels_1 = [], []
-# Create arrays for training data and labels
-
-# Create a numpy array for training dataset 1
-for i, files in enumerate(onlyfiles_1):
-    image_path = data_path_1 + onlyfiles_1[i]
-    images = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-    Training_Data_1.append(np.asarray(images, dtype=np.uint8))
-    Labels_1.append(i)   
-
-
-Labels_1 = np.asarray(Labels_1, dtype=np.int32)
-
-
-Nitesh_model  = cv2.face_LBPHFaceRecognizer.create()
-Nitesh_model.train(np.asarray(Training_Data_1), np.asarray(Labels_1))
-print("Model trained sucessefully")
-
-```
-**Note:** You can download the code from the **/src** directory of this repository
+- Add your dataset path
 
 **Output:**
 
-![](./Images/model.png)
+![](./Images/Activity-2/model.png)
 
-#### Activity 2.1
-- Add your dataset path
+#### Activity 2 - Task
+
 - Install the required modules used in the code using `pip3 install <module_name>`
 - Read about **Numpy**
 
 
 
 
-### Activity 3 - Create Terraform Configuration file
+### Activity 3 - Get the details from AWS
+ 
+ Before we start creating the configuration file, we should know the following things:
+
+- Make sure **Terraform** is installed in your system, if not install it by following the step in **Pre-Requisite**
+- The **region** where you are going to launch the service, in this case, **EC2** service
+- The **AMI-id** of the instance which you will be using
+
+
+If you are not able to find the region name in AWS then:
+> refer to Images/Activity-3/region.png
+
+For getting the AMI-id, follow the following steps:
+
+- Login to you AWS account
+- Go to **EC2** service
+- Click on **Launch Instance** button
+    > refer to Images/Activity-3/launch_instance.png
+- Select the **AMI** that you want to work on and you will find the AMI-id just below the AMI
+    > refer to Images/ACtivity-3/ami.png `the highlited one in the image is the ami id`
+
+Now we have the required information, we can add these details in our terraform configuration file
+
+### Activity 3 - Task
+- Read about the Security group in AWS and try to create one
+
+
+### Activity 4 - Create Terraform Configuration file
+
+With the help of Terraform Configuration file, you can launch the resources in the cloud platform and also attach the resource like ebs volume is attached to the ec2, with the help of it you can launch the resources in the multiple cloud platform at once like you can launch resources in AWS(Amazon Web Service), GCP(Google Cloud Platform), etc.
+
+- To create the Terraform file to launch the AWS resources:
+> Copy the file from `Src/Activity-4/terraform.tf` and add the detail as mentioned
+- Add your region name
+- Add your ami-id
+- Add your instance name 
+- Add your Security group name that you have created in **Activity-3 Task**
+- Add your EBS volume name
+
+**Note:** We don't have to run the terraform file now because we need to integrate the terraform file with the face recognition program in the next activity
+
+#### Activity 4 -  Task
+
+- Try to Create an EBS volume of size 10 GB
+- Read about the syntax of terraform file
+
+### Activity 5 - Integrate Terraform file with the Face Recognition Program
+In this activity, we are going to integrate the terraform configuration file with the face recognition program so that our terraform file gets executed as soon as our face gets recognized.
+
+ To perform the activity:
+ >Copy the file from `Src/Activity-5/automate.ipynb` and paste it to the location where your terraform file is present
+
+- Execute the file by using the command **ctrl +** enter**
+
+As soon as the file gets executed you will see that your WebCam  get opened your face gets recognized as shown below
+
+![face recognized](./Images/Activity-5/face_recognized.jpeg)
+
+- Now as soon as our face gets recognized, the terraform configuration file gets executed and you will see the output as below
+
+```
+aws_instance.os1: Refreshing state... [id=i-07c3d200a11ce50e0]
+aws_ebs_volume.st1: Refreshing state... [id=vol-0e4577c488a197d1f]
+aws_volume_attachment.ebs_att: Refreshing state... [id=vai-991301012]
+aws_ebs_volume.st1: Destroying... [id=vol-0e4577c488a197d1f]
+aws_ebs_volume.st1: Destruction complete after 0s
+aws_instance.os1: Creating...
+aws_instance.os1: Still creating... [10s elapsed]
+aws_instance.os1: Still creating... [20s elapsed]
+aws_instance.os1: Still creating... [30s elapsed]
+aws_instance.os1: Creation complete after 33s [id=i-0d1e951772b6e049d]
+aws_ebs_volume.st1: Creating...
+aws_ebs_volume.st1: Still creating... [10s elapsed]
+aws_ebs_volume.st1: Creation complete after 11s [id=vol-06c89d52fc685bcea]
+aws_volume_attachment.ebs_att: Creating...
+aws_volume_attachment.ebs_att: Still creating... [10s elapsed]
+aws_volume_attachment.ebs_att: Still creating... [20s elapsed]
+aws_volume_attachment.ebs_att: Creation complete after 21s [id=vai-977186061]
+
+Apply complete! Resources: 3 added, 0 changed, 1 destroyed.
+
+```
+
+- Now you can check in the AWS that the resources that we have mentioned in the terraform configuration file are launched successfully
+
+> Instance launched successfully
+
+![instance](./Images/Activity-5/instance.png)
+
+> EBS volume of 5 GB as mentioned launched successfully
+
+![ebs](./Images/Activity-5/ebs.png)
+
+
+### Challenge:-
+
+> Try to launch S3 bucket to store the imgages in the AWS using Terraform
+
+
+### Conclusion
+
+Congratulations! You have completed all the activities. I hope it was fun and you learned something new. Now you can automate any cloud computing platform using Terraform and can play with OpenCV
+
+### References
+
+1. [Terraform Documentation](https://developer.hashicorp.com/terraform/intro)
+2. [AWS Services](https://aws.amazon.com/)
+3. [Face Detection with OpenCV](https://realpython.com/face-recognition-with-python/)

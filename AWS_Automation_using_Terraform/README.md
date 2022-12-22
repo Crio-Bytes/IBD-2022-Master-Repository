@@ -128,7 +128,7 @@ For getting the AMI-id, follow the following steps:
 - Select the **AMI** that you want to work on and you will find the AMI-id just below the AMI
     > refer to Images/ACtivity-3/ami.png `the highlited one in the image is the ami-id`
 
-Now we have the required information, we can add these details in our terraform configuration file
+*Now we have the required information, we can add these details in our terraform configuration file*
 
 ### Activity 3 - Task
 - Read about the Security group in AWS and try to create one

@@ -40,7 +40,7 @@ Before we start, there are some pre-requisite to this micro-byte that you must h
 4.  Install **OpenCV**
 > pip3 install opencv-python
 
-Note: Only after the installation of Python, you can install OpenCV
+**Note:** Only after the installation of Python, you can install OpenCV
 
 
 # Activities
@@ -61,7 +61,7 @@ To create the dataset we will make use of OpenCV, it will capture your face imag
 
 - Add your directory path
 
-#### Activity 1 - Task
+> #### Activity 1 - Task
 
 - Instead of capturing 100 images, capture 500 for better model training
 
@@ -99,7 +99,7 @@ To train the model we will use the dataset that we have created in **Activity-1*
 
 ![](./Images/Activity-2/model.png)
 
-#### Activity 2 - Task
+> #### Activity 2 - Task
 
 - Install the required modules used in the code using `pip3 install <module_name>`
 - Read about **Numpy**
@@ -126,11 +126,11 @@ For getting the AMI-id, follow the following steps:
 - Click on **Launch Instance** button
     > refer to Images/Activity-3/launch_instance.png
 - Select the **AMI** that you want to work on and you will find the AMI-id just below the AMI
-    > refer to Images/ACtivity-3/ami.png `the highlited one in the image is the ami id`
+    > refer to Images/ACtivity-3/ami.png `the highlited one in the image is the ami-id`
 
 Now we have the required information, we can add these details in our terraform configuration file
 
-### Activity 3 - Task
+> #### Activity 3 - Task
 - Read about the Security group in AWS and try to create one
 
 <br>
@@ -138,7 +138,7 @@ Now we have the required information, we can add these details in our terraform 
 ---
 ### Activity 4 - Create Terraform Configuration file
 ---
-With the help of Terraform Configuration file, you can launch the resources in the cloud platform and also attach the resource like ebs volume is attached to the ec2, with the help of it you can launch the resources in the multiple cloud platform at once like you can launch resources in AWS(Amazon Web Service), GCP(Google Cloud Platform), etc.
+With the help of Terraform Configuration file, you can launch the resources in the cloud platform and also attach the resource like EBS volume to the EC2, with the help of it you can launch the resources in the multiple cloud platform at once like you can launch resources in AWS(Amazon Web Service), GCP(Google Cloud Platform), etc.
 
 - To create the Terraform file to launch the AWS resources:
 > Copy the file from `Src/Activity-4/terraform.tf` and add the detail as mentioned
@@ -150,7 +150,7 @@ With the help of Terraform Configuration file, you can launch the resources in t
 
 **Note:** We don't have to run the terraform file now because we need to integrate the terraform file with the face recognition program in the next activity
 
-#### Activity 4 -  Task
+ > #### Activity 4 -  Task
 
 - Try to Create an EBS volume of size 10 GB
 - Read about the syntax of terraform file
@@ -208,9 +208,9 @@ Apply complete! Resources: 3 added, 0 changed, 1 destroyed.
 
 <br>
 
-### Micro-Challenge:-
+> #### Micro-Challenge:-
 
-> Try to launch S3 bucket to store the imgages in the AWS using Terraform
+- Try to launch S3 bucket to store the imgages in the AWS using Terraform
 
 
 

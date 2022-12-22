@@ -121,18 +121,15 @@ To train the model we will use the dataset that we have created in **Activity-1*
 
 **For getting the AMI-id, follow the following steps:**
 
-- Login to you AWS account
-
-- Go to **EC2** service
+- Login to your AWS account
+- Go to the **EC2** service
 - Click on **Launch Instance** button
-<br>
-    > refer to Images/Activity-3/launch_instance.png
+>refer to Images/Activity-3/launch_instance.png
 
 - Select the **AMI** that you want to work on and you will find the AMI-id just below the AMI
-<br>
-    > refer to Images/ACtivity-3/ami.png `the highlited one in the image is the ami-id`
+>refer to Images/ACtivity-3/ami.png `the highlited one in the image is the ami-id`
 
-*Now we have the required information, we can add these details in our terraform configuration file*
+*Now we have the required information, we can add these details to our terraform configuration file*
 
 ### Activity 3 - Task
 - Read about the Security group in AWS and try to create one
@@ -169,7 +166,7 @@ In this activity, we are going to integrate the terraform configuration file wit
  To perform the activity:
  >Copy the file from `Src/Activity-5/automate.ipynb` and paste it to the location where your terraform file is present
 
-- Execute the file by using the command **ctrl +** enter**
+- Execute the file by using the command **ctrl + enter**
 
 As soon as the file gets executed you will see that your WebCam  get opened your face gets recognized as shown below
 

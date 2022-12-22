@@ -117,17 +117,17 @@ To train the model we will use the dataset that we have created in **Activity-1*
 
 
 **If you are not able to find the region name in AWS then:**
-> refer to Images/Activity-3/region.png
+> refer to `Images/Activity-3/region.png`
 
 **For getting the AMI-id, follow the following steps:**
 
 - Login to your AWS account
 - Go to the **EC2** service
 - Click on **Launch Instance** button
->refer to Images/Activity-3/launch_instance.png
+>refer to `Images/Activity-3/launch_instance.png`
 
 - Select the **AMI** that you want to work on and you will find the AMI-id just below the AMI
->refer to Images/ACtivity-3/ami.png `the highlited one in the image is the ami-id`
+>refer to `Images/ACtivity-3/ami.png` the highlited one in the image is the ami-id
 
 *Now we have the required information, we can add these details to our terraform configuration file*
 

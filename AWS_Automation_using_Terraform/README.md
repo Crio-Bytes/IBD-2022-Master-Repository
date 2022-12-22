@@ -78,6 +78,8 @@ Instead of using a laptop or external webcam for face detection try to use your 
 
 > Instead of my face you will see your face captured and stored in the directory
 
+<br>
+
 ### Activity 2 - Train the Model
 In this activity, we are going to train the face recognition model so that it can recognize our face as soon as the web camera turns on
 
@@ -98,7 +100,7 @@ To train the model we will use the dataset that we have created in **Activity-1*
 - Install the required modules used in the code using `pip3 install <module_name>`
 - Read about **Numpy**
 
-
+<br>
 
 
 ### Activity 3 - Get the details from AWS
@@ -127,6 +129,7 @@ Now we have the required information, we can add these details in our terraform 
 ### Activity 3 - Task
 - Read about the Security group in AWS and try to create one
 
+<br>
 
 ### Activity 4 - Create Terraform Configuration file
 
@@ -146,6 +149,8 @@ With the help of Terraform Configuration file, you can launch the resources in t
 
 - Try to Create an EBS volume of size 10 GB
 - Read about the syntax of terraform file
+
+<br>
 
 ### Activity 5 - Integrate Terraform file with the Face Recognition Program
 In this activity, we are going to integrate the terraform configuration file with the face recognition program so that our terraform file gets executed as soon as our face gets recognized.
@@ -194,8 +199,9 @@ Apply complete! Resources: 3 added, 0 changed, 1 destroyed.
 
 ![ebs](./Images/Activity-5/ebs.png)
 
+<br>
 
-### Challenge:-
+### Micro-Challenge:-
 
 > Try to launch S3 bucket to store the imgages in the AWS using Terraform
 

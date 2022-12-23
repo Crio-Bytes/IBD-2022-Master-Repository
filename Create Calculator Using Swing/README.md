@@ -17,7 +17,7 @@ Set the background color of the Frame and buttons
 
 # How to Create a Frame:-
 Firstly make the object of a Frame.
-# What is Object:-
+## What is Object:-
 In real point of view,everything is called object.
 
 Each Object is based on the three steps:-

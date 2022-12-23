@@ -17,7 +17,7 @@
 ### Ans- Controller Layer 
 
 ## Let's start our Activity
-   ## Activty 1: Start a new project 
+   ## Activity 1: Start a new project 
     step 1. Move to the terminal tab and type  "npm init -y"
     This will create a new package.json file
     step 2. Now type "npm install express" in  your terminal
@@ -37,7 +37,7 @@
     ->These are defined under a key called "scripts"
     ->We can use these commands with npm like npm run <script-key>   
 
-  ## Activty 2: Steps to create an Express.js Application
+  ## Activity 2: Steps to create an Express.js Application
     Create a file in src folder named as "express.js" This will create a new package.json file
     step 1. Create an app instance using express
 ```js
@@ -60,7 +60,7 @@ app.listen(PORT,()=>{
 
  ## Now our server is started and runing and 
 
-   ## Activty 3: Creating a Singup Route and understanding the why we use express.json() middleware
+   ## Activity 3: Creating a Singup Route and understanding the why we use express.json() middleware
      step 1: Create a '/sgnup route' 
      step 2: Test signup api using Postman and send data in json format ({username,email,password})
 ```js
@@ -94,7 +94,7 @@ app.post('/signup',(req,res)=>{
 ### Q)Is it a good practice to create a route this way? 
     No, because now we have a single route so it's easy to maintain and debug but when we have 100s of routes then it becomes very hard to maintain and debug. So to solve this problem we divide our routes into different files.
 
-  ## Activty 4: Creating a Singup Route in a structed way 
+  ## Activity 4: Creating a Singup Route in a structured way 
      step 1: Create a 'routes' folder and inside it create 'auth.routes.js' file.
   ```js
   const router=require('express').Router();//The express.Router() function is used to create a new router object
@@ -157,7 +157,7 @@ app.use('/v1',authRoutes);// we use 'v1' as like every request which starts like
 ## Q.What is MongoDB and why it is used?
     MongoDB is an open source NoSQL database management program. NoSQL is used as an alternative to traditional relational databases. NoSQL databases are quite useful for working with large sets of distributed data. MongoDB is a tool that can manage document-oriented information, store or retrieve information.
 
-  ## Activty 5: Creating a model and storing user data
+  ## Activity 5: Creating a model and storing user data
      step 1: Create  a folder "model" and inside it create file "auth.model.js"
      step 2: Type "npm install mongoose" library
      step 3: Create a schema and then model and export it.
@@ -180,11 +180,11 @@ module.exports=authModel;
   
 ### Note -If there is any problem understanding the code pls refer to the src folder.
 
- ## Activty 6:Connect our express app with the model we just created in  Activity 5
+ ## Activity 6:Connect our express app with the model we just created in  Activity 5
      step 1: Import "mongoose " in express.js file
      step 2: Connect model wih our express app using "mongoose.connect()" method(promise)
 ```js
-//Activity 6
+//Activity 6 : Create a model and connect it with express app
 const express=require('express');
 const app=express();
  const authRoutes=require('./routes/auth.routes.js');
@@ -285,7 +285,7 @@ const signup=async(body)=>{
 
 ## Here we can see now our password is stored as hashed password not the same which is given by the Client/Browser.
 
- ## Activity 8:Creating Login Route ,Controller, and login method in service layer as we do for signup route
+ ## Activity 8:Creating Login Route ,Controller, and login method in service layer as we do for signup route and verify login
     step 1: We should create a login route to authenticate existing users.
       Similar to what we did for /v1/signup route
       ->create a route POST /v1/login for login as well

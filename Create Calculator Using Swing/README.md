@@ -36,6 +36,7 @@ The Program has a single Identity
 
 ### Example of an Object:-
 A car is an object.
+
 A table is an object.
 
 # Frame:-

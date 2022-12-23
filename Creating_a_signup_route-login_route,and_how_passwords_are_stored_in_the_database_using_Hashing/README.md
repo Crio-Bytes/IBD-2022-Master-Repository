@@ -376,7 +376,7 @@ const signup=async(body)=>{
       }
 
 ## This is the end of our learning
-## For any doubt abou the code pls see the src folder 
+## For any doubt about the code pls see the src folder 
 
 ## Some Questions which is very important
     1.Difference between dependencies and dev-dependencies in package.json file

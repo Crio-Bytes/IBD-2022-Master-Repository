@@ -151,6 +151,8 @@ Read about tags `<button>` , `<figure>` ,`<blockquote>` ,`<figcaption>` from [he
 
 - write Javascript function getQuote() which will fetch random quotes from an API and will change the DOM .
 
+You can see some code examples here [HTML](https://github.com/nsachin08/IBD-2022-Master-Repository/blob/nsachin08/Chrome_Browser_Extension%7C%2310/Chrome%20Browser%20Extension/src/Quotes/popup.html) , [CSS](https://github.com/nsachin08/IBD-2022-Master-Repository/tree/nsachin08/Chrome_Browser_Extension%7C%2310/Chrome%20Browser%20Extension/src/Quotes/css) , [JS](https://github.com/nsachin08/IBD-2022-Master-Repository/blob/nsachin08/Chrome_Browser_Extension%7C%2310/Chrome%20Browser%20Extension/src/Quotes/js/quotes.js) .
+
 <details>
 <summary>Curious Cat Questions ?</summary>
 

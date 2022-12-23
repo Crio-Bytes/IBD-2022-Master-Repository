@@ -106,6 +106,64 @@ console.log(error)
 
 ```
 
+# Activities
+
+## Activity 1
+
+1. Which of the following is not a state in Javascript?
+
+- [ ] pending
+- [ ] resolve
+- [ ] rejected
+- [ ] fulfilled
+
+<details>
+<summary>Click here to see the answer</summary>
+<b>resolve</b>
+Reason: resolve is a callback function which we pass as argument to Promise constructior.
+</details>
+
+2. What is the initial state of a Promise?
+
+- [ ] pending
+- [ ] rejected
+- [ ] fulfilled
+- [ ] none of the above
+
+<details>
+<summary>Click here to see the answer</summary>
+<b>pending</b>
+Reason: Initially the state is pending which later changes to either **fulfilled** when resolve is called or **rejected** when reject is called.
+</details>
+
+3. Which of the following is equivalent to using the then method with only a reject function?
+
+- [ ] catch method
+- [ ] finally method
+- [ ] then method with null as the first argument
+- [ ] reject method
+
+<details>
+<summary>Click here to see the answer</summary>
+
+<b>catch method</b>
+
+Reason:
+
+        promise.then(null, (error)=>{
+        console.log(error)
+        })
+
+this is equivalent to:
+
+        promise.catch((error)=>{
+            console.log(error)
+        })
+
+</details>
+
+&nbsp;
+
 ## Conclusion
 
 Promises are often used in JavaScript to handle asynchronous operations. In this micro byte we learned how to handle promise.

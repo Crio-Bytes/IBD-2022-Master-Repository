@@ -1,8 +1,8 @@
 # Introduction
 
-If you have a task that may take long time to complete, such as reading data from file or making a network request, you may want to perform the task concurrently, rather than sequentially. This can be achieved with help of Asynchronous programming. With help of Asynchronous programming you can continue running your program while waiting for task to complete.
+If you have a task that may take a long time to complete, such as reading data from a file or making a network request, you may want to perform the task concurrently, rather than sequentially. This can be achieved with help of Asynchronous programming. With help of Asynchronous programming, you can continue running your program while waiting for tasks to complete.
 
-In Javascript you can achieve Asynchronous programming with help of callbacks, Promises, and async/await. In this micro-byte we will learn:
+In JavaScript, you can achieve Asynchronous programming with help of callbacks, Promises, and async/await. In this micro-byte we will learn:
 
 1. What is Promise in JS?
 2. How to create a Promise?
@@ -13,7 +13,7 @@ In Javascript you can achieve Asynchronous programming with help of callbacks, P
 
 # What is Promise in JS?
 
-A Promise in JavaScript is an object that is used to represent outcome of an asynchronous operation. The outcome can either represent a failure or completion of an asynchronous operation.
+A Promise in JavaScript is an object that is used to represent the outcome of an asynchronous operation. The outcome can either represent a failure or the completion of an asynchronous operation.
 
 Imagine that you are waiting for a package to be delivered. You might tell the delivery person, "I promise to be home by 4:00 PM to receive the package." This promise represents your intention to fulfill a particular action (being at home by 4) at some point in the future.
 
@@ -21,7 +21,7 @@ Similarly, a Promise in JavaScript represents the intention to perform a particu
 
 ## How to create a Promise?
 
-To create a Promise in JavaScript, you can use the 'Promise' constructor which takes a fucntion as an argument. This function is called as executor function. The executor function takes two areguments, resolve and reject.
+To create a Promise in JavaScript, you can use the 'Promise' constructor which takes a function as an argument. This function is called as executor function. The executor function takes two arguments, resolve and reject.
 
 ```
 const promise = new Promise((resolve, reject) => {
@@ -30,11 +30,11 @@ const promise = new Promise((resolve, reject) => {
 
 ```
 
-The **new Promise()** constructor returns a promise object. The promise object is capable of informing whether the execution has been started, completed, or returned with an error. To store this information promise object has an property called state.
+The **new Promise()** constructor returns a promise object. The promise object is capable of informing whether the execution has been started, completed, or returned with an error. To store this information promise object has a property called state.
 
-state can have anyone of the following values:
+state can have following values:
 
-- pending: It represents initial state.
+- pending: It represents the initial state.
 - fulfilled: It represents that the operation was completed successfully, i.e the promise is **resolved**.
 - rejected: It represents that the operation failed, i.e promise is rejected.
 
@@ -42,9 +42,9 @@ So we can say that the state is initially **pending**, then changes to either **
 
 A promise is said to be settled if it is either fulfilled or rejected, but not pending.
 
-Apart from state, promise object has one more internal property called as result.
+Apart from state, the promise object has one more internal property called as result.
 
-result can have anyone of the following values:
+result can have following values:
 
 - undefined: Initially when state value is pending.
 - value: When resolve(value) is called.
@@ -72,7 +72,7 @@ promise.then(
 
 ```
 
-If you are only interested in succussful outcome, you can just pass one argument to it.
+If you are only interested in a successful outcome, you can just pass one argument to it.
 
 ```
 
@@ -120,7 +120,7 @@ console.log(error)
 <details>
 <summary>Click here to see the answer</summary>
 <b>resolve</b>
-Reason: resolve is a callback function which we pass as argument to Promise constructior.
+Reason: resolve is a callback function that we pass as an argument to the Promise constructor.
 </details>
 
 2. What is the initial state of a Promise?
@@ -164,11 +164,11 @@ this is equivalent to:
 
 ## Activity 2: Promise in practice
 
-We learned how to use promise to handle asynchronous operations. with that knowledge send a get request to [media post](https://jsonplaceholder.typicode.com/posts) and log the result, also add **catch()** to handle the errors.
+We learned how to use a promise to handle asynchronous operations. with that knowledge send a get request to [media post](https://jsonplaceholder.typicode.com/posts) and log the result, also add **catch()** to handle the errors.
 
 <details>
 <summary>Hint</summary>
-make use of new Promise constructor to send get request.
+make use of the new Promise constructor to send a get request.
 
         let promise = new Promise(function (resolve, reject) {
         let req = new XMLHttpRequest();
@@ -224,7 +224,7 @@ Note: This might not work in online JS editors as XMLHttpRequest is a built-in o
 
 ## Conclusion
 
-Promises are often used in JavaScript to handle asynchronous operations. In this micro byte we learned what are promise and different events to handle promise.
+Promises are often used in JavaScript to handle asynchronous operations. In this micro byte, we learned what is promise and different events to handle promise in JavaScript.
 
 ## Refrences
 

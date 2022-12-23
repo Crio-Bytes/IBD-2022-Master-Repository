@@ -162,11 +162,69 @@ this is equivalent to:
 
 </details>
 
+## Activity 2: Promise in practice
+
+We learned how to use promise to handle asynchronous operations. with that knowledge send a get request to [media post](https://jsonplaceholder.typicode.com/posts) and log the result, also add **catch()** to handle the errors.
+
+<details>
+<summary>Hint</summary>
+make use of new Promise constructor to send get request.
+
+        let promise = new Promise(function (resolve, reject) {
+        let req = new XMLHttpRequest();
+        req.open("GET", URL);
+        req.onload = function () {
+        if (req.status == 200) {
+            resolve(req.response);
+        } else {
+            reject("There is an Error!");
+        }
+        };
+        req.send();
+        });
+
+</details>
+
+<details>
+<summary>Hint 2</summary>
+use the then() & catch() to handle the promise object 
+</details>
+
+<details>
+<summary>answer</summary>
+
+    const URL = 'https://jsonplaceholder.typicode.com/posts'
+    let promise = new Promise(function (resolve, reject) {
+        let req = new XMLHttpRequest();
+        req.open("GET", URL);
+        req.onload = function () {
+        if (req.status == 200) {
+            resolve(req.response);
+        } else {
+            reject("There is an Error!");
+        }
+        };
+        req.send();
+    });
+
+    promise.then(
+        (result) => {
+            console.log({result}); // Log the result of 50 Pokemons
+        }).catch(
+        (error) => {
+            console.log(error)
+            // As the URL is a valid one, this will not be called.
+            console.log('We have encountered an Error!'); // Log an error
+    });
+
+Note: This might not work in online JS editors as XMLHttpRequest is a built-in object in web browsers.
+
+</details>
 &nbsp;
 
 ## Conclusion
 
-Promises are often used in JavaScript to handle asynchronous operations. In this micro byte we learned how to handle promise.
+Promises are often used in JavaScript to handle asynchronous operations. In this micro byte we learned what are promise and different events to handle promise.
 
 ## Refrences
 

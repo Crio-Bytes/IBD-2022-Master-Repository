@@ -19,6 +19,37 @@ Similarly, a Promise in JavaScript represents the intention to perform a particu
 
 ## How to create a Promise?
 
+To create a Promise in JavaScript, you can use the 'Promise' constructor which takes a fucntion as an argument. This function is called as executor function. The executor function takes two areguments, resolve and reject.
+
+```
+const promise = new Promise((resolve, reject) => {
+    // code you want to execute asynchronously
+})
+
+```
+
+The **new Promise()** constructor returns a promise object. The promise object is capable of informing whether the execution has been started, completed, or returned with an error. To store this information promise object has an property called state.
+
+state can have anyone of the following values:
+
+- pending: It represents initial state.
+- fulfilled: It represents that the operation was completed successfully, i.e the promise is **resolved**.
+- rejected: It represents that the operation failed, i.e promise is rejected.
+
+So we can say that the state is initially **pending**, then changes to either **fulfilled** when resolve is called or **rejected** when reject is called.
+
+A promise is said to be settled if it is either fulfilled or rejected, but not pending.
+
+Apart from state, promise object has one more internal property called as result.
+
+result can have anyone of the following values:
+
+- undefined: Initially when state value is pending.
+- value: When resolve(value) is called.
+- error: When reject(error) is called.
+
+![state](/PROMISES%20IN%20JAVASCRIPT/Images/state.png)
+
 ## Refrences
 
 [Javascript Info - Promise](https://javascript.info/promise-basics)

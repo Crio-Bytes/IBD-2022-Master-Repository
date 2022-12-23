@@ -1,0 +1,29 @@
+body {
+  background-color: #85dcb8;
+  font-family: "Quicksand", sans-serif;
+  color: #e27d60;
+}
+
+.container__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons__icons:hover {
+  background-color: #c38d9e;
+  border-radius: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.hacks {
+  font-size: 25px;
+  font-weight: bold;
+}

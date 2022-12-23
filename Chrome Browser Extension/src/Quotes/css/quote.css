@@ -1,0 +1,21 @@
+blockquote p {
+  margin: 0 auto;
+  padding: 15px;
+  background: transparent;
+  border-radius: 5px;
+  font-size: 25px;
+}
+blockquote p::before {
+  content: "\201C";
+}
+blockquote p::after {
+  content: "\201D";
+}
+
+#author {
+  float: right;
+}
+
+button {
+  float: right;
+}

@@ -105,18 +105,18 @@ GitHub actions are categorized as **Container actions and JavaScript actions**.
   <ol type="a">
   <li>Go to the <b>Repositories</b> tab on your GitHub profile and hit the <b>New</b> button to create a repository.</li>
 
-  ![New Repository](/assets/images/repo-creation.png)    
+  ![New Repository](images/repo-creation.png)    
 
   <li>Fill in all the necessary details and create the repository. </li>
 
-  ![details](/assets/images/details-new-repo.png)
+  ![details](images/details-new-repo.png)
 </ol>
 <li>Create a <b>.github</b> folder. </li>
 <li>Within the .github folder create a folder named <b>workflows</b>. </li>
 <li>Now create a workflow (lets name the workflow as action.yml) in the workflows folder so the final path of your workflow will be like <b>.github/workflows/action.yml.</b></li>
 </ol>
 
-![actions-file](/assets/images/actions-file.png)
+![actions-file](images/actions-file.png)
 
 ### Define when the workflow will be triggered
 1. Now, our first job is to add the `on` and `name` attributes to our workflow.
@@ -174,11 +174,11 @@ jobs:
 2. Commit and push the code into your repository , 
 open the **Actions tab** in your repository and see your actions running!
 
-![Actions-Tab](/assets/images/action-tab.png)   
+![Actions-Tab](images/action-tab.png)   
 
 See the actions running! : 
 
-![Actions-Running](/assets/images/actions-running.png)    
+![Actions-Running](images/actions-running.png)    
 
 ## Activities
 ### Activity 1
@@ -192,7 +192,7 @@ See the actions running! :
 
 
 Output of the job should be: 
-![Run](/assets/images/pr_output.png) 
+![Run](images/pr_output.png) 
 
 ### Activity 2
 * Create a workflow that prints "Hello world!" every 15 minutes.
@@ -203,7 +203,7 @@ Output of the job should be:
 The shortest cron job that can be scheduled in a free-tier GitHub account is **every 5 minutes.** 
 
 Scheduled Jobs in GitHub Actions looks like : 
-![Cron-Job](/assets/images/scheduled-job.png) 
+![Cron-Job](images/scheduled-job.png) 
 
 ## Activity 3
 * Create a workflow that will be triggered manually by workflow_dispatch event. 
@@ -217,13 +217,13 @@ Scheduled Jobs in GitHub Actions looks like :
 * **Step-1** : This step is printing the input message that we will provide through the `workflow_dispatch` event.
 
 After adding the **workflow_dispatch** event one can see the below form created on the **Actions** tab: 
-![Run](/assets/images/workflow_dispatch.png)  
+![Run](images/workflow_dispatch.png)  
 
 Type in any message you want ( here the default message is used ):
-![Run](/assets/images/workflow_dispatch_run.png)  
+![Run](images/workflow_dispatch_run.png)  
 
 Output of the Job named **Custom-1** :
-![Run](/assets/images/workflow_dispatch_output.png)  
+![Run](images/workflow_dispatch_output.png)  
 
 ### Activity 4
 * Create a workflow that is triggered whenever a `push` event occurs on the master branch .
@@ -247,7 +247,7 @@ The nested job can be defined as :
 * In the above workflow job named **Custom-3** requires successfull execution of jobs `job1` and `job2`.
 
 See the Dependency graph that GitHub provides :
-![Run](/assets/images/nested-jobs.png)  
+![Run](images/nested-jobs.png)  
 
 ## Summary
 ### What have we learnt?

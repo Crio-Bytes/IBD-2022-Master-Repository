@@ -138,6 +138,45 @@ void Widget::on_pushButton_clicked()
 **Create two textedit,two pushButton and set different color in background**
 # Activity: Working with Setting
 QSetting  help to save and restore Data in a ini file.Users normally expect an application to remember its settings (window sizes and positions, options, etc.) across sessions. This information is often stored in the system registry on Windows, and in property list files on macOS and iOS. On Unix systems, in the absence of a standard, many applications (including the KDE applications) use INI text files.
+**Using saveButton to saveColor**
+```
+void Widget::savecolor(QString key, QColor color)
+{
+    int red=color.red();
+    int green=color.green();
+    int blue=color.blue();
+    QSettings settings("Limit","settingsDemo");
+    settings.beginGroup("ButtonGroup");
+    settings.setValue(key+"r",red);
+    settings.setValue(key+"g",green);
+    settings.setValue(key+"b",blue);
+            settings.endGroup();
+
+}
+```
+**Using loadButton to loadColor**
+```
+void Widget::on_LoadButton_clicked()
+{
+    setloader("oneButton",0,ui->oneButton);
+        setloader("twoButton",1,ui->twoButton);
+        setloader("threeButton",2,ui->threeButton);
+        setloader("fourButton",3,ui->fourButton);
+        setloader("fiveButton",4,ui->fiveButton);
+       setloader("sixButton",5,ui->sixButton);
+        setloader("sevenButton",6,ui->sevenButton);
+        setloader("eightButton",7,ui->eightButton);
+        setloader("nineButton",8,ui->nineButton);
+
+}
+```
+# Summary
+After completing this module you will able to create normal gui application and now try to savecolor project by yourself.
+# Reference:
+* https://doc.qt.io/qt-6/qsettings.html
+* https://doc.qt.io/qt-6/qtgui-index.html
+
+
 
 
 

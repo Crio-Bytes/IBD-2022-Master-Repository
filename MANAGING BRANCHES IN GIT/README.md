@@ -221,17 +221,58 @@ Using feature-based branching can help you manage changes to your codebase more 
 
 ## Trunk-based development
 
-Trunk-based development is a branching strategy in which all development work is done in the main branch, also known as the "trunk." This approach favors small, frequent commits over long-lived branches and encourages developers to merge their changes into the main branch as soon as they are ready.
+Trunk-based development is a branching strategy in which all development work is done in the main branch. This approach favors small, frequent commits over long-lived branches and encourages developers to merge their changes into the main branch as soon as they are ready.
 
 Trunk-based development can help reduce the complexity of version control, as there are fewer branches to manage and merge. It also makes it easier to review and integrate changes, as they are committed to the main branch on a regular basis.
 
 ![trunk-based](/MANAGING%20BRANCHES%20IN%20GIT/Images/trunkBased.png)
 [Image from [optimizely](https://www.optimizely.com/optimization-glossary/trunk-based-development/)]
 
-## Activity 3:
+## Activity 3
+
+A team is working on a complex new feature for their software application using trunk-based development, as they prefer to make small, frequent commits rather than working on long-lived branches.
+
+As they are working on the feature, they realize it will take longer than expected to complete. To avoid affecting the main branch while they continue to work on the feature, they need a temporary solution. What do you think they can do?
+
+<details>
+<summary>Hint</summary>
+
+Till the feature is complete they can hide the feature from the user interface.
+
+</details>
+
+<details>
+<summary>Solution</summary>
+The team can make use of feature toggle to temporarily disable a feature in the main branch while they continue to work on it.
+
+Feature toggle are often used in conjunction with trunk-based development to allow teams to continue working on new features without affecting the main branch.
+
+</details>
+
+## Activity 4
+
+You now know what feature-based and trunk-based development is. Which one do you think is more suitable for your projects?
+
+> Both feature-based development and trunk-based development have theor own strengths and weaknesses, the choice will depend on your project goals and priorities.
+
+Let us see some key difference between trunk-based and feature-based development
+
+- Feature-based development:
+
+  - Pros: Allows developers to work on new features in isolation, which can be helpful for complex or risky features. Can also make it easier to review and test changes before they are merged into the main branch.
+
+  - Cons: Can lead to longer development cycles, as developers may need to spend more time merging changes back into the main branch. Can also lead to conflicts and merge conflicts, as multiple developers may be working on different features at the same time and need to merge their changes together.
+
+- Trunk-based development:
+
+  - Pros: Emphasizes continuous integration and continuous delivery, which can lead to more efficient development cycles. Can also make it easier to review and test changes, as developers are encouraged to make small, frequent commits.
+
+  - Cons: May not be the best approach for large, complex features that require a lot of development and testing. Can also make it more challenging to manage changes, as developers are working directly on the main branch.
 
 ## Resources
 
 [branch-by-abstraction](https://paulhammant.com/blog/branch_by_abstraction.html)
 
 [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+
+[trunk-based-development](https://www.optimizely.com/optimization-glossary/trunk-based-development/)

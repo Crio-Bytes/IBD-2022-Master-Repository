@@ -72,6 +72,8 @@ MainWindow::~MainWindow()
 
 ```
 **Another Method to create Signal and slot**
+![Singalandslot](https://user-images.githubusercontent.com/120928669/209438440-85d880bc-ef6b-4769-baba-767d5ddc20c2.png)
+
 
 
 

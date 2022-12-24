@@ -137,6 +137,7 @@ void Widget::on_pushButton_clicked()
 ### Task:
 **Create two textedit,two pushButton and set different color in background**
 # Activity: Working with Setting
+QSetting  help to save and restore Data in a ini file.Users normally expect an application to remember its settings (window sizes and positions, options, etc.) across sessions. This information is often stored in the system registry on Windows, and in property list files on macOS and iOS. On Unix systems, in the absence of a standard, many applications (including the KDE applications) use INI text files.
 
 
 

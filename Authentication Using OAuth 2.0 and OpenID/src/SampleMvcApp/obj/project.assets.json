@@ -469,11 +469,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Software Development\\Crio.Do\\IBD-2022\\IBD-2022-Master-Repository\\SampleMvcApp\\SampleMvcApp.csproj",
+      "projectUniqueName": "D:\\Software Development\\Crio.Do\\IBD-2022\\IBD-2022-Master-Repository\\Authentication Using OAuth 2.0 and OpenID\\src\\SampleMvcApp\\SampleMvcApp.csproj",
       "projectName": "SampleMvcApp",
-      "projectPath": "D:\\Software Development\\Crio.Do\\IBD-2022\\IBD-2022-Master-Repository\\SampleMvcApp\\SampleMvcApp.csproj",
+      "projectPath": "D:\\Software Development\\Crio.Do\\IBD-2022\\IBD-2022-Master-Repository\\Authentication Using OAuth 2.0 and OpenID\\src\\SampleMvcApp\\SampleMvcApp.csproj",
       "packagesPath": "C:\\Users\\Nitin\\.nuget\\packages\\",
-      "outputPath": "D:\\Software Development\\Crio.Do\\IBD-2022\\IBD-2022-Master-Repository\\SampleMvcApp\\obj\\",
+      "outputPath": "D:\\Software Development\\Crio.Do\\IBD-2022\\IBD-2022-Master-Repository\\Authentication Using OAuth 2.0 and OpenID\\src\\SampleMvcApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

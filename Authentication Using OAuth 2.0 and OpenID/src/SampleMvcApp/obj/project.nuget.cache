@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ceRUxl+kA6ckSjuDwGd0u969SawJUBruaEy+hUs09i2IixwaD1OO2eBZsIJWtFCgli8sS8AINLk54Tz7ese1hw==",
+  "dgSpecHash": "NBU0T+05o8EM9M5TF2iVpcUkb36gawyBiN1I0EdZSlGMSTIaRfJIUIwbWgViseZzri07dN4xOvwZamsVCTnnCQ==",
   "success": true,
-  "projectFilePath": "D:\\Software Development\\Crio.Do\\IBD-2022\\IBD-2022-Master-Repository\\SampleMvcApp\\SampleMvcApp.csproj",
+  "projectFilePath": "D:\\Software Development\\Crio.Do\\IBD-2022\\IBD-2022-Master-Repository\\Authentication Using OAuth 2.0 and OpenID\\src\\SampleMvcApp\\SampleMvcApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nitin\\.nuget\\packages\\auth0.aspnetcore.authentication\\1.0.3\\auth0.aspnetcore.authentication.1.0.3.nupkg.sha512",
     "C:\\Users\\Nitin\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.17\\microsoft.aspnetcore.authentication.openidconnect.5.0.17.nupkg.sha512",

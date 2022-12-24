@@ -100,6 +100,8 @@ void Widget::on_pushButton_clicked()
     ui->label->setText(text);
 }
 ```
+### Task:
+**Add images in label after clicking pushButton**
 
 
 

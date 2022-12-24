@@ -297,11 +297,9 @@ If you want to practice more questions here is the link to more problems on hash
 >
 
 ## **Summary**
-___
 After going through this microbyte you are now good enough to use the hashing methods in your programs for your applications and DSA problems.
 
 ## Biblography
-___
 - https://www.geeksforgeeks.org/what-is-hashing/?ref=lbp
 - https://www.tutorialspoint.com/state-the-advantages-and-disadvantages-of-collision-resolution-strategies
 - https://medium.com/@codingfreak/hashing-problems-in-data-structures-c41b77a5119a

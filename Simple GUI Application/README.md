@@ -48,6 +48,7 @@ In this project you will learn how to use QSettiong to save color in button of w
 ![image](https://user-images.githubusercontent.com/120928669/209433055-774e07a3-7033-4c1c-9e2e-fd8c2a997019.png)
 ## Activity 2: Working with singals and slots
 Signals and slots are used for communication with object.In GUI programming, when we change one widget, we often want another widget to be notified. More generally, we want objects of any kind to be able to communicate with one another. For example, if a user clicks a Close button, we probably want the window's close() function to be called.
+
 **Connctin of pushButton with widget**
 ```
 #include "mainwindow.h"
@@ -70,6 +71,7 @@ MainWindow::~MainWindow()
 }
 
 ```
+**Another Method to create Signal and slot**
 
 
 

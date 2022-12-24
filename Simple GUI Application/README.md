@@ -46,6 +46,7 @@ In this project you will learn how to use QSettiong to save color in button of w
 **Create Widget with push button like this**
 
 ![image](https://user-images.githubusercontent.com/120928669/209433055-774e07a3-7033-4c1c-9e2e-fd8c2a997019.png)
+## Activity 2: Working with singals and slots
 
 
 

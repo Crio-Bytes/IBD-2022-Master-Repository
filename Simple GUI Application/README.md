@@ -73,6 +73,35 @@ MainWindow::~MainWindow()
 ```
 **Another Method to create Signal and slot**
 ![Singalandslot](https://user-images.githubusercontent.com/120928669/209438440-85d880bc-ef6b-4769-baba-767d5ddc20c2.png)
+**In widget.cpp file your slot is created now you can perform your action with pushButton**
+**Change text in Label after clicking pushButtton**
+
+```
+#include "widget.h"
+#include "ui_widget.h"
+#include<QPushButton>
+#include<QDebug>
+Widget::Widget(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::Widget)
+{
+    ui->setupUi(this);
+
+}
+Widget::~Widget()
+{
+    delete ui;
+}
+void Widget::on_pushButton_clicked()
+{
+    //Here you write code and  which action you want to perform
+    //Take example you want change text in Label after clicking pushButton
+    QString text="Qt World";
+    ui->label->setText(text);
+}
+
+
+'''
 
 
 

@@ -27,6 +27,14 @@ In this project you will learn how to use QSettiong to save color in button of w
 #### Reference:https://courses.qt.io/how-to-install-qt/index.html#/lessons/ptxZnFe71ghVgm7j-4V95TrBxp25gi6X
 # Activities
 ## Activity 1:Play wih widget
+**Steps to create demo project folder**
+*  **Click on create project**
+*  **Choose of templates**
+*  **Click on Application(Qt)->Qt Widgets Application**
+*  **Click on choose Button**
+*  **Save project name**
+*  **Inside form folder open widget.ui**
+
 
 
 

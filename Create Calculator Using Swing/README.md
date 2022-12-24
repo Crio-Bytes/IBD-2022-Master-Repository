@@ -85,6 +85,16 @@ Background color is important because to chage the color of frame, button, Label
 Action Listener is a interface. The Listener interface for receiving action events. The class that is interested in processing an action event implements this interface, and the object created with that class is registered with a component's ** addActionListener ** method. When the action event occurs, that object's ** actionPerformed method ** is invoked. 
 
 Implements the ActionListener interface and override the ** ActionPerformed(ActionEvent e) ** method to write the logic inside that method and then registration of that code.  
-> Implementation of ActionListener Interface in the following diagram:
+> Implementation of ActionListener Interface in the following code:
 
-![Captures 24-12-2022 01_33_12](https://user-images.githubusercontent.com/104218088/209401098-54da3f83-68d0-4d0b-9efc-d16bf8f07450.png)
+```java
+Class A implements ActionListener
+{
+//override the ActionPerformed method
+public void actionPerformed(ActionEvent e)
+{
+logic will write inside the method
+}
+}
+```
+

@@ -35,6 +35,20 @@ In this project you will learn how to use QSettiong to save color in button of w
 *  **Save project name**
 *  **Inside form folder open widget.ui**
 
+![image](https://user-images.githubusercontent.com/120928669/209432581-a13ae8ab-77ca-49ff-b837-2290234b8b3b.png) 
+* **Drag and drop the label in form,pushButton ,write Hello World in label**
+
+
+**Output of demo project**
+
+![image](https://user-images.githubusercontent.com/120928669/209432706-f1c82c06-5036-448b-892e-953357528f09.png)
+### Task
+**Create Widget with push button like this**
+
+![image](https://user-images.githubusercontent.com/120928669/209433055-774e07a3-7033-4c1c-9e2e-fd8c2a997019.png)
+
+
+
 
 
 

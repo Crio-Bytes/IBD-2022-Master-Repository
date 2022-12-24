@@ -21,7 +21,12 @@ In this project you will learn how to use QSettiong to save color in button of w
 * **Click on load button.Widget fill with save color or default color with black**
 
 ![image](https://user-images.githubusercontent.com/120928669/209431513-012a2c03-7a3c-4515-889d-5ec8a4c896b6.png)
-# Prerequisite
+# Prerequisites
+* **Basic knowledge of c++**
+* **How to install Qt**
+#### Reference:https://courses.qt.io/how-to-install-qt/index.html#/lessons/ptxZnFe71ghVgm7j-4V95TrBxp25gi6X
+# Activities
+## Activity 1:Play wih widget
 
 
 

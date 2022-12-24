@@ -102,6 +102,8 @@ void Widget::on_pushButton_clicked()
 ```
 ### Task:
 **Add images in label after clicking pushButton**
+# Activity 3:Working with QColorDialog
+
 
 
 

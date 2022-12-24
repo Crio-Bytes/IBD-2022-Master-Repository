@@ -173,13 +173,23 @@ HashSet has a variety of Other Topics. These are available for reading.
 <details>
 <summary> Hint </summary>
 
+    Use add() method
+</details>
+<details>
+<summary> Solution </summary>
+
     Using the add() method, you can add a new item to a hash set. This method will take as an argument the new item and add it to the set.
 </details>
  
 2. Can all items from one hash set be copied to another? If so, how so?
  
 <details>
-<summary> Hint </summary> 
+<summary> Hint </summary>
+
+    Use addAll() method
+</details>
+<details>
+<summary> Solution </summary> 
  
     Yes,The addAll() method can be used to do this.
 </details>
@@ -188,6 +198,11 @@ HashSet has a variety of Other Topics. These are available for reading.
 
 <details>
 <summary> Hint </summary>
+
+    Use an Iterator
+</details>
+<details>
+<summary> Solution </summary>
  
     The best approach to iterate over a hash set is to use an iterator. This allows you to go over each element in the set one at a time without worrying about the order in which they are stored.
  </details>
@@ -196,6 +211,11 @@ HashSet has a variety of Other Topics. These are available for reading.
 
 <details>
 <summary> Hint </summary>
+
+    Any type of set will not Stored any Duplicate Elements.
+</details>
+<details>
+<summary> Solution </summary>
     When you add a duplicate element to a hash set, it is simply ignored. Duplicate elements will not be stored in the hash set.
  </details>
  

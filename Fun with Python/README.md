@@ -107,7 +107,7 @@ Run the following command in cmd or command prompt to instal Pyttsx3:
 
 
     
-Copy the file from **/src/Activity-2/PDF_To_Audio_File_Conversion.ipynb** 
+Copy the file from **[PDF To Audio File Conversion](./src/Activity-2/PDF_To_Audio_File_Conversion.ipynb)** 
 
 fill the required data as mentioned there.
 
@@ -159,7 +159,7 @@ Run the following command in **cmd** or **command prompt** to instal opencv:
     pip install tkinter
 
     
-copy the file from **/src/Activity-3/Downloading_Videos_from_YouTube.ipynb**
+copy the file from **[Downloading Videos from YouTube](./src/Activity-3/Downloading_Videos_from_YouTube.ipynb)**
 
 - fill the required data as mentioned there.
 

@@ -131,9 +131,13 @@ void Widget::on_pushButton_clicked()
     ui->textEdit->setPalette(p);
 }
 ```
-
 **Output**
+
 ![image](https://user-images.githubusercontent.com/120928669/209439723-e3c455a2-a846-4170-b1e7-868cc825a3b2.png)
+### Task:
+**Create two textedit,two pushButton and set different color in background**
+# Activity: Working with Setting
+
 
 
 

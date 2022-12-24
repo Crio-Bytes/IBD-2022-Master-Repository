@@ -2,7 +2,7 @@
 Qt is a cross-platform application development framework for desktop, embedded and mobile. Supported Platforms include Linux, OS X, Windows, VxWorks, QNX, Android, iOS, BlackBerry, Sailfish OS and others.Qt is not a programming language on its own. It is a framework written in C++. A preprocessor, the MOC (Meta-Object Compiler), is used to extend the C++ language with features like signals and slots. Before the compilation step, the MOC parses the source files written in Qt-extended C++ and generates standard compliant C++ sources from them. Thus the framework itself and applications/libraries using it can be compiled by any standard compliant C++ compiler like Clang, GCC, ICC, MinGW and MSVC.
 #### Reference:https://wiki.qt.io/About_Qt
 # About Project
-In this project you will learn how to use QSettiong to save color in button of widget.Once you open the widget  click any button to save color any color,close the widget.Again open it click on load  button you will regain the saved color.
+In this project you will learn how to use QSettiong to save color in button of widget. Once you open the widget  click any button to save color any color,close the widget. Again open it click on load  button you will regain the saved color.
 * **First View of Widget**
 
 ![image](https://user-images.githubusercontent.com/120928669/209430794-12356762-8ab3-45b5-93f5-7689e4d7b3c8.png)
@@ -24,9 +24,9 @@ In this project you will learn how to use QSettiong to save color in button of w
 # Prerequisites
 * **Basic knowledge of c++**
 * **How to install Qt**
-#### Reference:https://courses.qt.io/how-to-install-qt/index.html#/lessons/ptxZnFe71ghVgm7j-4V95TrBxp25gi6X
+#### Reference: https://courses.qt.io/how-to-install-qt/index.html#/lessons/ptxZnFe71ghVgm7j-4V95TrBxp25gi6X
 # Activities
-## Activity 1:Play wih widget
+## Activity 1: Play wih widget
 **Steps to create demo project folder**
 *  **Click on create project**
 *  **Choose of templates**
@@ -49,7 +49,7 @@ In this project you will learn how to use QSettiong to save color in button of w
 ## Activity 2: Working with singals and slots
 Signals and slots are used for communication with object.In GUI programming, when we change one widget, we often want another widget to be notified. More generally, we want objects of any kind to be able to communicate with one another. For example, if a user clicks a Close button, we probably want the window's close() function to be called.
 
-**Connctin of pushButton with widget**
+**Connection of pushButton with widget**
 ```
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -102,7 +102,7 @@ void Widget::on_pushButton_clicked()
 ```
 ### Task:
 **Add images in label after clicking pushButton**
-# Activity 3:Working with QColorDialog
+# Activity 3: Working with QColorDialog
 The color dialog's function is to allow users to choose colors. For example, you might use this in a drawing program to allow the user to set the brush color.**Here You will set background color in text edit using pushButton**
 #### Reference:https://doc.qt.io/qt-6/qcolordialog.html#details
 ```#include "widget.h"
@@ -136,7 +136,7 @@ void Widget::on_pushButton_clicked()
 ![image](https://user-images.githubusercontent.com/120928669/209439723-e3c455a2-a846-4170-b1e7-868cc825a3b2.png)
 ### Task:
 **Create two textedit,two pushButton and set different color in background**
-# Activity: Working with Setting
+# Activity 4: Working with Setting
 QSetting  help to save and restore Data in a ini file.Users normally expect an application to remember its settings (window sizes and positions, options, etc.) across sessions. This information is often stored in the system registry on Windows, and in property list files on macOS and iOS. On Unix systems, in the absence of a standard, many applications (including the KDE applications) use INI text files.
 **Using saveButton to saveColor**
 ```

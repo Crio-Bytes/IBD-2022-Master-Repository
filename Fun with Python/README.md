@@ -49,7 +49,7 @@ Run the following command in **cmd** or **command prompt** to instal opencv:
     pip install opencv-python
 
     
-Copy the file from **/src/Activity-1/incredible_photos_into_a_pencil_drawing.ipynb** 
+Copy the file from **[Incredible Photos into a Pencil Drawing](./src/Activity-1/incredible_photos_into_a_pencil_drawing.ipynb)** 
 
 fill the required data as mentioned
 

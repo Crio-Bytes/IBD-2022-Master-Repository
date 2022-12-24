@@ -103,7 +103,7 @@ void Widget::on_pushButton_clicked()
 ### Task:
 **Add images in label after clicking pushButton**
 # Activity 3:Working with QColorDialog
-The color dialog's function is to allow users to choose colors. For example, you might use this in a drawing program to allow the user to set the brush color.Here You will set background color in text edit using pushButton
+The color dialog's function is to allow users to choose colors. For example, you might use this in a drawing program to allow the user to set the brush color.**Here You will set background color in text edit using pushButton**
 #### Reference:https://doc.qt.io/qt-6/qcolordialog.html#details
 ```#include "widget.h"
 #include "ui_widget.h"
@@ -131,6 +131,7 @@ void Widget::on_pushButton_clicked()
     ui->textEdit->setPalette(p);
 }
 ```
+
 **Output**
 ![image](https://user-images.githubusercontent.com/120928669/209439723-e3c455a2-a846-4170-b1e7-868cc825a3b2.png)
 

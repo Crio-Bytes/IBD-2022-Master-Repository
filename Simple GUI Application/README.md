@@ -1,0 +1,5 @@
+# Introduction 
+Qt is a cross-platform application development framework for desktop, embedded and mobile. Supported Platforms include Linux, OS X, Windows, VxWorks, QNX, Android, iOS, BlackBerry, Sailfish OS and others.Qt is not a programming language on its own. It is a framework written in C++. A preprocessor, the MOC (Meta-Object Compiler), is used to extend the C++ language with features like signals and slots. Before the compilation step, the MOC parses the source files written in Qt-extended C++ and generates standard compliant C++ sources from them. Thus the framework itself and applications/libraries using it can be compiled by any standard compliant C++ compiler like Clang, GCC, ICC, MinGW and MSVC.
+#### Reference:https://wiki.qt.io/About_Qt
+# About Project
+In this project you will learn how to use QSettiong to save color in button of widget.Once you open the widget  click any button to save color any color,close the widget.Again open it click on load  button you will regain the saved color.

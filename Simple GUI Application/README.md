@@ -105,8 +105,33 @@ void Widget::on_pushButton_clicked()
 # Activity 3:Working with QColorDialog
 The color dialog's function is to allow users to choose colors. For example, you might use this in a drawing program to allow the user to set the brush color.
 #### Reference:https://doc.qt.io/qt-6/qcolordialog.html#details
+```#include "widget.h"
+#include "ui_widget.h"
+#include<QColorDialog>
+#include<QPushButton>
+#include<QPalette>
+
+Widget::Widget(QWidget *parent)
+    : QWidget(parent)
+    , ui(new Ui::Widget)
+{
+    ui->setupUi(this);
+
+}
+Widget::~Widget()
+{
+    delete ui;
+}
+void Widget::on_pushButton_clicked()
+{
+    QColor color=QColorDialog::getColor(Qt::white,this,tr("selected color"));
+    qDebug()<<color;
+    QPalette p=ui->textEdit->palette();
+    p.setColor(QPalette::Base,color);
+    ui->textEdit->setPalette(p);
+}
 ```
-```
+**Output**
 
 
 

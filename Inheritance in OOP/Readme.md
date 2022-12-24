@@ -27,41 +27,91 @@ Your parents own properties (like money, home, land, moral values etc) and they 
 4. Hierarchical Inheritance
 5. Hybrid Inheritance
 
-## Single Inheritance
+# Activity
+
+## Activity 1 - Single Inheritance
 In this type of Inheritance, there is only one parent class and only child class which can resuse the properties of the parents class.
 
-Example is depicted in the picture below.
+> Refer to the `Single Inheritance` diagram in the repo for proper understanding.
 
-## Multiple Inheritance
+OK, Now let's undertand this with the help of a code which you will be implementing by your own.
+All you have to do is write a JAVA Code implementing Single Inheritance.
+
+<details>
+<summary>Hint</summary>
+You will have to use <b>extends</b> keyword.
+</details>
+
+<details>
+<summary>Solution</summary>
+
+> Refer to the `Single Inheritance` code in the repo for guidance.
+</details>
+
+## Activity 2 - Multiple Inheritance
 In this type of Inheritance, there is a class which inherits a properties of the parent class and then again a child class which inherits the properties of both the parent class.
 
 Note:-
 - There can be as much parent class as you want.
 - In Java there is no concept of Multiple Inheritance, hence to achieve it we take help of Interfaces
 
-Example is depicted in the picture below.
+<details>
+<summary>Hint</summary>
+You need to use <b>Interface</b> and <b>extends </b>keyword.
+</details>
 
-## Multilevel Inheritance
+<details>
+<summary>Solution</summary>
+
+> Refer to the `Multiple Inheritance` diagram in the repo for proper understanding.
+</details>
+
+## Activity 3 - Multilevel Inheritance
 In this type of Inheritance, there are two or more parent class (isolated from each other) and a child class which can access the properties of both the parent class.
 
-Example is depicted in the picture below.
+<details>
+<summary>Hint</summary>
+Create a child class extending base class and create another child class extending the first child class.
+</details>
 
-## Hierarchical Inheritance
+<details>
+<summary>Solution</summary>
+
+> Refer to the `Multilevel Inheritance` diagram in the repo for proper understanding.
+</details>
+
+## Activity 4 - Hierarchical Inheritance
 In this type of Inheritance, there is one parent class with which multiple child class gets derived and all the child classes are isolated from each other.
 
-Example is depicted in the picture below.
+> Refer to the `Hierarchical Inheritance` diagram in the repo for proper understanding.
 
-## Hybrid Inheritance
+<details>
+<summary>Hint</summary>
+Create multiple child class extending one base class.
+</details>
+
+<details>
+<summary>Solution</summary>
+
+> Refer to the `Hierarchical Inheritance` diagram in the repo for proper understanding.
+</details>
+
+## Activity 5 - Hybrid Inheritance
 This kind of Inheritance is basically a combination of all the other types of the inheritance.
 
 Note:- Again to acheive it, in Java we will require to use the Interface.
 
-Example is depicted in the picture below.
+> Refer to the `Hybrid Inheritance` diagram in the repo for proper understanding.
 
-# Activity
+<details>
+<summary>Solution</summary>
 
-## Activity 1
+> Refer to the `Hybrid Inheritance` diagram in the repo for proper understanding.
+</details>
 
-## Activity 2
+- Reference - https://beginnersbook.com/2013/10/hybrid-inheritance-java-program/
 
-## Activity 3
+# Summary
+We have learnt the concept of Inheritance, its types and also looked over its code samples. Inheritance in one of the most important pillar of the Object Oriented Programming. Make sure to get it thoroughly.
+
+Happy Coding !!

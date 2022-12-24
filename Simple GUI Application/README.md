@@ -103,6 +103,10 @@ void Widget::on_pushButton_clicked()
 ### Task:
 **Add images in label after clicking pushButton**
 # Activity 3:Working with QColorDialog
+The color dialog's function is to allow users to choose colors. For example, you might use this in a drawing program to allow the user to set the brush color.
+#### Reference:https://doc.qt.io/qt-6/qcolordialog.html#details
+```
+```
 
 
 

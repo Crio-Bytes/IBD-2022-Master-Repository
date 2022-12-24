@@ -23,6 +23,9 @@ Some key features of Git are:
 
 - Collaboration: Git makes it easy for developers to collaborate on projects, as it allows them to track and merge changes made by different team members.
 
+![vs-code](/MANAGING%20BRANCHES%20IN%20GIT/Images/vsCode.jpeg)
+Photo by <a href="https://unsplash.com/@yancymin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yancy Min</a> on <a href="https://unsplash.com/photos/842ofHC6MaI?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
 ## What is a branch in git?
 
 A branch is a separate line of development. When you create a new branch, you are creating a copy of the code at that point in time, which you can then modify independently of the main branch.
@@ -110,6 +113,9 @@ You can switch to a new branch using
 
 Feature-based branching is a branching strategy in which a separate branch is created for each new feature or task. This allows developers to work on new feature without the main branch, this makes it easier to review and merge changes when they are ready.
 
+![feature-based](/MANAGING%20BRANCHES%20IN%20GIT/Images/featureBased.png)
+[Image from [optimizely](https://www.optimizely.com/optimization-glossary/trunk-based-development/)]
+
 ## Activity 2:
 
 To understand feature-based development better, let us work on one example.
@@ -126,8 +132,6 @@ To understand feature-based development better, let us work on one example.
       cd to-do
 
 </details>
-
-&nbsp;
 
 2. Create a new branch for login
 
@@ -150,8 +154,6 @@ To understand feature-based development better, let us work on one example.
       git checkout login
 
 </details>
-
-&nbsp;
 
 3. Make changes and push the branch
 
@@ -216,3 +218,20 @@ You can use git branch command followed by the -d flag and the name of the branc
 </details>
 
 Using feature-based branching can help you manage changes to your codebase more efficiently, and makes it easier to review and merge changes when they are ready.
+
+## Trunk-based development
+
+Trunk-based development is a branching strategy in which all development work is done in the main branch, also known as the "trunk." This approach favors small, frequent commits over long-lived branches and encourages developers to merge their changes into the main branch as soon as they are ready.
+
+Trunk-based development can help reduce the complexity of version control, as there are fewer branches to manage and merge. It also makes it easier to review and integrate changes, as they are committed to the main branch on a regular basis.
+
+![trunk-based](/MANAGING%20BRANCHES%20IN%20GIT/Images/trunkBased.png)
+[Image from [optimizely](https://www.optimizely.com/optimization-glossary/trunk-based-development/)]
+
+## Activity 3:
+
+## Resources
+
+[branch-by-abstraction](https://paulhammant.com/blog/branch_by_abstraction.html)
+
+[gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)

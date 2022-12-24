@@ -36,14 +36,13 @@ I am using Jupyter notenook there.
 <hr/> 
 This script is amazing. With a few lines of code, you can use it to turn your incredible photographs into pencil sketches. This script may be used to impress someone by giving them your pencil sketch.
 
-&nbsp;
 
 ***OpenCV*** will be used to develop this script.
 
 ## what is ***Opencv***?
 A Python package called **Opencv** is made to help with computer vision issues. It contains numerous built-in methods that enable it to complete the most difficult tasks with little code.
 
-&nbsp;
+
 
 Run the following command in **cmd** or **command prompt** to instal opencv:
     
@@ -77,7 +76,7 @@ Visit this website to learn a new method for image blurring.
 https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html   
 </details>
 
-&nbsp;
+
 
 <hr/>
 
@@ -86,11 +85,11 @@ https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
 <hr/> 
 One of my favourite automation tasks is this one. I virtually always use it. Writing a Python script to convert PDFs into audio files is the challenge at hand.
 
-&nbsp;
+
 
 ***PyPDF*** and ***Pyttsx3*** will be used to develop this script.
 
-&nbsp;
+
 
 Python's ***PyPDF*** package is used to read text from a pdf file.
 
@@ -98,7 +97,7 @@ Run the following command in cmd or command prompt to instal PyPDF:
 
     pip install pypdf
 
-&nbsp;
+
 
 A text-to-speech conversion library is called ***Pyttsx3***.
 
@@ -106,7 +105,7 @@ Run the following command in cmd or command prompt to instal Pyttsx3:
     
     pip install Pyttsx3
 
-&nbsp;
+
     
 Copy the file from **/src/Activity-2/PDF_To_Audio_File_Conversion.ipynb** 
 
@@ -118,7 +117,7 @@ fill the required data as mentioned there.
 - Storyteller.
 - The very same script can be used to read the articles from websites like Medium and WordPress by adding a small amount of web scraping.
 
-# Micro-Challenge:-
+## Micro-Challenge:-
 - Your objective is to convert one folder that is full of PDFs at a time rather than one PDF to audio book at a time.
 <details>
 

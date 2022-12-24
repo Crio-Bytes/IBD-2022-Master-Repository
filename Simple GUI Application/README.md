@@ -176,6 +176,8 @@ After completing this module you will able to create normal gui application and 
 
 . [About QColorDialog](https://doc.qt.io/qt-6/qcolordialog.html#details)
 
+. [About QSetting](https://doc.qt.io/qt-6/qsettings.html)
+
 
 
 

@@ -217,6 +217,7 @@ HashSet has a variety of Other Topics. These are available for reading.
 
 <details>
 <summary> Solution </summary>
+    
     When you add a duplicate element to a hash set, it is simply ignored. Duplicate elements will not be stored in the hash set.
 </details>
  

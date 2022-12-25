@@ -18,7 +18,9 @@ There are several methods of web authentication, including:
 
 **Importance:** Web authentication is important because it helps to protect sensitive information and resources from unauthorized access. By requiring users to provide credentials before they can access a website or application, web authentication helps to ensure that only authorized users can access the resources they need.
 
-### **🚀 Activity 1:** Let's see how web apps are using web authentication.
+### **🚀 Activity 1:** 
+
+Let's see how web apps are using web authentication.
 
 1.  Head over to **[crio.do](http://crio.do)** website.
 

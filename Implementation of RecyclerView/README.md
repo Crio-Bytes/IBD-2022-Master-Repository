@@ -172,11 +172,11 @@ APK stands for Android Package sometimes Android Package Kit or Android Applicat
  # Summary
  By following these microbytes, you have learned about Android studio, Implemenatation of RecyclerView with Custom Adapter, how to create a list item for RecyclerView and how to build an apk
  # References
- - https://www.javatpoint.com/android-tutorial
- - https://www.educba.com/install-jdk/
- - https://developer.android.com/studio
- - https://www.geeksforgeeks.org/how-to-add-image-to-drawable-folder-in-android-studio
- - https://www.tutorialkart.com/kotlin-android/android-studio-create-new-layout-xml-file/#:~:text=Android%20%E2%80%93%20Create%20Layout%20File%20in%20Resources%20Layout,4%20Step%204%3A%20Configure%20Layout%20XML%20File%20
+ - [javatpoint](https://www.javatpoint.com/android-tutorial)
+ - [educba](https://www.educba.com/install-jdk/)
+ - [android developer guide](https://developer.android.com/studio)
+ - [GFG](https://www.geeksforgeeks.org/how-to-add-image-to-drawable-folder-in-android-studio)
+ - [tutorialkart](https://www.tutorialkart.com/kotlin-android/android-studio-create-new-layout-xml-file/#:~:text=Android%20%E2%80%93%20Create%20Layout%20File%20in%20Resources%20Layout,4%20Step%204%3A%20Configure%20Layout%20XML%20File%20)
  
    
 

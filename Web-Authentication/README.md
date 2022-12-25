@@ -1,23 +1,22 @@
-Web authentication
-==================
+# Web authentication
 
-**Objective:** Adding Authentication to our web app using Firebase authentication
+## **Objective:** Adding Authentication to our web app using Firebase authentication
 
 **Skill:** HTTP, HTML/CSS, Javascript.
 
-**Overview:**
+## **Overview:**
 
 Web authentication is a way to verify the identity of a user who is trying to access a website or online application. It is a process that involves the user providing a set of credentials, such as a username and password, to the website or application. The website or application then checks these credentials against a database of authorized users to determine whether the user should be granted access.
 
 There are several methods of web authentication, including:
 
--   Password-based authentication: This is the most common method of web authentication, where the user provides a username and password to the website or application. The website or application checks the credentials against a database of authorized users to determine whether the user should be granted access.
--   Two-factor authentication: This method of web authentication requires the user to provide an additional piece of information, such as a code sent to their phone or a fingerprint scan, in addition to their username and password. This adds an extra layer of security to the authentication process.
--   Single sign-on (SSO): This method allows a user to use a single set of credentials to access multiple websites or applications. For example, a user might use their Google login to access a variety of different websites or applications.
+-   **Password-based authentication**: This is the most common method of web authentication, where the user provides a username and password to the website or application. The website or application checks the credentials against a database of authorized users to determine whether the user should be granted access.
+-   **Two-factor authentication**: This method of web authentication requires the user to provide an additional piece of information, such as a code sent to their phone or a fingerprint scan, in addition to their username and password. This adds an extra layer of security to the authentication process.
+-   **Single sign-on (SSO)**: This method allows a user to use a single set of credentials to access multiple websites or applications. For example, a user might use their Google login to access a variety of different websites or applications.
 
 **Importance:** Web authentication is important because it helps to protect sensitive information and resources from unauthorized access. By requiring users to provide credentials before they can access a website or application, web authentication helps to ensure that only authorized users can access the resources they need.
 
-**🚀Activity 1:** Let's see how web apps are using web authentication.
+### **🚀 Activity 1:** Let's see how web apps are using web authentication.
 
 1.  Head over to **[crio.do](http://crio.do)** website.
 
@@ -32,11 +31,17 @@ Note: If you have signed in already, then open the the link in "incognito mode" 
 ![Sign in window pop up](image/Activity_1b.png)
 
 4.  Provide the credentials i.e your Email and Password.
-5.  Voila, you are now signed in.
+5.  Voila🪄, you are now signed in.
 
-**🚀Activity 2:**
+### **🚀 Activity 2:**
+
+**Question**
 
 Out of three authentication methods mentioned above, which method we are using here?
+- [ ] Password-based authentication
+- [ ] Two-factor authentication
+- [ ] Single sign-on (SSO)
+- [ ] None of the Above
 
 ### **How SSO system works?**
 
@@ -46,11 +51,11 @@ SSO systems allow users to log in to multiple applications with a single set of 
 
 Now, if you want to enable such authentication functionality in your website, How can you do so?
 
-there are different authentication service providers such as Firebase authentication, Okta etc. which allows you to enable authentication in your web application.
+There are different authentication service providers such as Firebase authentication, Okta etc. which allows you to enable authentication in your web application.
 
 In this micro-byte we are going to see how to enable **SSO authentication** using **Firebase**.
 
-**🚀Activity 3:**
+### **🚀 Activity 3:**
 
 To create a Firebase project, follow these steps:
 
@@ -73,7 +78,7 @@ To create a Firebase project, follow these steps:
 ![Firebase project dashboard](image/Activity_3d.png)
 
 
-**🚀Activity 4:** 
+### **🚀 Activity 4:** 
 
 Now that you’ve got the Firebase stuff out of the way, go ahead and create a web page, any web page! You can use an existing page, or can clone this repository and use the html and css file, or create one using the code provided below.
 
@@ -83,7 +88,11 @@ To use the one below, create a new folder "demo" and inside that create an `ind
 
 ![Expected project structure](image/Activity_4a.png)
 
- copy/paste the HTML below into `index.html`.
+Copy/paste the HTML below into `index.html`.
+
+<details>
+<summary>Source code for index.html</summary>
+
 ```
 <!doctype html>
 <html lang="en">
@@ -108,7 +117,14 @@ To use the one below, create a new folder "demo" and inside that create an `ind
 </body>
 </html>
 ```
-copy/paste the css below into `style.css`.
+
+</details>
+<br>
+
+Copy/paste the css below into `style.css`.<br>
+
+<details>
+<summary>Source code for style.css</summary>
 
 ```
 /*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);*/
@@ -267,6 +283,11 @@ copy/paste the css below into `style.css`.
     background: #DD4B39;
   }
 ```
+
+</details>
+
+<br>
+
 Your App will look like this: 
 
 ![Simple web page](image/Activity_4b.png)
@@ -290,7 +311,7 @@ Your App will look like this:
 Great👍 we have successfully added firebase in our web application.
 
 
-**🚀Activity 5:**
+### **🚀 Activity 5:**
 
 Finally let's add authentication to our web application, follow this steps below.
 
@@ -307,7 +328,7 @@ Enable the authentication methods that you want to use, such as email/password o
 
 ![Setting up Google Sign-in](image/Activity_5b.png)
 
-Awesome👍, google sign-in is now enabled in your project.
+Awesome👍 google sign-in is now enabled in your project.
 
 3. Now we go ahead with **[Firebase Web Documentation](https://firebase.google.com/)**, go to **[Google](https://firebase.google.com/docs/auth/web/google-signin)** sign-in tab.
 
@@ -377,3 +398,17 @@ See the line number 33,50,51 where changes has been made.
 ![Users tab](image/Activity_5g.png)
 
 😊 Hope you enjoyed this micro-byte on **Web Authentication**
+
+## **Conclusion**
+
+**Web authentication with the Google sign-in pop-up method using Firebase** is a secure and convenient way to authenticate users on your website. By integrating Firebase into your website and enabling the Google sign-in method, you can allow users to sign in with their Google accounts and easily access protected areas of your website
+
+## **Refrences**
+
+[Web Authentication in detail](https://swoopnow.com/website-authentication/)
+
+[Firebase Web Documentation](https://firebase.google.com/docs/auth/web/google-signin)
+
+[Host your web app Online](https://www.freecodecamp.org/news/publish-your-website-netlify-github/)
+
+[Host your web app in Localhost](https://devpractical.com/host-a-html-page-on-localhost/)

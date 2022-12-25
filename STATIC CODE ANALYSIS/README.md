@@ -198,3 +198,7 @@ In this micro byte we learned about static code analysis which will help you in 
 ## Refrences
 
 [Sonar Cloud Docs](https://docs.sonarcloud.io/)
+
+[Code analysis with SonarCloud & Github Actions](https://blog.jepsen.ninja/code-analysis-with-sonarcloud-and-github-actions)
+
+[Improving code quality with SonarCloud](https://medium.com/sevensenders-techblog/improving-code-quality-with-sonarcloud-cc3e2faeb89)

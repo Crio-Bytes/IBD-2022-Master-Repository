@@ -166,6 +166,31 @@ Understanding different issues SonarCloud detects and solving them.
     ![bug](/STATIC%20CODE%20ANALYSIS/Images/bug.png)
     A sample bug shown by SonarCloud, [here](https://sonarsource.com/knowledge/languages/js/)
 
+## Activity 3
+
+Prerequisite: You should have atleast one project on Github which we can use for static code analysis using SonarCloud.
+
+1. Create a account on SonarCloud using your github.
+   Navigate to [this](https://www.sonarsource.com/products/sonarcloud/) link and click on Sign up.
+
+2. Click on Sign up using Github, Enter the credentials and click on Sign in button.
+   ![sign-up](/STATIC%20CODE%20ANALYSIS/Images/signUp.png)
+
+3. After login is successful you need to import an organization from Github.
+   ![import-org](/STATIC%20CODE%20ANALYSIS/Images/afterLogin.png)
+
+4. Import repository on which you want to perform static code analysis.
+   ![import-repo](/STATIC%20CODE%20ANALYSIS/Images/importRepo.png)
+
+5. Open the project in SonarCloud -> The quality gate might show as not computed -> click on set new code defination
+
+![quality-gate](/STATIC%20CODE%20ANALYSIS/Images/quality-gate.png)
+
+6. Select the option for which code will be considered new.
+   ![new-code](/STATIC%20CODE%20ANALYSIS/Images/new-code.png)
+
+Congratulations!! Whenever you make some changes and push the code it will be analyzed by SonarCloud and quality gate will let you know if your code is good enough to be pushed.
+
 ## Conclusion
 
 In this micro byte we learned about static code analysis which will help you in writing high-quality, reliable and secure code.

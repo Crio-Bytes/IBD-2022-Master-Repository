@@ -1,6 +1,8 @@
 # Web authentication
 
-## **Objective:** Adding Authentication to our web app using Firebase authentication
+## **Objective:** 
+
+Adding Authentication to our web app using Firebase authentication
 
 **Skill:** HTTP, HTML/CSS, Javascript.
 

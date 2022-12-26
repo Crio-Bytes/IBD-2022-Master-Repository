@@ -32,7 +32,7 @@ const promise = new Promise((resolve, reject) => {
 
 The **new Promise()** constructor returns a promise object. The promise object is capable of informing whether the execution has been started, completed, or returned with an error. To store this information promise object has a property called state.
 
-state can have following values:
+state can have the following values:
 
 - pending: It represents the initial state.
 - fulfilled: It represents that the operation was completed successfully, i.e the promise is **resolved**.
@@ -42,9 +42,9 @@ So we can say that the state is initially **pending**, then changes to either **
 
 A promise is said to be settled if it is either fulfilled or rejected, but not pending.
 
-Apart from state, the promise object has one more internal property called as result.
+Apart from the state, the promise object has one more internal property called as result.
 
-result can have following values:
+result can have the following values:
 
 - undefined: Initially when state value is pending.
 - value: When resolve(value) is called.
@@ -164,7 +164,7 @@ this is equivalent to:
 
 ## Activity 2: Promise in practice
 
-We learned how to use a promise to handle asynchronous operations. with that knowledge send a get request to [media post](https://jsonplaceholder.typicode.com/posts) and log the result, also add **catch()** to handle the errors.
+We learned how to use a promise to handle asynchronous operations. with that knowledge send a get request to [media post](https://jsonplaceholder.typicode.com/posts) and log the result, also add a **catch()** to handle the errors.
 
 <details>
 <summary>Hint</summary>

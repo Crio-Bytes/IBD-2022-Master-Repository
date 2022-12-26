@@ -1,15 +1,15 @@
 # Introduction
 
-A version conrol system is a tool helps developers track and manage changes in their codebase.
+A version control system is a tool that helps developers track and manage changes in their codebase.
 
-This lets us work on our project without worrying about introducing errors to partly working code and not beign able to go back. There are several different version control systems available, including Git, Mercurial, and Subversion. In this micro byte we will undestand
+This lets us work on our project without worrying about introducing errors to partly working code and not being able to go back. There are several different version control systems available, including Git, Mercurial, and Subversion. In this micro byte, we will understand.
 
 1. What is git?
-2. What is branch in git?
+2. What is a branch in git?
 3. How to create a branch in git?
 4. Some best practices while working on branch.
-5. Feature based development.
-6. Trunk based development.
+5. Feature-based development.
+6. Trunk-based development.
 
 ## What is git?
 
@@ -30,13 +30,13 @@ Photo by <a href="https://unsplash.com/@yancymin?utm_source=unsplash&utm_medium=
 
 A branch is a separate line of development. When you create a new branch, you are creating a copy of the code at that point in time, which you can then modify independently of the main branch.
 
-## Activity 1: Branching in practice
+## Activity 1 - Branching in practice
 
-1. create a new project called as branching basics and navigate to that project.
+1. create a new project called as "learning-branch" and navigate to that project.
 
 <details>
 <summary>Hint</summary>
-You can use <b>mkdir</b> command to create a new directory and <b>cd</b> to navigate to that directory.
+You can use the <b>mkdir</b> command to create a new directory and <b>cd</b> to navigate to that directory.
 </details>
 
 <details>
@@ -55,12 +55,14 @@ You can use <b>mkdir</b> command to create a new directory and <b>cd</b> to navi
 <details>
 <summary>Hint</summary>
 You can create a new branch using
+        
         git branch branch-name
 
 </details>
 
 <details>
 <summary>Solution</summary>
+
         # Initialize a new Git repository
         git init
 
@@ -74,12 +76,14 @@ You can create a new branch using
 <details>
 <summary>Hint</summary>
 You can switch to a new branch using
+
         git checkout branch-name
 
 </details>
 
 <details>
 <summary>Solution</summary>
+
         # Switch to the 'new-feature' branch
         git checkout new-feature
 
@@ -95,13 +99,13 @@ You can switch to a new branch using
 
 1. Use descriptive names for branches
    Branch name should clearly describe the purpose of the branch.
-   For example, login-page, authenticaion.
+   For example, login-page, authentication.
 
 2. Keep your branches up-to-date
-   Update branch with latest changes from main branch.
+   Update the branch with the latest changes from the main branch.
 
 3. Make small and frequent commits
-   Commits should clearly describe changes you are making. This makes it easier to review and merge changes, and helps to keep the codebase organized.
+   Commits should clearly describe the changes you are making. This makes it easier to review and merge changes and helps to keep the codebase organized.
 
 4. Review and merge changes frequently
    Set up a process for reviewing and merging changes into the main branch. This could involve creating pull requests, conducting code reviews, or using a continuous integration system to automatically build and test changes.
@@ -111,16 +115,16 @@ You can switch to a new branch using
 
 ## Feature-based branching
 
-Feature-based branching is a branching strategy in which a separate branch is created for each new feature or task. This allows developers to work on new feature without the main branch, this makes it easier to review and merge changes when they are ready.
+Feature-based branching is a branching strategy in which a separate branch is created for each new feature or task. This allows developers to work on a new feature without the main branch, which makes it easier to review and merge changes when they are ready.
 
 ![feature-based](/MANAGING%20BRANCHES%20IN%20GIT/Images/featureBased.png)
 [Image from [optimizely](https://www.optimizely.com/optimization-glossary/trunk-based-development/)]
 
-## Activity 2:
+## Activity 2 - Trying out feature-based development
 
 To understand feature-based development better, let us work on one example.
 
-1. Create new repository on local machine.
+1. Create a new repository on the local machine.
 
 <details>
 <summary>Solution</summary>
@@ -157,7 +161,7 @@ To understand feature-based development better, let us work on one example.
 
 3. Make changes and push the branch
 
-> Before pushing its always a good idea to pull & check if anyone else in the team has made any changes.
+> Before pushing it's always a good idea to pull & check if anyone else in the team has made any changes.
 
 <details>
 <summary>Hint</summary>
@@ -191,7 +195,7 @@ To understand feature-based development better, let us work on one example.
 
 </details>
 
-Once you are dome making required changes, its time to merege login branch with main.
+Once you are done making the required changes, it's time to merge the login branch with the main branch.
 
 4. Review and merge the changes
 
@@ -208,12 +212,14 @@ Once you are dome making required changes, its time to merege login branch with 
 
 5. Delete the feature branch
 
-Now that you have made the changes and created pull request too, you can delete the feature branch.
+Now that you have made the changes and created a pull request too, you can delete the feature branch.
 
 <details>
 <summary>Hint</summary>
 
-You can use git branch command followed by the -d flag and the name of the branch. For example: git branch -d new-feature.
+You can use git branch command followed by the -d flag and the name of the branch. For example:
+
+                git branch -d new-feature.
 
 </details>
 
@@ -228,7 +234,7 @@ Trunk-based development can help reduce the complexity of version control, as th
 ![trunk-based](/MANAGING%20BRANCHES%20IN%20GIT/Images/trunkBased.png)
 [Image from [optimizely](https://www.optimizely.com/optimization-glossary/trunk-based-development/)]
 
-## Activity 3
+## Activity 3 - Learning about a technique that is used often in trunk-based development
 
 A team is working on a complex new feature for their software application using trunk-based development, as they prefer to make small, frequent commits rather than working on long-lived branches.
 
@@ -243,31 +249,31 @@ Till the feature is complete they can hide the feature from the user interface.
 
 <details>
 <summary>Solution</summary>
-The team can make use of feature toggle to temporarily disable a feature in the main branch while they continue to work on it.
+The team can make use of a feature toggle to temporarily disable a feature in the main branch while they continue to work on it.
 
-Feature toggle are often used in conjunction with trunk-based development to allow teams to continue working on new features without affecting the main branch.
+Feature toggles are often used in conjunction with trunk-based development to allow teams to continue working on new features without affecting the main branch.
 
 </details>
 
-## Activity 4
+## Activity 4 - Making a decision
 
-You now know what feature-based and trunk-based development is. Which one do you think is more suitable for your projects?
+You now know what feature-based and trunk-based development are. **Which one do you think is more suitable for your projects?**
 
-> Both feature-based development and trunk-based development have theor own strengths and weaknesses, the choice will depend on your project goals and priorities.
+> Both feature-based development and trunk-based development have their own strengths and weaknesses, the choice will depend on your project goals and priorities.
 
-Let us see some key difference between trunk-based and feature-based development
+Let us see some key differences between trunk-based and feature-based development
 
 - Feature-based development:
 
   - Pros: Allows developers to work on new features in isolation, which can be helpful for complex or risky features. Can also make it easier to review and test changes before they are merged into the main branch.
 
-  - Cons: Can lead to longer development cycles, as developers may need to spend more time merging changes back into the main branch. Can also lead to conflicts and merge conflicts, as multiple developers may be working on different features at the same time and need to merge their changes together.
+  - Cons: This can lead to longer development cycles, as developers may need to spend more time merging changes back into the main branch. Can also lead to conflicts and merge conflicts, as multiple developers may be working on different features at the same time and need to merge their changes together.
 
 - Trunk-based development:
 
   - Pros: Emphasizes continuous integration and continuous delivery, which can lead to more efficient development cycles. Can also make it easier to review and test changes, as developers are encouraged to make small, frequent commits.
 
-  - Cons: May not be the best approach for large, complex features that require a lot of development and testing. Can also make it more challenging to manage changes, as developers are working directly on the main branch.
+  - Cons: This may not be the best approach for large, complex features that require a lot of development and testing. Can also make it more challenging to manage changes, as developers are working directly on the main branch.
 
 ## Resources
 

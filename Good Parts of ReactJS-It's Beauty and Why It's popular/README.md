@@ -41,10 +41,14 @@ _Easy to Debug_
 <br>
 
 <p align="center">
-  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079991/d1_jtwsbt.png" width="350" alt="declarative image"
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079991/d1_jtwsbt.png" width="350" 
+  height="157"
+  alt="declarative image"
   raw=true
   >
-  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079991/d2_s5d86d.png" width="350" alt="declarative image2"
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079991/d2_s5d86d.png" width="350" 
+  height="157"
+  alt="declarative image2"
   raw=true
   >
 </p>
@@ -159,7 +163,7 @@ Hooks have access to react specific thing for managing state and side effects.
 <br>
 
 <p align="center">
-  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079992/hook1_pqcdqu.png" width="350" height="157" alt="hook1 image" >
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079992/hook1_pqcdqu.png" width="350" alt="hook1 image" >
 </p>
 
 <br>

@@ -41,8 +41,8 @@ _Easy to Debug_
 <br>
 
 <p align="center">
-  <img src="./images/d1.png" width="350" alt="declarative image">
-  <img src="./images/d2.png" width="350" alt="declarative image2">
+  <img src="images/d1.png" width="350" alt="declarative image">
+  <img src="images/d2.png" width="350" alt="declarative image2">
 </p>
 
 <br>
@@ -69,7 +69,7 @@ _Component should be Pure Function (for same input should produce same output)_
 <br>
 
 <p align="center">
-  <img src="./images/spc.png" width="350" alt="state-prop-component image">
+  <img src="images/spc.png" width="350" alt="state-prop-component image">
 </p>
 
 <br>
@@ -110,7 +110,7 @@ _Another reason for React to be a library and not a framework is the amount of f
 <br>
 
 <p align="center">
-  <img src="./images/lib.png" width="350" alt="framework-library image">
+  <img src="images/lib.png" width="350" alt="framework-library image">
 </p>
 
 <br>
@@ -151,7 +151,7 @@ Hooks have access to react specific thing for managing state and side effects.
 <br>
 
 <p align="center">
-  <img src="./images/hook1.png" width="350" alt="hook1 image">
+  <img src="images/hook1.png" width="350" alt="hook1 image">
 </p>
 
 <br>
@@ -159,7 +159,7 @@ Hooks have access to react specific thing for managing state and side effects.
 <br>
 
 <p align="center">
-  <img src="./images/hooks2.png" width="350" alt="hook2 image">
+  <img src="images/hooks2.png" width="350" alt="hook2 image">
 </p>
 
 <br>

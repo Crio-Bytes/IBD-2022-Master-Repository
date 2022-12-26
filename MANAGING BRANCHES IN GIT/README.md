@@ -257,11 +257,9 @@ Feature toggles are often used in conjunction with trunk-based development to al
 
 ## Activity 4 - Making a decision
 
-You now know what feature-based and trunk-based development are. **Which one do you think is more suitable for your projects?**
+Now that you have learned about feature-based and trunk-based development. **Which approach do you think would be more suitable for your projects?**
 
-> Both feature-based development and trunk-based development have their own strengths and weaknesses, the choice will depend on your project goals and priorities.
-
-Let us see some key differences between trunk-based and feature-based development
+To help you with the selection we can first understand the difference between trunk-based and feature-based development
 
 - Feature-based development:
 
@@ -274,6 +272,12 @@ Let us see some key differences between trunk-based and feature-based developmen
   - Pros: Emphasizes continuous integration and continuous delivery, which can lead to more efficient development cycles. Can also make it easier to review and test changes, as developers are encouraged to make small, frequent commits.
 
   - Cons: This may not be the best approach for large, complex features that require a lot of development and testing. Can also make it more challenging to manage changes, as developers are working directly on the main branch.
+
+Both feature-based development and trunk-based development have their own strengths and weaknesses, the choice will depend on need and constraints of the project, including the size and complexity of the project, the level of collaboration and communication within the development team, and overall development process and workflow.
+
+## Conclusion
+
+In this micro byte, we learned how to create a branch in git along with some best practices. We also what feature-based and trunk-based development are and also saw the difference between the two to help you with the selection of the right branching strategy for your project.
 
 ## Resources
 

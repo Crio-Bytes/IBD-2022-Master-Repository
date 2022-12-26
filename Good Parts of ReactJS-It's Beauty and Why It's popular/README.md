@@ -41,8 +41,12 @@ _Easy to Debug_
 <br>
 
 <p align="center">
-  <img src="images/d1.png" width="350" alt="declarative image">
-  <img src="images/d2.png" width="350" alt="declarative image2">
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079991/d1_jtwsbt.png" width="350" alt="declarative image"
+  raw=true
+  >
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079991/d2_s5d86d.png" width="350" alt="declarative image2"
+  raw=true
+  >
 </p>
 
 <br>
@@ -69,7 +73,9 @@ _Component should be Pure Function (for same input should produce same output)_
 <br>
 
 <p align="center">
-  <img src="images/spc.png" width="350" alt="state-prop-component image">
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079992/spc_j1vd3b.png" width="350" alt="state-prop-component image"
+  raw=true
+  >
 </p>
 
 <br>
@@ -110,33 +116,35 @@ _Another reason for React to be a library and not a framework is the amount of f
 <br>
 
 <p align="center">
-  <img src="images/lib.png" width="350" alt="framework-library image">
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079991/lib_cbx6xf.png" width="350" alt="framework-library image"
+  raw=true
+  >
 </p>
 
 <br>
 <br>
 
 > ## Side Effects
-<br>
+>
+> <br>
 
-*The Process of avoiding Pure Function. side effects change the phenomena of function from being Pure Function.*
+_The Process of avoiding Pure Function. side effects change the phenomena of function from being Pure Function._
 
 - Each of the component as much as possible should be like Stateless / Pure Function (Should not have side effects)
 
 - But, When we buillding an application, side effects is must. For Example: If you want to Click on button and want to change something with that click or If you want to make Network call, and change something
 
-- So, without side effects, we won't be able to build something And also *we need to follow Paradigm of Stateless/Pure components*
+- So, without side effects, we won't be able to build something And also _we need to follow Paradigm of Stateless/Pure components_
 
 <br>
 
-
->## Hooks
+> ## Hooks
 
 <br>
 
-*We can move the stateful logic to another component and that thing is called Hooks*
+_We can move the stateful logic to another component and that thing is called Hooks_
 
-*React Hooks are simple Javascript Function that we can use to separate out the reusable part from the functional component.*
+_React Hooks are simple Javascript Function that we can use to separate out the reusable part from the functional component._
 
 It can be stateful and can manage side effects !
 
@@ -151,7 +159,7 @@ Hooks have access to react specific thing for managing state and side effects.
 <br>
 
 <p align="center">
-  <img src="images/hook1.png" width="350" alt="hook1 image">
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079992/hook1_pqcdqu.png" width="350" alt="hook1 image" >
 </p>
 
 <br>
@@ -159,16 +167,16 @@ Hooks have access to react specific thing for managing state and side effects.
 <br>
 
 <p align="center">
-  <img src="images/hooks2.png" width="350" alt="hook2 image">
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079992/hooks2_rtli2g.png" width="350" alt="hook2 image"></image>
 </p>
 
 <br>
 
-> ## State Updates should be Pure 
+> ## State Updates should be Pure
 
 <br>
 
-*The state updates should be immutable. It should create copy.* 
+_The state updates should be immutable. It should create copy._
 
 - [x] Do not change the original value.
 
@@ -183,7 +191,7 @@ Hooks have access to react specific thing for managing state and side effects.
 <br>
 <br>
 
-> ## DOM Manipulation is Expensive 
+> ## DOM Manipulation is Expensive
 
 <br>
 
@@ -191,40 +199,35 @@ If React had to update the whole DOM tree on every state change, then displaying
 
 To Solve this Problem, Reconcillation came up
 
-
 <br>
 <br>
 
-> ## Virtual DOM  
+> ## Virtual DOM
 
 <br>
 
-A new Virtual DOM tree will be created whenever the element's state changes. 
+A new Virtual DOM tree will be created whenever the element's state changes.
 
-In React, for every DOM object, there will be a corresponding in-memory copy created. This copy is called the *Virtual DOM*.
+In React, for every DOM object, there will be a corresponding in-memory copy created. This copy is called the _Virtual DOM_.
 
 React performs Diffing Algorithm to calculate the update.
-
 
 - First, React creates a copy of the Original DOM, known as the Virtual DOM. Each of the Virtual DOM nodes represents an element and the whole DOM is in a tree-like structure. For now, let’s call this Vtree1.
 
 - Next, if there is a state update of an element, a new Virtual DOM is created. Let’s call this Vtree2.
 
-- The diffing algorithm identifies the difference between Vtree1 and Vtree2. In this case, a subtree from the changed node has been identified as the diff. 
-  
+- The diffing algorithm identifies the difference between Vtree1 and Vtree2. In this case, a subtree from the changed node has been identified as the diff.
 - Lastly, React updates the Original DOM with only these particular changes to keep it in sync.
 
 <br>
 
->## Reconciliation 
+> ## Reconciliation
 
 <br>
 
-This mechanism to differentiate one tree from another, to determine which part / parts need to be changed, and to update the original DOM is known as *Reconciliation*.
-
+This mechanism to differentiate one tree from another, to determine which part / parts need to be changed, and to update the original DOM is known as _Reconciliation_.
 
 - React implements a heuristic algorithm for Diffing and it is based on two assumptions:
 
 - Root elements of different types will produce different trees. But if the type of both the root element is the same then only the concerned child element is updated.
-  
 - By using a key prop, the developer can hint that which child elements may be stable across different renders.

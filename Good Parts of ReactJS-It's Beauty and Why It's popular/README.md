@@ -159,7 +159,7 @@ Hooks have access to react specific thing for managing state and side effects.
 <br>
 
 <p align="center">
-  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079992/hook1_pqcdqu.png" width="350" alt="hook1 image" >
+  <img src="https://res.cloudinary.com/do6ftivnc/image/upload/v1672079992/hook1_pqcdqu.png" width="350" height="157" alt="hook1 image" >
 </p>
 
 <br>

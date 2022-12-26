@@ -35,10 +35,10 @@ As you might have guessed by now feature toggles are basically conditional state
 
 &nbsp;
 
-1. Variable in same file: The most basic way would be creating a variable with feature name in the same file. But it isn't used as it has various drawbacks like:
+1. Variable in the same file: The most basic way would be to create a variable with a feature name in the same file. But it isn't used as it has various drawbacks like:
 
 - all the toggles aren't stored in one place.
-- They are only accessible in same file.
+- They are only accessible in the same file.
 - The code needs to be deployed again for changes to get reflected.
 
 ```
@@ -81,7 +81,7 @@ const AdvertismentToggle = () => {
 
 In the above example, we have a config.json file where we have added a list of toggleable features and their current state. In the AdvertismentToggle component, we are returning advertisment if the feature is "on".
 
-3. Database: We can store the feature toggles in database by either creating a new table contaning or keys or if app is using microservice architecture you can store the toggles in a separate service that manages the toggles.
+3. Database: We can store the feature toggles in the database by either creating a new table contaning the keys or if the app is using microservice architecture you can store the toggles in a separate service that manages the toggles.
 
    | Feature name | Feature value |
    | ------------ | ------------- |
@@ -90,7 +90,7 @@ In the above example, we have a config.json file where we have added a list of t
 
 We can access feature flag value from the database, if we need feature flag flag value in frontend we can create a REST API to access the value.
 
-4. Using Ghraphical User Interface: You can create a simple UI interface by youself or use any feature toggle management tool available.
+4. Using Graphical User Interface: You can create a simple UI interface by yourself or use any feature toggle management tool available.
 
 ![launch-darkly](/UNDERSTANDING%20FEATURE%20TOGGLE/Images/LaunchDarkly.png)
 [img: LaunchDarkly toggle’s interface]
@@ -99,7 +99,7 @@ We can access feature flag value from the database, if we need feature flag flag
 
 ## Activity 1: Basics of Feature Toggle
 
-1. What will be the value of flag if you want to display the feature1?
+1. What will be the value of the flag if you want to display feature1?
 
 - [ ] true
 - [ ] false
@@ -122,14 +122,14 @@ Generally, for the feature to be displayed flag needs to be enabled.
 
 </details>
 
-2. Where should we add feature toggle?
+2. Where should we add the feature toggle?
 
 - [ ] Frontend
 - [ ] Backend
 - [ ] Both Frontend and Backend
 - [ ] Depends on use case
 
-> Hint: To find the answer take differnt examples and think where should we add feature toggle
+> Hint: To find the answer take different examples and think about where should we add the feature toggle
 
 <details>
 <summary>Click here to see the answer</summary>
@@ -139,7 +139,7 @@ Consider you need to disable button from UI, in this case we will add feature to
 
 </details>
 
-3. Should we keep feature toggle in our code indefinetly?
+3. Should we keep the feature toggle in our code indefinitely?
 
 - [ ] Yes
 - [ ] No
@@ -155,9 +155,9 @@ No, it is generally not recommended to keep feature toggles in the code indefine
 
 &nbsp;
 
-## Activity 2: Understanding feature toggle from real world use cases.
+## Activity 2: Understanding feature toggle from real-world use cases.
 
-> Did you know: Netflix, Spotify also use feature toggle. Try solving these to understand benefits of feature toggle.
+> Did you know: Netflix and Spotify also use feature toggle? Try solving these to understand the benefits of the feature toggle.
 
 1. A team is working on a new feature for an e-commerce website that involves adding a new payment method. To minimize the risk of introducing bugs or breaking the application, the team decides to use a feature toggle to gradually roll out the new payment method to a subset of users. Which of the following is NOT a potential benefit of using a feature toggle in this situation?
 
@@ -167,7 +167,7 @@ No, it is generally not recommended to keep feature toggles in the code indefine
 - [ ] The team can improve the performance of the application by using a feature toggle to optimize the code.
 
 <details>
-<summary>Click here to see answer</summary>
+<summary>Click here to see the answer</summary>
 In this situation adding feature toggle won't have any effect on performance. So the answer is last option: The team can improve the performance of the application by using a feature toggle to optimize the code.
 </details>
 
@@ -180,7 +180,7 @@ In this situation adding feature toggle won't have any effect on performance. So
 - [ ] The team can make the new feature available to a subset of users who are more likely to use it.
 
 <details>
-<summary>Click here to see answer</summary>
+<summary>Click here to see the answer</summary>
 While feature toggles can have a number of potential benefits, such as allowing developers to gradually roll out new features and test changes to the application without affecting the production environment, they do not typically result in significant improvements to the security of the application.
 
 So the answer is: The team can improve the security of the application by using a feature toggle to isolate the new feature from the rest of the codebase.
@@ -189,7 +189,7 @@ So the answer is: The team can improve the security of the application by using 
 
 ## Conclusion
 
-In this micro byte we leared what feature toggles are and different ways we can implement feature toggles.
+In this micro byte we learned what feature toggles are and different ways we can implement feature toggles.
 
 ## References
 

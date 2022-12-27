@@ -6,9 +6,9 @@ An IP address (Internet Protocol address) is a unique numerical label assigned t
 ## **What are the different types of IP addresses?**
 There are two main versions of IP addresses in use today: **IPv4** and **IPv6**.
 
-**IPv4** addresses are 32-bit numbers that are written in the a dotted decimal notation form as "a.b.c.d", where each "a", "b", "c", and "d" is a number between 0 and 255. For example, the IP address "192.168.1.1" belongs to a network with the network identifier "192.168.1" and the host identifier "1". 
+**IPv4** addresses are 32-bit numbers that are written in the a dotted decimal notation form as `a.b.c.d`, where each "a", "b", "c", and "d" is a number between 0 and 255. For example, the IP address "192.168.1.1" belongs to a network with the network identifier "192.168.1" and the host identifier "1". 
 
-**IPv6** addresses are 128-bit numbers that are represented in hexadecimal notation as "a:b:c:d:e:f:g:h", where each "a", "b", "c", "d", "e", "f", "g", and "h" is a hexadecimal number. For example, the IPv6 address "2001:0db8:85a3:0000:0000:8a2e:0370:7334" belongs to a network with the network identifier "2001:0db8:85a3" and the host identifier "0000:0000:8a2e:0370:7334".
+**IPv6** addresses are 128-bit numbers that are represented in hexadecimal notation as `a:b:c:d:e:f:g:h`, where each "a", "b", "c", "d", "e", "f", "g", and "h" is a hexadecimal number. For example, the IPv6 address "2001:0db8:85a3:0000:0000:8a2e:0370:7334" belongs to a network with the network identifier "2001:0db8:85a3" and the host identifier "0000:0000:8a2e:0370:7334".
 
 In addition to these two types of IP addresses, there are also several special types of IP addresses that serve specific purposes. These include:
 
@@ -22,8 +22,6 @@ In addition to these two types of IP addresses, there are also several special t
 
 **Anycast addresses**: These are IP addresses that are used to send messages to the nearest of a group of devices. Anycast addresses are used for applications that require the ability to send messages to multiple recipients, but only need to send them to the nearest device in the group.
 
-<br>
-
 # **Activities**
 
 ## **Do you know your device's IP address?**
@@ -36,8 +34,6 @@ Go to [DuckDuckGo](https://duckduckgo.com) and search "What is my IP address?"
 <img title="ip-address" alt="A screenshot containing an IP address as reported by DuckDuckGo." src="images/ip-address.jpg">
 </details>
 
-<br>
-
 **Question**: Is the IP address in the output a public IP address or a private IP address? 
 
 <details>
@@ -49,7 +45,6 @@ It is not a private IP address. IP addreses such as the one shown in the image a
 <summary>Public IP Address</summary>
 It is a public IP address. IP addreses such as the one shown in the image above are public IP addresses. We can say this because it's not in any other type of IP address range.
 </details>
-<br>
 
 ### **Activity 2**
 Select your operating system below and follow the steps:
@@ -84,8 +79,6 @@ Select your operating system below and follow the steps:
 <img title="ip-address-2" alt="A screenshot containing an IP address as reported by Windows." src="images/ip-address-2.jpg">
 </details> 
 
-<br>
-
 **Question**: Is the IP address in the output a public IP address or a private IP address?  
 
 <details>
@@ -97,7 +90,6 @@ It is a private IP address. IP addreses such as the one shown in the image above
 <summary>Public IP Address</summary>
 It is not a public IP address. IP addreses such as the one shown in the image above are private IP addresses. We can say this because it's in private IP address range.
 </details>
-<br>
 
 ## **Why is the IP address different even if the same device is being used?**
 The IP address in the first activity is the public IP address of the network that your device is connected to (assigned to a rounter in a home network). When a device in a network makes a request to another device outside the network the request and response is handled by the router. As a result only the router is visible to the internet. This is Network Address Translation (NAT).
@@ -123,8 +115,6 @@ The public IP address has changed after the switch from Wi-Fi to mobile data.
 <img title="merged-image" alt="Comparision of IP addresses of Wi-Fi and mobile data." src="images/merged-image.jpg">
 </details> 
 
-<br>
-
 ## **Can a private IP address be changed too?**
 Typically private IP addresses are dynamic too so it is possible to change the private IP address of a device. Restarting the router will result in a change to the private IP address of the connected device after it reconnects.  
 
@@ -137,8 +127,6 @@ The private IP address of the device has changed after the switch from wired (et
 <img title="merged-image-2" alt="Comparision of IP addresses of Wi-Fi and mobile data." src="images/merged-image-2.jpg">
 </details> 
 
-<br>
-
 ## **Introduction to Ping**
 The ping command is a utility that is used to test the connectivity between two devices on a network. It works by sending a small data packet (information in ther internet is sent as data packets), called an "ICMP echo request," from one device to another, and then waiting for a response.
 
@@ -148,8 +136,6 @@ To use the ping command, you can open a command prompt or terminal window and ty
 <summary>Sample output:</summary>
 <img title="ping-output" alt="Comparision of IP addresses of Wi-Fi and mobile data." src="images/ping-output.jpg">
 </details> 
-
-<br>
 
 ### **Activity 5**
 Try pinging a device using it's internal IP address once from inside the network and once from outside the network. Observer the output.
@@ -163,12 +149,8 @@ Mobile Data (Outside Network):
 <img title="ping-mobiledata" alt="Comparision of IP addresses of Wi-Fi and mobile data." src="images/ping-mobiledata.jpg">
 </details>  
 
-<br>
-
 # **Summary**
 Congratulations on completing this micro-byte. I hope this micro-byte has helped you understand a bit about the modern wonder that we call the internet.
-
-<br>
 
 # **References**
 https://en.wikipedia.org/wiki/IP_address

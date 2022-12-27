@@ -3,7 +3,7 @@ This microbyte includes detailed caching techniques and procedures in Django.
 
 ## Pre-requisites
 - Django
-- MVT architecture in Django
+- MVT (Model View Template) architecture in Django
 - Caching fundamentals
 
 ## Table of Contents
@@ -68,22 +68,23 @@ CACHES = {
 ### Setting Up Cache in Memory
 - This is the most efficient way of caching to use it. 
 - One can use one of the following options depending on the Python binding library you choose for the memory cache −
-
+```
 CACHES = {
    'default': {
       'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
       'LOCATION': '127.0.0.1:11210',
    }
 }
+```
 Or like
-
+```
 CACHES = {
    'default': {
       'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
       'LOCATION': 'unix:/tmp/memcached.sock',
    }
 }
-
+```
 ## Caching the entire site
 - To cache the entire site in Django one has to change the `Middleware` present in the **settings.py** file.
 ```
@@ -104,7 +105,7 @@ MIDDLEWARE = [
 ```
 - The order in which the middleware is updated is important here.
 - One can also add : \
-`CACHE_MIDDLEWARE_ALIAS` – The cache alias to use for storage.
+`CACHE_MIDDLEWARE_ALIAS` – The cache alias to use for storage. \
 `CACHE_MIDDLEWARE_SECONDS` – The number of seconds each page should be cached.
 
 <img src="images/cache-keywords.png" align = "left">

@@ -81,6 +81,35 @@ Pagination component has a props called as size which accepts string value, here
 
 </details>
 
+## Activity 2 - Setting up simple React application
+
+In this activity you need to create a React app called as `react-pagination`. We will use this as base code to work on the Pagination.
+
+Hint:
+
+- You can use of **create-react-app** command to set up basic react application.
+
+<details>
+</summary>Solution
+</summary>
+
+Open the terminal at directory you want to create the React app. Run the following command to configure basic setup.
+
+        create-react-app react-pagination
+
+This will create a new directory called as react-pagination with basic structure of React application. We will add new files in the <b>src/</b> directory. The <b>src/</b> directory contains source code of the application. It includes the index.js file, which is entry point of the application and App.js file which contains root component of the application.
+
+</details>
+
+Once you have created the React app navigate to that directory to start the development server.
+
+Hint:
+
+- You can use `cd app-name` command to navigate to the newly created React project
+- You can then start the development server with help of `npm start`
+
+This will start the development server and open the application in the browser. The development server will automatically reload the application whenever we make changes to the source code, so we can see our changes in real-time as we work on the application.
+
 ## Reference
 
 [MUI pagination](https://mui.com/material-ui/react-pagination/)

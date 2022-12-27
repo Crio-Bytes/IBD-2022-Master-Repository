@@ -13,8 +13,6 @@ No C# or .NET experience is required.
 **Note**  
 All or most of the concepts in this micro-byte might be new and it might be overwhelming for new learners to understand and use them. This micro-byte is only an introduction. A great way to gain a good understanding on these concepts is to learn by using them practicallys. #LearnByDoing
 
-<br>
-
 # **Introduction**
 This microbyte is about identity and access management using OAuth and OpenID. 
 
@@ -61,8 +59,6 @@ User expectations, customer requirements, and compliance standards introduce sig
 
 ## **Task**
 Please go through the original document and other supporting documents in Identity Fundamentals by Auth0 for a comprehensive introduction.
-
-<br>
 
 # **OAuth 2.0 and OpenID Connect**
 ## **OAuth 2.0**
@@ -133,8 +129,6 @@ endpoint) along with the application's Client ID and Client Secret.
 
 **Note:**  
 Client secrets are only used for private clients like backend servers and not for public clients like web apps and mobile apps.
-
-<br>
 
 # **Activity**
 A sample web application based on .NET framework which uses Auth0 as the identity provider has been provided in this repository. In this activity one can setup the sample application, setup an Auth0 tenant and use it as the identity provider for the sample application.
@@ -209,8 +203,6 @@ Set callback URL and logout URL of the app in the Auth0 app's settings.
 
 Run the app and perform all the actions.
 </details>
-
-<br>
 
 # **References**
 [Introduction to Identity and Access Management (IAM) by Auth0](https://auth0.com/docs/get-started/identity-fundamentals/identity-and-access-management#what-is-identity-and-access-management-iam-)  

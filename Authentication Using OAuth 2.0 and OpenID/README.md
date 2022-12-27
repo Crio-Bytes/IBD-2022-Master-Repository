@@ -194,15 +194,18 @@ If you have figured out the other two hints then this is the hint for you: The a
 <details>
 <summary>Solution</summary>
 The application neither knows the domain of the Auth0 tenant nor the client id of the registered app. The application tried to read the values from it's configuration file which is appsettings.json but couldn't find any value so it throws an error.
-
-Copy and paste the domain and the client id from the auth0 app settings page into their corresponding fields in appsettings.json.
-
-The authentication part still won't work after this because Auth0 doesn't know the callback and logout URLs of the application. 
-
-Set callback URL and logout URL of the app in the Auth0 app's settings.
+    
+- Copy and paste the domain and the client id from the auth0 app settings page into their corresponding fields in appsettings.json.
+    
+- The authentication part still won't work after this because Auth0 doesn't know the callback and logout URLs of the application. 
+    
+- Set callback URL and logout URL of the app in the Auth0 app's settings.
 
 Run the app and perform all the actions.
 </details>
+
+# **Summary**
+Congratulations on completing the micro-byte. I hope this micro-byte helped you learn something new about authentication, authorization and how third party identity providers make it easier to implement it.
 
 # **References**
 [Introduction to Identity and Access Management (IAM) by Auth0](https://auth0.com/docs/get-started/identity-fundamentals/identity-and-access-management#what-is-identity-and-access-management-iam-)  

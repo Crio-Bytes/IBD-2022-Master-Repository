@@ -1,21 +1,21 @@
 # Introduction
 
-Pagination allows users to navigate through a large list of items by dividing it into smaller number of items per page. In this micro byte we will learn how to implement pagination in React application using Material-UI.
+Pagination allows users to navigate through a large list of items by dividing them into smaller numbers of items per page. In this micro byte, we will learn how to implement pagination in React application using Material-UI.
 
 ## Prerequisite:
 
-If you have basic understanding on how to create web application using ReactJS.
+If you have a basic understanding of how to create a web application using ReactJS.
 
 ## Understanding the task
 
-We have get the posts data from `https://jsonplaceholder.typicode.com/posts` API and display the title as a list. We will also add pagination so that user will be able to see only 10 posts per page.
+We have to fetch the posts data from `https://jsonplaceholder.typicode.com/posts` API and display the title as a list. We will also add pagination so that users will be able to see only 10 posts per page.
 
-## Intoduction to Material-UI Pagination component
+## Introduction to Material-UI Pagination component
 
-Pagination is a common feature that helps to improve the user experience by making it easier to find and view specific items. It can also help us to imrpove performance by loading items only when required, but in this micro byte we are going to focus on implementing pagination on frontend side and load all the data at once.
+Pagination is a common feature that helps to improve the user experience by making it easier to find and view specific items. It can also help us to improve performance by loading items only when required, but in this micro byte, we are going to focus on implementing pagination on the frontend side and load all the data at once.
 
-To implement pagination in a React application, we can use Pagination component provided by Material-UI.
-We can use Pagination component by importing it in our JSX component and call it like:
+To implement pagination in a React application, we can use the Pagination component provided by Material-UI.
+To use it we need to import it in our JSX component and call it like:
 
         <Pagination count={10} page={1} onChange={handleChange}/>
 
@@ -23,17 +23,17 @@ We can use Pagination component by importing it in our JSX component and call it
 
 It will render the Pagination component similar to this image.
 
-Different props we used in above snippet are:
+Different props we used in the above snippet are:
 
-- count: It accepts integer value and denotes total number of pages.
-- page: It accepts integer value and denotes current page.
-- onChange: This accepts function which is called when pagination is changed.
+- count: It accepts an integer value and denotes the total number of pages.
+- page: It accepts integer value and denotes the current page.
+- onChange: This accepts a function which is called when pagination is changed.
 
-This will render a pagination component with 10 pages and current page will be **1**. The handleChange function will be called and we can use this function to update the current page in our component's state.
+This will render a pagination component with 10 pages and the current page will be **1**. The handleChange function will be called and we can use this function to update the current page in our component's state.
 
-## Activity 1 - Trying out different props of Pagination Component
+## Activity 1 - Trying out different props of the Pagination Component
 
-Apart from count, page & onChange, Pagination component provides various props which you can find [here](https://mui.com/material-ui/api/pagination/). With help of this props we can customize appearance of Pagination component.
+Apart from count, page & onChange, the Pagination component provides various props which you can find [here](https://mui.com/material-ui/api/pagination/). With help of these props, we can customize the appearance of the Pagination component.
 
 For example, we can use the color props to change the color of the page number background color, and the theme.
 
@@ -41,7 +41,7 @@ For example, we can use the color props to change the color of the page number b
 
 ![primary-pagination](/PAGINATION%20IN%20REACTJS/Images/primaryPagination.png)
 
-1. Try changing color of the Pagination component to **secondary**.
+1. Try changing the color of the Pagination component to **secondary**.
 
 ![secondary-pagnation](/PAGINATION%20IN%20REACTJS/Images/secondaryPagination.png)
 
@@ -55,7 +55,7 @@ Here, the color props are assigned value of secondary, so we achive desired resu
 
 </details>
 
-2. Now, try adding **variant** props which will change the appearnace of the page number, and add border to the numbers as shown in the image below
+2. Now, try adding **variant** props which will change the appearance of the page number, and add a border to the numbers as shown in the image below
 
 ![outlined-pagination](/PAGINATION%20IN%20REACTJS/Images/outlinedPagination.png)
 
@@ -69,7 +69,7 @@ Pagination component has a props called as variant which accepts string value, h
 
 </details>
 
-3. In the above two questions we saw how to change background color and add outline to page numbers, In this question try increasing size of the page numbers with help of the **size** props provided in Pagination component.
+3. In the above two questions we saw how to change the background color and add an outline to page numbers, In this question try increasing the size of the page numbers with help of the **size** props provided in the Pagination component.
 
 <details>
     <summary>Solution
@@ -81,13 +81,13 @@ Pagination component has a props called as size which accepts string value, here
 
 </details>
 
-## Activity 2 - Setting up simple React application
+## Activity 2 - Setting up a simple React application
 
-In this activity you need to create a React app called as `react-pagination`. We will use this as base code to work on the Pagination.
+In this activity, you need to create a React app called `react-pagination`. We will use this as a base code to work on the Pagination.
 
 Hint:
 
-- You can use of **create-react-app** command to set up basic react application.
+- You can use of **create-react-app** command to set up a basic react application.
 
 <details>
 </summary>Solution
@@ -108,9 +108,9 @@ Hint:
 - You can use `cd app-name` command to navigate to the newly created React project
 - You can then start the development server with help of `npm start`
 
-This will start the development server and open the application in the browser. The development server will automatically reload the application whenever we make changes to the source code, so we can see our changes in real-time as we work on the application.
+This will start the development server and open the application in the browser. The development server will automatically reload the application whenever we make changes to the source code, so we can see our changes in real time as we work on the application.
 
-We can now start building our pagination feature, to do that we will fetch the list of posts from the API and store the result in state. After that we will add Pagination component provided by Material-UI and customize it as per our requirements.
+We can now start building our pagination feature, to do that we will fetch the list of posts from the API and store the result in the state. After that, we will add the Pagination component provided by Material-UI and customize it as per our requirements.
 
 ## Activity 3 - Fetching list of posts from the API
 
@@ -120,13 +120,13 @@ In this activity, we will learn how to fetch data from `https://jsonplaceholder.
 
         npm install axios
 
-Once axios is installed we will import it in our React component and use it to make an HTTP request.
+Once axios is installed we will import it into our React component and use it to make an HTTP request.
 
-2. Create a function called `getAllPost` to fecth the data from posts API using axios.
+2. Create a function called `getAllPost` to fetch the data from posts API using axios.
 
 Hint:
 
-- We can send get request from axios using **axios.get** method and pass the API as parameter to this method.
+- We can send get request from axios using **axios.get** method and pass the API as a parameter to this method.
 
 <details>
 <summary>Solution</summary>
@@ -139,7 +139,7 @@ Hint:
 
 </details>
 
-The api contains list of posts with "userId", "id", "title" & "body".
+The API contains a list of posts with "userId", "id", "title" & "body".
 
 You can refer sample post below:
 
@@ -159,7 +159,7 @@ You can refer sample post below:
 
 Hint:
 
-- You can create a component called as `Post.js`.
+- You can create a component called `Post.js`.
 - Call the `allPost` method in useEffect of that component.
 - create the state with help of **useState** hook.
 
@@ -195,24 +195,24 @@ Hint:
 
 </details>
 
-4. Display all the post on a single page.
+4. Display all the posts on a single page.
 
 Hint:
 
-- We can use **map** to iterate over the elements
+- We can use the **map** to iterate over the elements
 - Display the "title" of each post in the UI
 
 ## Activity 4 - Working on the logic
 
-After we fecth the API we get around 100 posts. We now need to work on login so that we will have only 10 posts at a time.
+After we fetch the API we get around 100 posts. We now need to work on login so that we will have only 10 posts at a time.
 
-1. Use a JavaScript method to get only first 10 post at a time.
+1. Use a JavaScript method to get only the first 10 posts at a time.
 
 You can try using your own logic to get post number 1-10 from the result.
 
 Hint:
 
-- You can create a custom method or make use of inbuilt methods such as filter, reduce, slice to get 10 posts at a time.
+- You can create a custom method or make use of inbuilt methods such as filter, reduce, and slice to get 10 posts at a time.
 
 <details>
 <summary>Solution</summary>
@@ -225,15 +225,15 @@ Therefore, the above code snippet will give us a new array containg 10 elements 
 
 </details>
 
-In next question we will covert this logic to a generic one so that you can get post based on page number.
+In the next question, we will convert this logic to a generic one so that you can get posts based on the page number.
 
-2. Convert the logic you created in above question so that we can get 10 posts based on the given page number.
+2. Convert the logic you created in the above question so that we can get 10 posts based on the given page number.
    For example, if the page number is 3 we will get posts 21-30.
 
 Hint:
 
-- make use of slice method, just update the starting and end index.
-- For calculation of the start and end index use some logic instead of directly specifing a number.
+- make use of the slice method, just update the starting and end index.
+- For the calculation of the start and end index use some logic instead of directly specifying a number.
 
 <details>
 <summary>Solution</summary>
@@ -259,13 +259,13 @@ here 10 denotes post per page
 
 </details>
 
-We now have our logic ready, we can make use of this logic to display 10 posts at a time and navigate to different page numbers with help of Pagination component.
+We now have our logic ready, we can make use of this logic to display 10 posts at a time and navigate to different page numbers with help of the Pagination component.
 
-## Activity 5 - Putting it all toghether
+## Activity 5 - Putting it all together
 
-We learned about all required things in above activites now it's time to put it all together so that we have a working Pagination feature.
+We learned about all the required things in the above activities now it's time to put it all together so that we have a working Pagination feature.
 
-1. Make use of the concepts you learned above to create a Pagination component and map only 10 post at a time based on the page number you received in the handleChange method.
+1. Make use of the concepts you learned above to create a Pagination component and map only 10 posta at a time based on the page number you received in the handleChange method.
 
 <details>
 <summary>Solution</summary>
@@ -318,11 +318,11 @@ We learned about all required things in above activites now it's time to put it 
 
 > The code for the above UI is available in codes folder.
 
-Contratulations!! We now have a working Pagination feature, you can customize the UI as per your choice.
+Congratulations!! We now have a working Pagination feature, you can customize the UI as per your choice.
 
 ## Conclusion
 
-We successfully implemented pagination feature with help of Material-UI pagination component.
+We successfully implemented the pagination feature with help of the Material-UI Pagination component.
 
 ## Reference
 

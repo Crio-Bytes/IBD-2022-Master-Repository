@@ -11,7 +11,7 @@
 8. Summary
 
 ### 1. Introduction
-In thos Byte, we
+In this Byte, we introduce you to NGINX, a popular web server and reverse proxy software that is widely used to deliver static and dynamic content on the web. We will also show you how to deploy NGINX on an EC2 instance and serve a static HTML document using NGINX. 
 
 ### 2. What is NGINX
 NGINX (pronounced "engine x") is a high-performance web server and reverse proxy software that is widely used to deliver static and dynamic content on the web. It was originally developed to solve the C10K problem, which refers to the challenge of serving 10,000 concurrent connections on a single server. NGINX is known for its ability to handle a large number of connections and requests efficiently, with a low memory footprint and minimal impact on the underlying system resources.

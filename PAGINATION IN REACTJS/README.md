@@ -202,6 +202,65 @@ Hint:
 - We can use **map** to iterate over the elements
 - Display the "title" of each post in the UI
 
+## Activity 4 - Working on the logic
+
+After we fecth the API we get around 100 posts. We now need to work on login so that we will have only 10 posts at a time.
+
+1. Use a JavaScript method to get only first 10 post at a time.
+
+You can try using your own logic to get post number 1-10 from the result.
+
+Hint:
+
+- You can create a custom method or make use of inbuilt methods such as filter, reduce, slice to get 10 posts at a time.
+
+<details>
+<summary>Solution</summary>
+ 
+        allPost.slice(0,10)
+
+Slice method returns a new array that includes the elements from the original array starting at specified index till end index.
+
+Therefore, the above code snippet will give us a new array containg 10 elements from index 0-9.
+
+</details>
+
+In next question we will covert this logic to a generic one so that you can get post based on page number.
+
+2. Convert the logic you created in above question so that we can get 10 posts based on the given page number.
+   For example, if the page number is 3 we will get posts 21-30.
+
+Hint:
+
+- make use of slice method, just update the starting and end index.
+- For calculation of the start and end index use some logic instead of directly specifing a number.
+
+<details>
+<summary>Solution</summary>
+
+If the page number is given as 2 we need to return posts 11-20, so the start index will be 10 and end index will be 20.
+
+- Let's say the page number is stored in variable called currentPage, we need to use currentPage to get start index.
+
+        (currentPage-1) * 10
+
+here 10 denotes post per page
+
+- We can create a variable called as indexOfFirstPost which will store the start index.
+
+- We can get end index by making use of indexOfFirstPost variable we just created. We can simple add post per page to it to get end index.
+
+        const indexOfFirstPost = (currentPage - 1) * POST_PER_PAGE;
+        const indexOfLastPost = indexOfFirstPost + POST_PER_PAGE;
+
+- We can now use slice method to get 10 post at a time
+
+        allPost.slice(indexOfFirstPost, indexOfLastPost);
+
+</details>
+
+We now have our logic ready, we can make use of this logic to display 10 posts at a time and navigate to different page numbers with help of Pagination component.
+
 ## Reference
 
 [MUI pagination](https://mui.com/material-ui/react-pagination/)

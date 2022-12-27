@@ -1,6 +1,6 @@
 # **Introduction**
 
-## **What is an IP addrress?**
+## **What is an IP address?**
 An IP address (Internet Protocol address) is a unique numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. It serves two main functions: host or network interface identification and location addressing. It is used to identify and locate devices on the network, and to route data to and from those devices.
 
 ## **What are the different types of IP addresses?**

@@ -110,6 +110,98 @@ Hint:
 
 This will start the development server and open the application in the browser. The development server will automatically reload the application whenever we make changes to the source code, so we can see our changes in real-time as we work on the application.
 
+We can now start building our pagination feature, to do that we will fetch the list of posts from the API and store the result in state. After that we will add Pagination component provided by Material-UI and customize it as per our requirements.
+
+## Activity 3 - Fetching list of posts from the API
+
+In this activity, we will learn how to fetch data from `https://jsonplaceholder.typicode.com/posts` API using axios.
+
+1.  Install axios
+
+        npm install axios
+
+Once axios is installed we will import it in our React component and use it to make an HTTP request.
+
+2. Create a function called `getAllPost` to fecth the data from posts API using axios.
+
+Hint:
+
+- We can send get request from axios using **axios.get** method and pass the API as parameter to this method.
+
+<details>
+<summary>Solution</summary>
+
+        const getAllPost = async () => {
+            let response = await axios.get(
+                "https://jsonplaceholder.typicode.com/posts"
+            );
+        };
+
+</details>
+
+The api contains list of posts with "userId", "id", "title" & "body".
+
+You can refer sample post below:
+
+> {
+>
+> "userId": 1,
+>
+> "id": 1,
+>
+> "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+>
+> "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+>
+> }
+
+3. Call the `getAllPost` method we created and store the result in a state called as **allPost**
+
+Hint:
+
+- You can create a component called as `Post.js`.
+- Call the `allPost` method in useEffect of that component.
+- create the state with help of **useState** hook.
+
+<details>
+<summary>Solution</summary>
+
+        import axios from "axios";
+        import { useEffect, useState } from "react";
+
+        const Post = () => {
+            const [allPost, setAllPost] = useState(null);
+
+            const getAllPost = async () => {
+                let response = await axios.get(
+                    "https://jsonplaceholder.typicode.com/posts"
+                );
+
+                setAllPost(response.data)
+            };
+
+            useEffect(() => {
+                getAllPost();
+            }, []);
+
+            return(
+                <div>
+                    {/*
+                        Add code to display all the titles
+                     */}
+                </div>
+            )
+        }
+
+</details>
+
+4. Display all the post on a single page.
+
+Hint:
+
+- We can use **map** to iterate over the elements
+- Display the "title" of each post in the UI
+
 ## Reference
 
 [MUI pagination](https://mui.com/material-ui/react-pagination/)

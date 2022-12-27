@@ -261,6 +261,69 @@ here 10 denotes post per page
 
 We now have our logic ready, we can make use of this logic to display 10 posts at a time and navigate to different page numbers with help of Pagination component.
 
+## Activity 5 - Putting it all toghether
+
+We learned about all required things in above activites now it's time to put it all together so that we have a working Pagination feature.
+
+1. Make use of the concepts you learned above to create a Pagination component and map only 10 post at a time based on the page number you received in the handleChange method.
+
+<details>
+<summary>Solution</summary>
+
+    import axios from "axios";
+    import { useEffect, useState } from "react";
+    import Pagination from "@mui/material/Pagination";
+
+    const POST_PER_PAGE = 10;
+    const Post = () => {
+    const [allPost, setAllPost] = useState(null);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [numberOfPages, setNumberOfPages] = useState(0);
+
+    // add getAllPost method we created in activity 3
+
+    useEffect(() => {
+        getAllPost();
+    }, []);
+
+    const handleChange = (event, value) => {
+        setCurrentPage(value);
+    };
+
+    const getPostData = () => {
+       // add the logic we learned in activity 4 and assign result of splice to a variable called posts
+        return posts;
+    };
+
+    return (
+        <div>
+            <div>
+                {getPostData().map((item) => (
+                <p key={item.id}>Title: {item.title}</p>
+                ))}
+            </div>
+            <Pagination
+                count={numberOfPages}
+                page={currentPage}
+                onChange={handleChange}
+            />
+        </div>
+    };
+
+    export default Post;
+
+</details>
+
+![result](/PAGINATION%20IN%20REACTJS/Images/result.png)
+
+> The code for the above UI is available in codes folder.
+
+Contratulations!! We now have a working Pagination feature, you can customize the UI as per your choice.
+
+## Conclusion
+
+We successfully implemented pagination feature with help of Material-UI pagination component.
+
 ## Reference
 
 [MUI pagination](https://mui.com/material-ui/react-pagination/)

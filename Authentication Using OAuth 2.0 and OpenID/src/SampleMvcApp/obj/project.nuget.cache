@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "NBU0T+05o8EM9M5TF2iVpcUkb36gawyBiN1I0EdZSlGMSTIaRfJIUIwbWgViseZzri07dN4xOvwZamsVCTnnCQ==",
+  "success": true,
+  "projectFilePath": "D:\\Software Development\\Crio.Do\\IBD-2022\\IBD-2022-Master-Repository\\Authentication Using OAuth 2.0 and OpenID\\src\\SampleMvcApp\\SampleMvcApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nitin\\.nuget\\packages\\auth0.aspnetcore.authentication\\1.0.3\\auth0.aspnetcore.authentication.1.0.3.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\microsoft.aspnetcore.authentication.openidconnect\\5.0.17\\microsoft.aspnetcore.authentication.openidconnect.5.0.17.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.7.1\\microsoft.identitymodel.jsonwebtokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.1\\microsoft.identitymodel.logging.6.7.1.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.7.1\\microsoft.identitymodel.protocols.6.7.1.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.7.1\\microsoft.identitymodel.protocols.openidconnect.6.7.1.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.1\\microsoft.identitymodel.tokens.6.7.1.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\system.text.encodings.web\\4.5.1\\system.text.encodings.web.4.5.1.nupkg.sha512",
+    "C:\\Users\\Nitin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
+  "logs": []
+}

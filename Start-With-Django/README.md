@@ -44,7 +44,7 @@ The microbyte targets to illustrate how to  create a simple backend project in D
 - So , the first step is to create a project.
 - One can run the following command : \
 `django-admin startproject <Project-name>`
-- Refer to this `SampleProject` created : [Sample Project](Start-With-Django/SampleProject)
+- Refer to this `SampleProject` created : [Sample Project](SampleProject)
 
 ### Starting Django Server
 - Once the project is created , we can start the server! (Django makes it all so easy 😊)

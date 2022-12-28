@@ -165,8 +165,34 @@ Output : \
 
 ### Hint
 > Create a new thread using the `start()` method then use the `join()` method.
+
+### Activity 3
+- Create a class in Python named `CustomThread`. This class overrides the __init__() method of the `Thread` class and sets the name of the threads which are created.
+
+### Hint
+> In order to override any method in a class one has to inherit the parent class first.
+> For eg : class Child(Parent) and then override the method you want.
+
+The following sets the `thread_name` property of the threads created.
+```
+def __init__(self, thread_name):
+    threading.Thread.__init__(self)
+ 	self.thread_name = thread_name
+```
+### Activity 4
+- Write a Python program to calculate the number of active threads.
+
+### Hint
+> In order to calculate the number of active threads one can use the `active_count` callable function in the `threading` module in python.
+### Activity 5
+- Write a program to calculate the cube and square of a particular number using two different threads.
+
+### Hint
+> Refer to https://www.geeksforgeeks.org/multithreading-python-set-1/
+
 ## Conclusion
 Leaners learnt how to create and execute threads concurrently using multithreading in Python.
 
 ## References
 - https://docs.python.org/3/library/threading.html
+- https://www.geeksforgeeks.org/multithreading-python-set-1/

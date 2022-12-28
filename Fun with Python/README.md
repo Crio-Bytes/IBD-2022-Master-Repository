@@ -184,6 +184,6 @@ Congratulations! You have finished all of the tasks. I hope you enjoyed it and t
 
 # Reference
 
-https://www.activestate.com/blog/top-10-tasks-to-automate-with-python/
+- https://www.activestate.com/blog/top-10-tasks-to-automate-with-python/
 
-https://www.kdnuggets.com/2022/11/3-useful-python-automation-scripts.html
+- https://www.kdnuggets.com/2022/11/3-useful-python-automation-scripts.html

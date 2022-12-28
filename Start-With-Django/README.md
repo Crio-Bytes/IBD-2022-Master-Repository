@@ -1,6 +1,19 @@
 ## Introduction
+The microbyte targets to illustrate how to  create a simple backend project in Django.
+
 ## Pre-requisites
+- Datastructures in Python
+- Different types of HTTP request like (GET , POST , PATCH , etc)
+- Running commands on the terminal
+
 ## Table of Contents
+- [What is Django](#what-is-django)
+- [How does Django Works?](#how-does-django-works)
+- [Getting Started with Django](#installing-django)
+- [Next Steps](#next-steps)
+- [Conclusion](#conclusion)
+- [References](#references)
+
 ## What is Django?
 - Django is a Python framework that makes it easier to create web sites using Python.
 - Django takes care of the difficult stuff so that you can concentrate on building your web applications.
@@ -38,7 +51,8 @@
 - The command to start the server is `python manage.py runserver`
 - The default template provided by Django is rendered when the server starts : \
 ![server-running](images/server-running.png)
-### Activity 2 
+
+#### Activity 2 
 - The default port that django uses for running the server is port `8000`. 
 - Run the server on a different port `8080`
 <details>
@@ -47,7 +61,7 @@
     For example <code>python manage.py runserver <i>Port Number</i></code>
 </details>
 
-### Activity 3 
+#### Activity 3 
 - A super user is a special user in Django that can manage the database and all the social profiles in a particular project.
 - The activity is to create a super user of your project in Django
 <details>
@@ -67,10 +81,36 @@
 - Once the app is created one has to add the app name in the `INSTALLED_APPS` list present in the **settings.py** file.
 ![installed-apps](images/installed_apps.png)
 
+#### Activity 4 : Creating an API endpoint in Django
+- Once the server is up and running lets create an API endpoint called `home`.
+- To create APIs Django uses `views.py` file present in the app created.
+- This API will return a hashmap containing the basic information of a student like : `first_name` , `last_name` , `age` , etc
+- One can use `JSONRESPONSE` package to render a json response in django.
+- For reference : [refer to the sample views.py](SampleProject/SampleApp/views.py)
 
-#### Defining URLS in the app
-#### Defining Models in the app
-#### Creating an API endpoint with Views in Django
-#### Hitting the API
+#### Activity 5 : Defining URLS in the app
+- Urls are defined in the `urls.py` file which is present in the base directory.
+- Make a uri : `/initial` which will trigger the `home` API created in activity 4.
+- One can refer to this sample `urls.py` file to understand how the api paths are defined : [urls.py](SampleProject/SampleProject/urls.py)
+
+### Triggering the API
+- Let's trigger the `home` API by sending a `GET` hit from the browser (one can also use POSTMAN): 
+![home](images/home-response.png)
+
+## Next Steps
+Learning should never be stopped!
+One can learn the following advanced concepts in Django
+- Working with Migrations in Django
+- Creating templates in Django
+- Creating models in Django
+- Adding Authentication in Django by : 
+    - session-based authentication
+    - token-based authentication
+    - JWT authentication
+    - Third party authentication (like : OAuth via Google , GitHub etc)
+
 ## Conclusion
+In this microbyte learners learnt how to create a django project , how to start a server , how to create API endpoints in Django.
+
 ## References
+- https://docs.djangoproject.com/en/4.1/

@@ -74,7 +74,7 @@ if __name__ == "__main__":
     print(thread.is_alive()) 
 ```
 
-Output of the above code: 
+Output of the above code: \
 ![output](images/output-1.png)
 
 - One can see that as soon as the `run()` method stopped executing the thread became dead.

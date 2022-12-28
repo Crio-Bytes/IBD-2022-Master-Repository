@@ -128,8 +128,9 @@ if __name__ == "__main__":
 
 ```
 
-Output :
+Output : \
 ![output](images/output-2.png)
+\
 **One can see that as soon as the thread named `thread` sleeps for 1 second the `main` thread resumes running.** This prevents the code to stuck infinitely with the custom made thread.
 - Let's run the same thread by using `run()` method : 
 ```
@@ -147,8 +148,9 @@ if __name__ == "__main__":
     print("Onto the main thread")
 
 ```
-Output : 
+Output : \
 ![output](images/output-3.png)
+
 **One can see that the main thread is only triggered once the execution of the previous thread finished.** Hence because of this reason it is a good practice to create new thread using the `start()` method
 - Another difference is that for a thread the `start()` method can only be called once else will raise a `RuntimeError` if called more than once on the same thread object.
 - A `run()` method can be called many times.

@@ -1,6 +1,6 @@
 # Introduction
 
-Client and server often need to communicate with each other in real-time, such as in chat application, online gaming and collaborative tools. There are different backend communication patterns that help in real-time communication between client and server such as Push, Polling, Long Polling, and Server sent events. In this micro byte we are going to cover:
+Client and server often need to communicate with each other in real-time, such as in chat applications, online gaming, and collaborative tools. There are different backend communication patterns that help in real-time communication between client and server such as Push, Polling, Long Polling, and Server sent events. In this micro byte we are going to cover:
 
 - What is Long Polling
 - How is it different from Polling
@@ -9,13 +9,13 @@ Client and server often need to communicate with each other in real-time, such a
 
 ## What is Long Polling?
 
-Long Polling is a technique that allows real-time communication between a client and server without overhead of creating new connection for every message.
+Long Polling is a technique that allows real-time communication between a client and server without the overhead of creating a new connection for every message.
 
-In Long Polling client sends request to the server and then waits for a response from the server. If the server does not have any new information to send back to the client, it will keep the request open for a specified amount of time, known as **long poll timeout**. So the connection is not closed by the server until it has new information available or if the long poll timeout threshold is reached.
+In Long Polling client sends a request to the server and then waits for a response from the server. If the server does not have any new information to send back to the client, it will keep the request open for a specified amount of time, known as **long poll timeout**. So the connection is not closed by the server until it has new information available or if the long poll timeout threshold is reached.
 
 ## How is Long Polling different from Polling?
 
-The basic idea of Polling is that client sends request repetadly to the server at regular intervals to check for new data. So server has to constantly process and respond to the requests, even when no new data is available.
+The basic idea of Polling is that client sends requests repeatedly to the server at regular intervals to check for new data. So the server has to constantly process and respond to the requests, even when no new data is available.
 
 ![polling](/Introduction%20to%20Long%20Polling/Images/polling.png)
 
@@ -26,10 +26,10 @@ Pros of polling:
 
 Cons of polling:
 
-- Polling can be inefficient and resource-intensive. It requires client to constantly send request to server and server to constantly process and respond to those request even when there is no new data available.
-- It utilze more network bandwidth and backend resource compared to long polling.
+- Polling can be inefficient and resource-intensive. It requires the client to constantly send a request to the server and server to constantly process and respond to those requests even when there is no new data available.
+- It utilzes more network bandwidth and backend resources compared to long polling.
 
-Long polling is similar to polling, but it is designed to be more efficient and less resource-intensive by keeping the connection open until new data becomes avialble. When new data becomes available, the server sends the data to the client and closes the connection. If no new data is available withing a specified timeout period, the server sends message to client indicating that no new data is available and closes the connection.
+Long polling is similar to polling, but it is designed to be more efficient and less resource-intensive by keeping the connection open until new data becomes available. When new data becomes available, the server sends the data to the client and closes the connection. If no new data is available within a specified timeout period, the server sends a message to the client indicating that no new data is available and closes the connection.
 
 ![long-polling](/Introduction%20to%20Long%20Polling/Images/long%20polling.png)
 
@@ -42,17 +42,17 @@ Cons of Long Polling:
 
 - Long Polling may introduce latency, as the client has to wait for the server to send a response with new data. This may not be suitable for applications that require real-time updates.
 
-Both Polling & Long Polling are not as efficient and secure as other approches as they require the client to send requests to the server at regular intervals. This makes it easier for attackers to identify and target the server with malicious requests.
+Both Polling & Long Polling are not as efficient and secure as other approaches as they require the client to send requests to the server at regular intervals. This makes it easier for attackers to identify and target the server with malicious requests.
 
 ## Applications of Long Polling
 
-Long Polling is used in real-time applications, where server needs to send updates to client as soon as they become available.
+Long Polling is used in real-time applications, where the server needs to send updates to clients as soon as they become available.
 
 It can be used in chat systems and social media applications, where the client needs to be notified as soon as new information becomes available on the server. It can also be used to implement push notifications in web applications, allowing the server to send updates to the client without the need for the client to continuously poll the server for new information.
 
 ### Prerequisite for the Activity
 
-The logic to implement long polling is similar for different languages, but for this micro byte we are going to use Node.js so basic familiarity with Node.js is required to understand the code.
+The logic to implement long polling is similar for different languages, but for this micro byte, we are going to use Node.js so basic familiarity with Node.js is required to understand the code.
 
 # Activity
 
@@ -69,7 +69,7 @@ Create a new folder and npm repository.
 
         npm init
 
-Enter necessary data and package.json file will be created.
+Enter the necessary data and package.json file will be created.
 
 ![package-png](/Introduction%20to%20Long%20Polling/Images/package.png)
 
@@ -77,14 +77,14 @@ Enter necessary data and package.json file will be created.
 
 ## Activity 2 - Creating HTTP server using `http` module.
 
-In this activity you need to create a simple HTTP server using `http` module in Node.js that sends "Learning about Long Polling" message to the client when a request is received.
+In this activity, you need to create a simple HTTP server using `http` module in Node.js that sends "Learning about Long Polling" message to the client when a request is received.
 
 1. Import the `http` module.
 
 2. create HTTP server using `createServer` method of HTTP module.
 
 Hint:
-The `createServer` method takes a callback function with request & response as its paramenters.
+The `createServer` method takes a callback function with request & response as its parameters.
 
 <details>
 <summary>Solution</summary>
@@ -95,7 +95,7 @@ The `createServer` method takes a callback function with request & response as i
             res.end("Learning about Long Polling");
         })
 
-The createServer method is called whenever server receives a request.
+The createServer method is called whenever the server receives a request.
 
 </details>
 
@@ -116,11 +116,11 @@ Hint:
 
 ## Activity 3 - Sending data if available
 
-We will now update the `createServer` method so that it will check if data is available and sends it as response.
+We will now update the `createServer` method so that it will check if data is available and sends it as the response.
 
-1. create a variable called as `isDataAvialable` & assign it value of false.
+1. create a variable called as `isDataAvialable` & assign it a value of false.
 
-2. Now update the `createServer` method so that it will return the data if data is avialable.
+2. Now update the `createServer` method so that it will return the data if data is available.
 
 <details>
 <summary>Solution</summary>
@@ -143,11 +143,11 @@ We will now update the `createServer` method so that it will check if data is av
 
 ## Activity 4 - Adding long poll timeout
 
-Add a timeout in `createServer` method so that it will send responde as "No new data available" if no data is updated in 5 seconds.
+Add a timeout in `createServer` method so that it will send response as "No new data available" if no data is updated in 5 seconds.
 
 Hint:
 
-- Use `setTimeout` method to add time period for each connection.
+- Use `setTimeout` method to add a time period for each connection.
 
 The `setTimeout` function is a JavaScript method that allows you to set a delay before executing a callback function. It is often used in conjunction with long Polling to set a timeout period for each connection.
 Here is an example of how to use setTimeout():
@@ -193,7 +193,7 @@ Start the server and test the URL using Postman.
 
 ![postman-loading](/Introduction%20to%20Long%20Polling/Images/loadingPostman.png)
 
-After 5 seconds, server will send response as "No data is avialable".
+After 5 seconds, the server will send a response as "No data is available".
 
 ![no-data](/Introduction%20to%20Long%20Polling/Images/no-data.png)
 
@@ -201,7 +201,7 @@ After 5 seconds, server will send response as "No data is avialable".
 
 4. Restart the server using **node index.js**
 
-5. Send request to server
+5. Send a request to the server
 
 ![data-loaded](/Introduction%20to%20Long%20Polling/Images/data-loaded.png)
 
@@ -209,7 +209,7 @@ After 5 seconds, server will send response as "No data is avialable".
 
 We learned what Long Polling is and how it is different from Polling. Long Polling is a variant of Polling that is designed to be more efficient and less resource-intensive by keeping the connection open until new data becomes available. However, it may still require more resources compared to other approaches, such as WebSockets or server-sent events (SSE), which use a persistent connection for real-time communication. We also implemented Long Polling in Node.js
 
-## Refrences
+## References
 
 [Http Long Polling](https://www.pubnub.com/blog/http-long-polling/)
 [Long Polling](https://javascript.info/long-polling#long-polling)

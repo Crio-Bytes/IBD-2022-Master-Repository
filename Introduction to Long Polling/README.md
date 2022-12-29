@@ -5,7 +5,7 @@ Client and server often need to communicate with each other in real-time, such a
 - What is Long Polling
 - How is it different from Polling
 - Applications of Long Polling
-- Activity
+- Activity: Implementing Long Polling
 
 ## What is Long Polling?
 
@@ -43,3 +43,54 @@ Cons of Long Polling:
 - Long Polling may introduce latency, as the client has to wait for the server to send a response with new data. This may not be suitable for applications that require real-time updates.
 
 Both Polling & Long Polling are not as efficient and secure as other approches as they require the client to send requests to the server at regular intervals. This makes it easier for attackers to identify and target the server with malicious requests.
+
+## Applications of Long Polling
+
+Long Polling is used in real-time applications, where server needs to send updates to client as soon as they become available.
+
+It can be used in chat systems and social media applications, where the client needs to be notified as soon as new information becomes available on the server. It can also be used to implement push notifications in web applications, allowing the server to send updates to the client without the need for the client to continuously poll the server for new information.
+
+### Prerequisite for the Activity
+
+The logic to implement long polling is similar for different languages, but for this micro byte we are going to use Node.js so basic familiarity with Node.js is required to understand the code.
+
+# Activity
+
+## Activity 1 - Creating HTTP server using `http` module.
+
+In this activity you need to create a simple HTTP server using `http` module in Node.js that sends "Learning about Long Polling" message to the client when a request is received.
+
+1. Import the `http` module.
+
+2. create HTTP server using `createServer` method of HTTP module.
+
+Hint:
+The `createServer` method takes a callback function with request & response as its paramenters.
+
+<details>
+<summary>Solution</summary>
+
+        const http = require('http');
+
+        const server = http.createServer((req,res) => {
+            res.end("Learning about Long Polling");
+        })
+
+The createServer method is called whenever server receives a request.
+
+</details>
+
+3. Start listening for requests on port **3000**.
+
+Hint:
+
+- We can use `listen` method of the `server` object to complete this activity.
+
+<details>
+<summary>Solution</summary>
+
+        server.listen((3000, ()=>{
+            console.log('Server is listening on port 3000');
+        }))
+
+</details>

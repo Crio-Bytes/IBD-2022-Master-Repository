@@ -94,3 +94,72 @@ Hint:
         }))
 
 </details>
+
+## Activity 2 - Sending data if available
+
+We will now update the `createServer` method so that it will check if data is available and sends it as response.
+
+1. create a variable called as `isDataAvialable` & assign it value of false.
+
+2. Now update the `createServer` method so that it will return the data if data is avialable.
+
+<details>
+<summary>Solution</summary>
+
+        let isDataAvialable = false;
+
+        const http = require('http');
+
+        const server = http.createServer((req,res) => {
+            if(isDataAvialable){
+                res.end(`Data is ${data}`);
+            }
+        })
+
+        server.listen((3000, ()=>{
+            console.log('Server is listening on port 3000');
+        }))
+
+</details>
+
+## Activity 3 - Adding long poll timeout
+
+Add a timeout in `createServer` method so that it will send responde as "No new data available" if no data is updated in 5 seconds.
+
+Hint:
+
+- Use `setTimeout` method to add time period for each connection.
+
+The `setTimeout` function is a JavaScript method that allows you to set a delay before executing a callback function. It is often used in conjunction with long Polling to set a timeout period for each connection.
+Here is an example of how to use setTimeout():
+
+        setTimeout(callback, delay);
+
+The `callback` parameter is a function that will be executed after the specified `delay` period has elapsed. The `delay` parameter is the number of milliseconds to wait before executing the callback function.
+
+<details>
+<summary>Solution</summary>
+
+        let isDataAvialable = false;
+
+        const http = require('http');
+
+        const server = http.createServer((req,res) => {
+
+            // Set a timeout period for each connection
+             const timeout = setTimeout(() => {
+                res.end("No new data available");
+            }, 30000);
+
+            // Wait for new data to become available
+            if(isDataAvialable){
+                res.end(`Data is ${data}`);
+            }
+
+        })
+
+        server.listen((3000, ()=>{
+            console.log('Server is listening on port 3000');
+        }))
+
+</details>

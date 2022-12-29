@@ -56,7 +56,26 @@ The logic to implement long polling is similar for different languages, but for 
 
 # Activity
 
-## Activity 1 - Creating HTTP server using `http` module.
+## Activity 1 - Setting up the codebase
+
+Create a new folder and npm repository.
+
+1.  Create a new folder and navigate to that directory
+
+        mkdir long-polling
+        cd long-polling
+
+2.  Initiate a new npm repository
+
+        npm init
+
+Enter necessary data and package.json file will be created.
+
+![package-png](/Introduction%20to%20Long%20Polling/Images/package.png)
+
+3. Create an `index.js` file and open any IDE.
+
+## Activity 2 - Creating HTTP server using `http` module.
 
 In this activity you need to create a simple HTTP server using `http` module in Node.js that sends "Learning about Long Polling" message to the client when a request is received.
 
@@ -95,7 +114,7 @@ Hint:
 
 </details>
 
-## Activity 2 - Sending data if available
+## Activity 3 - Sending data if available
 
 We will now update the `createServer` method so that it will check if data is available and sends it as response.
 
@@ -122,7 +141,7 @@ We will now update the `createServer` method so that it will check if data is av
 
 </details>
 
-## Activity 3 - Adding long poll timeout
+## Activity 4 - Adding long poll timeout
 
 Add a timeout in `createServer` method so that it will send responde as "No new data available" if no data is updated in 5 seconds.
 
@@ -163,3 +182,36 @@ The `callback` parameter is a function that will be executed after the specified
         }))
 
 </details>
+
+## Activity 5 - Trying the code.
+
+Start the server and test the URL using Postman.
+
+1. Start the server using **node index.js**
+
+2. Open postman and enter the url **http://localhost:3000**
+
+![postman-loading](/Introduction%20to%20Long%20Polling/Images/loadingPostman.png)
+
+After 5 seconds, server will send response as "No data is avialable".
+
+![no-data](/Introduction%20to%20Long%20Polling/Images/no-data.png)
+
+3. Update the value of d=isDataAvialable to true
+
+4. Restart the server using **node index.js**
+
+5. Send request to server
+
+![data-loaded](/Introduction%20to%20Long%20Polling/Images/data-loaded.png)
+
+## Conclusion
+
+We learned what Long Polling is and how it is different from Polling. Long Polling is a variant of Polling that is designed to be more efficient and less resource-intensive by keeping the connection open until new data becomes available. However, it may still require more resources compared to other approaches, such as WebSockets or server-sent events (SSE), which use a persistent connection for real-time communication. We also implemented Long Polling in Node.js
+
+## Refrences
+
+[Http Long Polling](https://www.pubnub.com/blog/http-long-polling/)
+[Long Polling](https://javascript.info/long-polling#long-polling)
+[Difference between Polling & Long Polling](https://www.geeksforgeeks.org/what-is-long-polling-and-short-polling/)
+[Implementing long polling](https://levelup.gitconnected.com/understand-and-implement-long-polling-and-short-polling-in-node-js-94334d2233f3)

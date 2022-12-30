@@ -197,13 +197,21 @@ After 5 seconds, the server will send a response as "No data is available".
 
 ![no-data](/Introduction%20to%20Long%20Polling/Images/no-data.png)
 
-3. Update the value of d=isDataAvialable to true
+3. Update the value of isDataAvialable to true
 
 4. Restart the server using **node index.js**
 
 5. Send a request to the server
 
 ![data-loaded](/Introduction%20to%20Long%20Polling/Images/data-loaded.png)
+
+## Mega Challenge
+
+Can you implement Long Polling using express or any other web server framework in Node.js.
+
+Hint: You need to create a route that listens for incoming HTTP requests and sends the data id it is available. If no new data is available in 10 seconds (the long poll timeout), then it should send back message "No new data is avialable" to the client.
+
+The solution for this challenge is available [here](/Introduction%20to%20Long%20Polling/code/server.js)
 
 ## Conclusion
 

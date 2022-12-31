@@ -24,7 +24,7 @@ Before we begin, you'll need to have Python installed on your computer, along wi
 ---
 ## Activity 1 - Plotting a Line Graph
 ---
-
+<img src='./images/Activity_1.png'>
 One of the most basic types of plots is the line graph, which shows how one or more variables change over time.
 To create a line graph in Python, we can use the plot() function from the matplotlib.pyplot library.
 
@@ -56,6 +56,8 @@ You can download the dataset from Kaggle.
 ## Activity 2 - Customizing the Appearance of Plots
 
 ---
+<img src='./images/Activity_2.png'>
+
 Of course, a plain line graph isn't very useful on its own. 
 We can use a variety of options to customize the appearance of our plots and make them more informative.
 
@@ -88,6 +90,7 @@ such as changing the line style, color, and markers, and adding grid lines and l
 ---
 ## Activity 3 - Plotting Multiple Lines on the Same Plot
 --- 
+
  Sometimes, you may want to plot multiple lines on the same plot to 
  compare them or show their relationship. To do this, simply call the plot() 
  function multiple times with different data.
@@ -123,6 +126,8 @@ The legend() function adds a legend to the plot, which labels each line.
 ---
 ## Activity 4 - Plotting a Scatter Plot
 ---
+<img src='./images/Activity_3.png'>
+
 In addition to line graphs, Python also provides tools for creating scatter plots, 
 which are useful for visualizing the relationship between two numerical variables. 
 To create a scatter plot, we can use the `scatter()` function from the `matplotlib.pyplot` library.
@@ -147,6 +152,8 @@ Now, we can use the scatter() function to plot this data:
 ---
 ### Activity 5 - Plotting a Bar Chart
 ---
+<img src='./images/Activity_5.png'>
+
 Bar charts are a useful tool for visualizing categorical data, or data that can be grouped into categories. 
 To create a bar chart in Python, we can use the bar() function from the matplotlib.pyplot library.
 For example, let's say we have data on the number of students in each grade at a school:

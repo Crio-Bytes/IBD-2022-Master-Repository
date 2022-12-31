@@ -1,3 +1,5 @@
+<img src='./images/DataV.png'>
+
 # Introduction
 `Data visualization` is the process of creating and presenting graphical representations of data in order to facilitate understanding and analysis. Data visualization can help people to understand trends, patterns, and relationships in data by using visual elements like **charts**, **plots**, and **maps**.
 `Python` is a popular programming language that has many libraries and tools for data visualization. 
